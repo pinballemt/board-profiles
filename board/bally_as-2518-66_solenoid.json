@@ -1,0 +1,88 @@
+{
+  "board": "AS-2518-66",
+  "header": {
+    "name": "J1",
+    "type": "10-pin",
+    "pins": {
+      "1": {
+        "label": "Switched Illumination Bus",
+        "function": "Drives lamp via R1 → U1-1",
+        "connected_to": ["R1 (330Ω)", "U1 pin 1"]
+      },
+      "2": {
+        "label": "Lamp Driver SCR",
+        "function": "Drives lamp via U1-2",
+        "connected_to": ["U1 pin 2"]
+      },
+      "3": {
+        "label": "GND",
+        "function": "Board ground",
+        "connected_to": ["Ground plane"]
+      },
+      "4": {
+        "label": null,
+        "function": "Jumpered to pin 9 (+43VDC)",
+        "connected_to": ["CR1", "K1 coil", "U1 pin 6"]
+      },
+      "5": {
+        "label": null,
+        "function": "Connected to switch symbol",
+        "connected_to": ["Switch logic"]
+      },
+      "6": {
+        "label": "KEY",
+        "function": "Relay control input",
+        "connected_to": ["U1 pin 6"]
+      },
+      "7": {
+        "label": null,
+        "function": "Connected to switch symbol",
+        "connected_to": ["Switch logic"]
+      },
+      "8": {
+        "label": null,
+        "function": "Unused or not shown",
+        "connected_to": []
+      },
+      "9": {
+        "label": "+43VDC",
+        "function": "Solenoid power input",
+        "connected_to": ["CR1", "K1 coil", "jumpered to pin 4"]
+      },
+      "10": {
+        "label": null,
+        "function": "Unused or not shown",
+        "connected_to": []
+      }
+    }
+  },
+  "components": {
+    "U1": {
+      "type": "Optocoupler",
+      "part": "MOC3011",
+      "pins": {
+        "1": "From R1 (illumination bus)",
+        "2": "To lamp driver SCR",
+        "6": "From KEY input, drives relay"
+      }
+    },
+    "K1": {
+      "type": "Relay",
+      "coil": "Driven by +43VDC via CR1 and U1-6"
+    },
+    "CR1": {
+      "type": "Diode",
+      "function": "Protects relay coil"
+    },
+    "R1": {
+      "value": "330Ω",
+      "function": "Limits current from illumination bus to U1"
+    }
+  },
+  "notes": [
+    "Pins 4 and 9 are jumpered together and carry +43VDC",
+    "Pins 5 and 7 appear to be part of a switch circuit",
+    "Arrow direction in schematic indicates current flow and opto triggering logic",
+    "Lamp is driven by SCR and opto output"
+  ]
+}

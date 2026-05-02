@@ -1,0 +1,751 @@
+{
+  "board_id": "bally_as-2518-23_lamp_driver",
+  "description": "Bally lamp driver board: J4 MPU interface, J1–J3 lamp headers, U1–U4 MC14514 decoders, transistor mapping",
+
+  "connectors": [
+    {
+      "id": "J4",
+      "role": "mpu_interface",
+      "description": "Lamp address, lamp data, strobe, and utility/test signals from MPU",
+      "pins": [
+        {
+          "pin": 1,
+          "signal": "J4_P1",
+          "alias": "+5V_MON",
+          "direction": "reference",
+          "goes_to": [
+            { "type": "test_point", "ref": "TP1", "note": "+5V ±0.25 VDC monitor" }
+          ],
+          "notes": "Utility bus node associated with +5V monitoring"
+        },
+        {
+          "pin": 2,
+          "signal": "J4_P2",
+          "alias": "GND_REF",
+          "direction": "reference",
+          "goes_to": [
+            { "type": "test_point", "ref": "TP2", "note": "GND reference" }
+          ],
+          "notes": "Utility bus node tied to ground reference"
+        },
+        {
+          "pin": 3,
+          "signal": "J4_P3",
+          "alias": "+5V_REF",
+          "direction": "reference",
+          "goes_to": [
+            { "type": "test_point", "ref": "TP3" },
+            { "type": "resistor", "ref": "R70", "value": "2K" },
+            { "type": "capacitor", "ref": "C1", "value": "0.01uF", "to": "GND" }
+          ],
+          "notes": "Filtered +5V reference node (R70 to +5V, C1 to GND)"
+        },
+        {
+          "pin": 4,
+          "signal": "PD3_LAMP_DATA",
+          "direction": "input",
+          "goes_to": [
+            { "type": "resistor", "ref": "R65", "value": "2.2M" },
+            { "type": "bus", "ref": "LAMP_DATA[3]" }
+          ],
+          "notes": "Lamp data bit 3 from MPU; through R65 into MC14514 data path"
+        },
+        {
+          "pin": 5,
+          "signal": "PD2_LAMP_DATA",
+          "direction": "input",
+          "goes_to": [
+            { "type": "resistor", "ref": "R64", "value": "2.2M" },
+            { "type": "bus", "ref": "LAMP_DATA[2]" }
+          ],
+          "notes": "Lamp data bit 2 from MPU; through R64 into MC14514 data path"
+        },
+        {
+          "pin": 6,
+          "signal": "PD1_LAMP_DATA",
+          "direction": "input",
+          "goes_to": [
+            { "type": "resistor", "ref": "R63", "value": "2.2M" },
+            { "type": "bus", "ref": "LAMP_DATA[1]" }
+          ],
+          "notes": "Lamp data bit 1 from MPU; through R63 into MC14514 data path"
+        },
+        {
+          "pin": 7,
+          "signal": "PD0_LAMP_DATA",
+          "direction": "input",
+          "goes_to": [
+            { "type": "resistor", "ref": "R62", "value": "2.2M" },
+            { "type": "bus", "ref": "LAMP_DATA[0]" }
+          ],
+          "notes": "Lamp data bit 0 from MPU; through R62 into MC14514 data path"
+        },
+        {
+          "pin": 8,
+          "signal": "KEY",
+          "direction": "none",
+          "goes_to": [],
+          "notes": "Key position; mechanical only, no contact"
+        },
+        {
+          "pin": 9,
+          "signal": "SPARE1",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked SPARE on schematic; no functional connection"
+        },
+        {
+          "pin": 10,
+          "signal": "SPARE2",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked SPARE on schematic; no functional connection"
+        },
+        {
+          "pin": 11,
+          "signal": "J4_P11",
+          "direction": "reference",
+          "goes_to": [
+            { "type": "net_group", "ref": "J4_UTILITY_BUS" }
+          ],
+          "notes": "Unlabeled tap on same utility cluster as TP1/TP2/TP3 (exact MPU use TBD)"
+        },
+        {
+          "pin": 12,
+          "signal": "J4_P12",
+          "direction": "reference",
+          "goes_to": [
+            { "type": "net_group", "ref": "J4_UTILITY_BUS" }
+          ],
+          "notes": "Unlabeled tap on same utility cluster as TP1/TP2/TP3 (exact MPU use TBD)"
+        },
+        {
+          "pin": 13,
+          "signal": "STROBE_I",
+          "direction": "input",
+          "goes_to": [
+            { "type": "resistor", "ref": "R75", "value": "20K" },
+            { "type": "net_group", "ref": "LAMP_STROBE" }
+          ],
+          "notes": "Lamp strobe input from MPU; via R75 into strobe/enable network for MC14514 decoders"
+        },
+        {
+          "pin": 14,
+          "signal": "AD0_LAMP_ADDR",
+          "direction": "input",
+          "goes_to": [
+            { "type": "resistor", "ref": "R66", "value": "2.2M" },
+            { "type": "bus", "ref": "LAMP_ADDR[0]" }
+          ],
+          "notes": "Lamp address bit 0 from MPU; through R66 into MC14514 address path"
+        },
+        {
+          "pin": 15,
+          "signal": "AD1_LAMP_ADDR",
+          "direction": "input",
+          "goes_to": [
+            { "type": "resistor", "ref": "R67", "value": "2.2M" },
+            { "type": "bus", "ref": "LAMP_ADDR[1]" }
+          ],
+          "notes": "Lamp address bit 1 from MPU; through R67 into MC14514 address path"
+        },
+        {
+          "pin": 16,
+          "signal": "AD2_LAMP_ADDR",
+          "direction": "input",
+          "goes_to": [
+            { "type": "resistor", "ref": "R68", "value": "2.2M" },
+            { "type": "bus", "ref": "LAMP_ADDR[2]" }
+          ],
+          "notes": "Lamp address bit 2 from MPU; through R68 into MC14514 address path"
+        },
+        {
+          "pin": 17,
+          "signal": "AD3_LAMP_ADDR",
+          "direction": "input",
+          "goes_to": [
+            { "type": "resistor", "ref": "R69", "value": "2.2M" },
+            { "type": "bus", "ref": "LAMP_ADDR[3]" }
+          ],
+          "notes": "Lamp address bit 3 from MPU; through R69 into MC14514 address path"
+        }
+      ]
+    },
+
+    {
+      "id": "J1",
+      "role": "lamp_output_header",
+      "description": "Lamp outputs to playfield, group 1",
+      "pins": [
+        {
+          "pin": 20,
+          "signal": "KEY",
+          "direction": "none",
+          "goes_to": [],
+          "notes": "Key position; mechanical only, no contact"
+        },
+        {
+          "pin": 21,
+          "signal": "N_U",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked N/U on schematic; no functional connection"
+        },
+        {
+          "pin": 22,
+          "signal": "N_U",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked N/U on schematic; no functional connection"
+        }
+      ]
+    },
+    {
+      "id": "J2",
+      "role": "lamp_output_header",
+      "description": "Lamp outputs to playfield, group 2",
+      "pins": [
+        {
+          "pin": 18,
+          "signal": "KEY",
+          "direction": "none",
+          "goes_to": [],
+          "notes": "Key position; mechanical only, no contact"
+        },
+        {
+          "pin": 17,
+          "signal": "N_U",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked N/U on schematic; no functional connection"
+        },
+        {
+          "pin": 19,
+          "signal": "N_U",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked N/U on schematic; no functional connection"
+        }
+      ]
+    },
+    {
+      "id": "J3",
+      "role": "lamp_output_header",
+      "description": "Lamp outputs to playfield, group 3",
+      "pins": [
+        {
+          "pin": 8,
+          "signal": "KEY",
+          "direction": "none",
+          "goes_to": [],
+          "notes": "Key position; mechanical only, no contact"
+        },
+        {
+          "pin": 5,
+          "signal": "N_U",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked N/U on schematic; no functional connection"
+        },
+        {
+          "pin": 6,
+          "signal": "N_U",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked N/U on schematic; no functional connection"
+        },
+        {
+          "pin": 7,
+          "signal": "N_U",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked N/U on schematic; no functional connection"
+        },
+        {
+          "pin": 28,
+          "signal": "N_U",
+          "direction": "unused",
+          "goes_to": [],
+          "notes": "Marked N/U on schematic; no functional connection"
+        }
+      ]
+    }
+  ],
+
+  "lamp_decoders": [
+    {
+      "id": "U1",
+      "type": "MC14514CP",
+      "role": "lamp_decoder",
+      "power": {
+        "vdd": { "pin": 24, "connected_to": "+5V" },
+        "vss": { "pin": 12, "connected_to": "GND" }
+      },
+      "inputs": [
+        {
+          "signal": "AD0_LAMP_ADDR",
+          "pin": 2,
+          "label": "D1",
+          "from": {
+            "connector": "J4",
+            "pin": 14,
+            "resistor": "R66",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD1_LAMP_ADDR",
+          "pin": 3,
+          "label": "D2",
+          "from": {
+            "connector": "J4",
+            "pin": 15,
+            "resistor": "R67",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD2_LAMP_ADDR",
+          "pin": 21,
+          "label": "D3",
+          "from": {
+            "connector": "J4",
+            "pin": 16,
+            "resistor": "R68",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD3_LAMP_ADDR",
+          "pin": 22,
+          "label": "D4",
+          "from": {
+            "connector": "J4",
+            "pin": 17,
+            "resistor": "R69",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "PD0_LAMP_DATA",
+          "pin": 23,
+          "label": "I",
+          "from": {
+            "connector": "J4",
+            "pin": 7,
+            "resistor": "R62",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "STROBE_I",
+          "pin": 1,
+          "label": "ST",
+          "from": {
+            "connector": "J4",
+            "pin": 13,
+            "resistor": "R75",
+            "value": "20K"
+          },
+          "aid_test_point": true
+        }
+      ],
+      "outputs": [
+        { "transistor": "Q14", "headers": [ { "connector": "J1", "pin": 18 } ] },
+        { "transistor": "Q12", "headers": [ { "connector": "J1", "pin": 19 } ] },
+        { "transistor": "Q13", "headers": [ { "connector": "J1", "pin": 17 } ] },
+        { "transistor": "Q8",  "headers": [ { "connector": "J1", "pin": 23 } ] },
+        { "transistor": "Q9",  "headers": [ { "connector": "J1", "pin": 14 } ] },
+        { "transistor": "Q10", "headers": [ { "connector": "J1", "pin": 15 } ] },
+        { "transistor": "Q11", "headers": [ { "connector": "J1", "pin": 16 } ] },
+        { "transistor": "Q4",  "headers": [ { "connector": "J1", "pin": 28 } ] },
+        { "transistor": "Q1",  "headers": [ { "connector": "J1", "pin": 24 } ] },
+        { "transistor": "Q2",  "headers": [ { "connector": "J1", "pin": 25 } ] },
+        {
+          "transistor": "Q3",
+          "headers": [
+            { "connector": "J1", "pin": 26 },
+            { "connector": "J2", "pin": 21 }
+          ]
+        },
+        {
+          "transistor": "Q7",
+          "headers": [
+            { "connector": "J1", "pin": 27 },
+            { "connector": "J2", "pin": 13 }
+          ]
+        },
+        { "transistor": "Q16", "headers": [ { "connector": "J2", "pin": 22 } ] },
+        { "transistor": "Q5",  "headers": [ { "connector": "J2", "pin": 16 } ] },
+        { "transistor": "Q6",  "headers": [ { "connector": "J2", "pin": 14 } ] }
+      ]
+    },
+
+    {
+      "id": "U2",
+      "type": "MC14514CP",
+      "role": "lamp_decoder",
+      "power": {
+        "vdd": { "pin": 24, "connected_to": "+5V" },
+        "vss": { "pin": 12, "connected_to": "GND" }
+      },
+      "inputs": [
+        {
+          "signal": "AD0_LAMP_ADDR",
+          "pin": 2,
+          "label": "D1",
+          "from": {
+            "connector": "J4",
+            "pin": 14,
+            "resistor": "R66",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD1_LAMP_ADDR",
+          "pin": 3,
+          "label": "D2",
+          "from": {
+            "connector": "J4",
+            "pin": 15,
+            "resistor": "R67",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD2_LAMP_ADDR",
+          "pin": 21,
+          "label": "D3",
+          "from": {
+            "connector": "J4",
+            "pin": 16,
+            "resistor": "R68",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD3_LAMP_ADDR",
+          "pin": 22,
+          "label": "D4",
+          "from": {
+            "connector": "J4",
+            "pin": 17,
+            "resistor": "R69",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "PD1_LAMP_DATA",
+          "pin": 23,
+          "label": "I",
+          "from": {
+            "connector": "J4",
+            "pin": 6,
+            "resistor": "R63",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "STROBE_I",
+          "pin": 1,
+          "label": "ST",
+          "from": {
+            "connector": "J4",
+            "pin": 13,
+            "resistor": "R75",
+            "value": "20K"
+          },
+          "aid_test_point": true
+        }
+      ],
+      "outputs": [
+        { "transistor": "Q29", "headers": [ { "connector": "J1", "pin": 1 } ] },
+        { "transistor": "Q27", "headers": [ { "connector": "J1", "pin": 9 } ] },
+        { "transistor": "Q28", "headers": [ { "connector": "J1", "pin": 8 } ] },
+        { "transistor": "Q35", "headers": [ { "connector": "J1", "pin": 3 } ] },
+        { "transistor": "Q34", "headers": [ { "connector": "J1", "pin": 2 } ] },
+        { "transistor": "Q22", "headers": [ { "connector": "J1", "pin": 10 } ] },
+        { "transistor": "Q26", "headers": [ { "connector": "J1", "pin": 7 } ] },
+        { "transistor": "Q25", "headers": [ { "connector": "J1", "pin": 6 } ] },
+        { "transistor": "Q24", "headers": [ { "connector": "J1", "pin": 5 } ] },
+        { "transistor": "Q17", "headers": [ { "connector": "J1", "pin": 11 } ] },
+        {
+          "transistor": "Q23",
+          "headers": [
+            { "connector": "J1", "pin": 4 },
+            { "connector": "J2", "pin": 8 }
+          ]
+        },
+        {
+          "transistor": "Q21",
+          "headers": [
+            { "connector": "J1", "pin": 12 },
+            { "connector": "J2", "pin": 12 }
+          ]
+        },
+        { "transistor": "Q15", "headers": [ { "connector": "J2", "pin": 23 } ] },
+        { "transistor": "Q18", "headers": [ { "connector": "J2", "pin": 20 } ] },
+        { "transistor": "Q19", "headers": [ { "connector": "J2", "pin": 15 } ] }
+      ]
+    },
+
+    {
+      "id": "U3",
+      "type": "MC14514CP",
+      "role": "lamp_decoder",
+      "power": {
+        "vdd": { "pin": 24, "connected_to": "+5V" },
+        "vss": { "pin": 12, "connected_to": "GND" }
+      },
+      "inputs": [
+        {
+          "signal": "AD0_LAMP_ADDR",
+          "pin": 2,
+          "label": "D1",
+          "from": {
+            "connector": "J4",
+            "pin": 14,
+            "resistor": "R66",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD1_LAMP_ADDR",
+          "pin": 3,
+          "label": "D2",
+          "from": {
+            "connector": "J4",
+            "pin": 15,
+            "resistor": "R67",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD2_LAMP_ADDR",
+          "pin": 21,
+          "label": "D3",
+          "from": {
+            "connector": "J4",
+            "pin": 16,
+            "resistor": "R68",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD3_LAMP_ADDR",
+          "pin": 22,
+          "label": "D4",
+          "from": {
+            "connector": "J4",
+            "pin": 17,
+            "resistor": "R69",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "PD2_LAMP_DATA",
+          "pin": 23,
+          "label": "I",
+          "from": {
+            "connector": "J4",
+            "pin": 5,
+            "resistor": "R64",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "STROBE_I",
+          "pin": 1,
+          "label": "ST",
+          "from": {
+            "connector": "J4",
+            "pin": 13,
+            "resistor": "R75",
+            "value": "20K"
+          },
+          "aid_test_point": true
+        }
+      ],
+      "outputs": [
+        { "transistor": "Q33", "headers": [ { "connector": "J2", "pin": 11 } ] },
+        { "transistor": "Q30", "headers": [ { "connector": "J2", "pin": 6 } ] },
+        { "transistor": "Q31", "headers": [ { "connector": "J2", "pin": 2 } ] },
+        { "transistor": "Q36", "headers": [ { "connector": "J3", "pin": 26 } ] },
+        { "transistor": "Q38", "headers": [ { "connector": "J3", "pin": 25 } ] },
+        { "transistor": "Q44", "headers": [ { "connector": "J3", "pin": 19 } ] },
+        { "transistor": "Q49", "headers": [ { "connector": "J3", "pin": 17 } ] },
+        { "transistor": "Q48", "headers": [ { "connector": "J3", "pin": 16 } ] },
+        { "transistor": "Q37", "headers": [ { "connector": "J3", "pin": 23 } ] },
+        { "transistor": "Q32", "headers": [ { "connector": "J3", "pin": 27 } ] },
+        { "transistor": "Q20", "headers": [ { "connector": "J1", "pin": 13 } ] },
+        { "transistor": "Q42", "headers": [ { "connector": "J3", "pin": 21 } ] },
+        { "transistor": "Q41", "headers": [ { "connector": "J3", "pin": 20 } ] },
+        {
+          "transistor": "Q40",
+          "headers": [
+            { "connector": "J2", "pin": 9 },
+            { "connector": "J3", "pin": 22 }
+          ]
+        },
+        {
+          "transistor": "Q39",
+          "headers": [
+            { "connector": "J2", "pin": 4 },
+            { "connector": "J3", "pin": 24 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "U4",
+      "type": "MC14514CP",
+      "role": "lamp_decoder",
+      "power": {
+        "vdd": { "pin": 24, "connected_to": "+5V" },
+        "vss": { "pin": 12, "connected_to": "GND" }
+      },
+      "inputs": [
+        {
+          "signal": "AD0_LAMP_ADDR",
+          "pin": 2,
+          "label": "D1",
+          "from": {
+            "connector": "J4",
+            "pin": 14,
+            "resistor": "R66",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD1_LAMP_ADDR",
+          "pin": 3,
+          "label": "D2",
+          "from": {
+            "connector": "J4",
+            "pin": 15,
+            "resistor": "R67",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD2_LAMP_ADDR",
+          "pin": 21,
+          "label": "D3",
+          "from": {
+            "connector": "J4",
+            "pin": 16,
+            "resistor": "R68",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "AD3_LAMP_ADDR",
+          "pin": 22,
+          "label": "D4",
+          "from": {
+            "connector": "J4",
+            "pin": 17,
+            "resistor": "R69",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "PD3_LAMP_DATA",
+          "pin": 23,
+          "label": "I",
+          "from": {
+            "connector": "J4",
+            "pin": 4,
+            "resistor": "R65",
+            "value": "2.2M"
+          },
+          "aid_test_point": true
+        },
+        {
+          "signal": "STROBE_I",
+          "pin": 1,
+          "label": "ST",
+          "from": {
+            "connector": "J4",
+            "pin": 13,
+            "resistor": "R75",
+            "value": "20K"
+          },
+          "aid_test_point": true
+        }
+      ],
+      "outputs": [
+        { "transistor": "Q47", "headers": [ { "connector": "J2", "pin": 10 } ] },
+        { "transistor": "Q43", "headers": [ { "connector": "J2", "pin": 7 } ] },
+        { "transistor": "Q45", "headers": [ { "connector": "J2", "pin": 1 } ] },
+        { "transistor": "Q57", "headers": [ { "connector": "J3", "pin": 1 } ] },
+        { "transistor": "Q50", "headers": [ { "connector": "J3", "pin": 12 } ] },
+        { "transistor": "Q51", "headers": [ { "connector": "J3", "pin": 15 } ] },
+        { "transistor": "Q54", "headers": [ { "connector": "J3", "pin": 11 } ] },
+        { "transistor": "Q55", "headers": [ { "connector": "J3", "pin": 9 } ] },
+        { "transistor": "Q60", "headers": [ { "connector": "J3", "pin": 3 } ] },
+        { "transistor": "Q59", "headers": [ { "connector": "J3", "pin": 4 } ] },
+        { "transistor": "Q58", "headers": [ { "connector": "J3", "pin": 2 } ] },
+        { "transistor": "Q56", "headers": [ { "connector": "J3", "pin": 10 } ] },
+        { "transistor": "Q46", "headers": [ { "connector": "J3", "pin": 18 } ] },
+        {
+          "transistor": "Q52",
+          "headers": [
+            { "connector": "J2", "pin": 5 },
+            { "connector": "J3", "pin": 13 }
+          ]
+        },
+        {
+          "transistor": "Q53",
+          "headers": [
+            { "connector": "J2", "pin": 3 },
+            { "connector": "J3", "pin": 14 }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "net_groups": [
+    {
+      "id": "J4_UTILITY_BUS",
+      "description": "Cluster of utility/test-related nodes around TP1/TP2/TP3, +5V monitor, GND reference, and filtered reference",
+      "members": ["J4_P1", "J4_P2", "J4_P3", "J4_P11", "J4_P12"]
+    },
+    {
+      "id": "LAMP_ADDR",
+      "description": "4-bit lamp address bus from MPU",
+      "members": ["AD0_LAMP_ADDR", "AD1_LAMP_ADDR", "AD2_LAMP_ADDR", "AD3_LAMP_ADDR"]
+    },
+    {
+      "id": "LAMP_DATA",
+      "description": "4-bit lamp data bus from MPU",
+      "members": ["PD0_LAMP_DATA", "PD1_LAMP_DATA", "PD2_LAMP_DATA", "PD3_LAMP_DATA"]
+    },
+    {
+      "id": "LAMP_STROBE",
+      "description": "Strobe/enable signal feeding MC14514 decoders via R75",
+      "members": ["STROBE_I"]
+    }
+  ]
+}

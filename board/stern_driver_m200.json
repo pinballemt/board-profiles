@@ -1,0 +1,378 @@
+{
+  "board": {
+  "id": "stern_m200",
+  "name": "Stern M-200 Solenoid Driver",
+  "manufacturer": "Stern Electronics",
+  "system": "Stern MPU-100 / MPU-200",
+  "family_equivalence": "Functionally equivalent to Bally AS-2518-16/-22"
+    },
+
+  "metadata": {
+    "notes": [
+      "Stern M-200 is architecturally identical to Bally AS-2518-16/-22.",
+      "Connector names, pinouts, and driver topology match Bally hardware.",
+      "Differences between Bally and Stern occur at the game wiring level, not the board level.",
+      "Meteor schematic used for verification.",
+      "Solenoid enable/blanking signal originates from Stern MPU-100/200 board; same board-side pin as Bally but different MPU source."
+    ]
+  },
+
+  "decoders": {
+    "U1": {
+      "type": "BCD_to_10",
+      "outputs": {
+        "0": [],
+        "1": ["Q1"],
+        "2": ["Q2"],
+        "3": ["Q3"],
+        "4": ["Q4"],
+        "5": ["Q5"],
+        "6": ["Q6"],
+        "7": ["Q7"],
+        "8": ["Q8"],
+        "9": ["Q9"]
+      },
+      "notes": [
+        "Exact mapping of decoder outputs to Q-numbers may vary per schematic; only relative driver roles are important here.",
+        "Direct-drive transistors Q15, Q16, Q17, Q18, Q19 are not part of the main BCD decoder path.",
+        "Meteor/M-200 HV section omits or relocates the F1 3/16 A fuse present in Bally AS-2518-16/-22 between J3B-8 and TP2."
+      ]
+    }
+  },
+
+  "drivers": {
+    "Q1": {
+      "type": "decoded",
+      "multi_drop": true,
+      "notes": [
+        "Q1 output is shared between J1P-2 and J2-9.",
+        "J2-9 is used as 'Chime 10' in at least one game; J1P-2 is unlabeled in reference schematic."
+      ],
+      "outputs": [
+        { "connector": "J1P", "pin": 2 },
+        { "connector": "J2",  "pin": 9 }
+      ]
+    },
+
+    "Q2": {
+      "type": "decoded",
+      "multi_drop": true,
+      "notes": [
+        "Q2 output is shared between J2-4 (unlabeled) and J1P-3 (Saucer in at least one game)."
+      ],
+      "outputs": [
+        { "connector": "J2",  "pin": 4 },
+        { "connector": "J1P", "pin": 3 }
+      ]
+    },
+
+    "Q3": {
+      "type": "decoded",
+      "multi_drop": true,
+      "notes": [
+        "Q3 output is shared between J2-5 and J3B-4.",
+        "J3B-4 is used as the knocker coil output in at least one game."
+      ],
+      "outputs": [
+        { "connector": "J2",  "pin": 5 },
+        { "connector": "J3B", "pin": 4 }
+      ]
+    },
+
+    "Q4": {
+      "type": "decoded",
+      "multi_drop": false,
+      "notes": [
+        "Q4 output is routed only to J1P-5.",
+        "J1P-5 is used as the outhole coil in at least one game."
+      ],
+      "outputs": [
+        { "connector": "J1P", "pin": 5 }
+      ]
+    },
+
+    "Q5": {
+      "type": "decoded",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J2", "pin": 10 }
+      ]
+    },
+
+    "Q6": {
+      "type": "decoded",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J2", "pin": 11 }
+      ]
+    },
+
+    "Q7": {
+      "type": "decoded",
+      "multi_drop": false,
+      "notes": [
+        "J2-12 is used as an 'extra chime' in at least one game."
+      ],
+      "outputs": [
+        { "connector": "J2", "pin": 12 }
+      ]
+    },
+
+    "Q8": {
+      "type": "decoded",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J5", "pin": 10 }
+      ]
+    },
+
+    "Q9": {
+      "type": "decoded",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J5", "pin": 9 }
+      ]
+    },
+
+    "Q10": {
+      "type": "decoded",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J5", "pin": 15 }
+      ]
+    },
+
+    "Q11": {
+      "type": "decoded",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J5", "pin": 14 }
+      ]
+    },
+
+    "Q12": {
+      "type": "decoded",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J5", "pin": 13 }
+      ]
+    },
+
+    "Q13": {
+      "type": "decoded",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J5", "pin": 12 }
+      ]
+    },
+
+    "Q14": {
+      "type": "decoded",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J5", "pin": 11 }
+      ]
+    },
+
+    "Q15": {
+      "type": "direct",
+      "multi_drop": false,
+      "notes": [
+        "Q15 is a direct-drive transistor to J3B-5 (typically a relay or special coil)."
+      ],
+      "outputs": [
+        { "connector": "J3B", "pin": 5 }
+      ]
+    },
+
+    "Q16": {
+      "type": "direct",
+      "multi_drop": true,
+      "notes": [
+        "Q16 output is shared between J5-8, J2-6, and J3B-7.",
+        "All three endpoints are unlabeled in the reference schematic; usage is game-dependent."
+      ],
+      "outputs": [
+        { "connector": "J5",  "pin": 8 },
+        { "connector": "J2",  "pin": 6 },
+        { "connector": "J3B", "pin": 7 }
+      ]
+    },
+
+    "Q17": {
+      "type": "direct",
+      "multi_drop": false,
+      "outputs": [
+        { "connector": "J5", "pin": 7 }
+      ]
+    },
+
+    "Q18": {
+      "type": "direct",
+      "multi_drop": true,
+      "notes": [
+        "Q18 output is shared between J5-3, J2-15, and J3B-9 on this board.",
+        "All three endpoints are unused (N/U) in the reference game; future games may use one or more.",
+        "Schematic labels such as J5P-3 and J2C-15 are harness-side references; board-side headers are J5 and J2."
+      ],
+      "outputs": [
+        { "connector": "J5",  "pin": 3 },
+        { "connector": "J2",  "pin": 15 },
+        { "connector": "J3B", "pin": 9 }
+      ]
+    },
+
+    "Q19": {
+      "type": "direct",
+      "multi_drop": false,
+      "notes": [
+        "Schematic label 'J2C-8' refers to a cabinet connector; board-side header is J2 pin 8."
+      ],
+      "outputs": [
+        { "connector": "J2", "pin": 8 }
+      ]
+    }
+  },
+
+  "connectors": {
+    "J1P": {
+      "location": "playfield_header",
+      "notes": [
+        "Board-side header routing to playfield harness.",
+        "Only pins used by driver outputs are listed here."
+      ],
+      "pins": {
+        "2": { "role": "driver_output", "drivers": ["Q1"] },
+        "3": { "role": "driver_output", "drivers": ["Q2"] },
+        "5": { "role": "driver_output", "drivers": ["Q4"] }
+      }
+    },
+
+    "J2": {
+      "location": "backbox_header",
+      "notes": [
+        "Board-side header routing primarily to playfield and cabinet connectors via harness.",
+        "Only pins used by driver outputs are listed here."
+      ],
+      "pins": {
+        "4":  { "role": "driver_output", "drivers": ["Q2"],  "note": "Unlabeled in reference schematic" },
+        "5":  { "role": "driver_output", "drivers": ["Q3"],  "note": "Part of Q3 multi-drop net" },
+        "6":  { "role": "driver_output", "drivers": ["Q16"], "note": "Part of Q16 multi-drop net" },
+        "8":  { "role": "driver_output", "drivers": ["Q19"] },
+        "9":  { "role": "driver_output", "drivers": ["Q1"],  "note": "Used as 'Chime 10' in at least one game" },
+        "10": { "role": "driver_output", "drivers": ["Q5"] },
+        "11": { "role": "driver_output", "drivers": ["Q6"] },
+        "12": { "role": "driver_output", "drivers": ["Q7"],  "note": "Used as 'Extra Chime' in at least one game" },
+        "15": { "role": "driver_output", "drivers": ["Q18"], "note": "Part of Q18 multi-drop net; N/U in reference game" }
+      }
+    },
+
+    "J3B": {
+        "location": "backbox_header",
+        "notes": [
+            "Board-side header in backbox; routes to other boards, harness segments, and display power.",
+            "Includes high-voltage input from rectifier, regulated HV output to displays, and several driver outputs."
+        ],
+        "pins": {
+            "3": { "role": "ground",       "drivers": [],       "note": "HV and logic ground reference from rectifier/transformer assembly" },
+            "4": { "role": "driver_output","drivers": ["Q3"],   "note": "Knocker coil output in at least one game; part of Q3 multi-drop net" },
+            "5": { "role": "driver_output","drivers": ["Q15"] },
+            "6": { "role": "hv_input",     "drivers": [],       "note": "Raw high-voltage feed from rectifier board (e.g. A2J3-5 or A2J4-6 depending on game)" },
+            "7": { "role": "driver_output","drivers": ["Q16"],  "note": "Part of Q16 multi-drop net" },
+            "8": { "role": "hv_output",    "drivers": [],       "note": "+190 VDC regulated output to displays" },
+            "9": { "role": "driver_output","drivers": ["Q18"],  "note": "Part of Q18 multi-drop net; N/U in reference game" }
+        }
+    },
+    "J4B": {
+      "location": "backbox_header",
+      "notes": [
+        "Board-side header for control outputs and flipper disable logic.",
+        "Used to drive cabinet features like coin lockout, flipper enable, and pushbutton inputs."
+      ],
+      "pins": {
+        "1":  { "role": "control_output", "label": "PB6 CONT.1" },
+        "2":  { "role": "unused",         "label": "KEY" },
+        "8":  { "role": "control_output", "label": "FLIPPER DISABLE" },
+        "9":  { "role": "control_output", "label": "PB5 CONT.4" },
+        "10": { "role": "control_output", "label": "PB7" },
+        "11": { "role": "control_output", "label": "PB4" },
+        "12": { "role": "unused" }
+      }
+    },
+    "J5": {
+      "location": "playfield_header",
+      "notes": [
+        "Board-side header routing to playfield coils.",
+        "Only pins used by driver outputs are listed here."
+      ],
+      "pins": {
+        "3":  { "role": "driver_output", "drivers": ["Q18"], "note": "Part of Q18 multi-drop net; N/U in reference game" },
+        "7":  { "role": "driver_output", "drivers": ["Q17"] },
+        "8":  { "role": "driver_output", "drivers": ["Q16"], "note": "Part of Q16 multi-drop net" },
+        "9":  { "role": "driver_output", "drivers": ["Q9"] },
+        "10": { "role": "driver_output", "drivers": ["Q8"] },
+        "11": { "role": "driver_output", "drivers": ["Q14"] },
+        "12": { "role": "driver_output", "drivers": ["Q13"] },
+        "13": { "role": "driver_output", "drivers": ["Q12"] },
+        "14": { "role": "driver_output", "drivers": ["Q11"] },
+        "15": { "role": "driver_output", "drivers": ["Q10"] }
+      }
+    }
+  },
+
+  "power": {
+    "hv_185v": {
+        "name": "+190 V display supply",
+        "input": {
+        "connector": "J3B",
+        "pin": 6,
+        "label": "raw_hv_from_rectifier",
+        "notes": [
+            "Fed from rectifier/transformer assembly (e.g. A2J3-5 or A2J4-6 depending on game).",
+            "Labeling differs between Mata Hari (-16) and EBD (-22) schematics, but board-side pin is J3B-6 in both cases."
+        ]
+        },
+        "output": {
+        "connector": "J3B",
+        "pin": 8,
+        "label": "+190VDC_to_displays"
+        },
+        "ground": {
+        "connector": "J3B",
+        "pin": 3
+        },
+        "transistors": [
+        { "id": "Q21", "part": "2N3584", "bally_id": "E585-42" },
+        { "id": "Q22", "part": "2N3440", "bally_id": "E585-41" },
+        { "id": "Q23", "part": "2N3440", "bally_id": "E585-41" }
+        ],
+        "adjust": {
+        "pot": "RT1",
+        "value": "25K",
+        "label": "+190VDC ADJUST"
+        },
+        "protection": {
+          "fuse": null,
+          "note": "Stern M-200 revision omits the F1 3/16 A fuse found on Bally AS-2518-16/-22."
+        },
+        "target_voltage": {
+        "nominal": 185,
+        "tolerance": "+/- 14",
+        "units": "VDC",
+        "note": "Stern spec; derived from Meteor HV schematic"
+        },
+        "sense_and_reference": {
+        "zener": { "id": "D1", "part": "1N5275A", "bally_id": "E598-10" },
+        "testpoints": [
+            { "id": "TP2", "label": "+190VDC / +5VDC reference" },
+            { "id": "TP4", "label": "raw_hv_monitor" }
+        ]
+        },
+        "notes": [
+        "Q21–Q23 form the +190 VDC regulator for the plasma displays.",
+        "EBD schematic provides explicit parts and labels (e.g. E585-42) that are not shown on the handwritten Mata Hari (-16) sheet.",
+        "Despite differences in rectifier labeling and drawing clarity, the board-level connector behavior (J3B-3, J3B-6, J3B-8) is the same between -16 and -22."
+        ]
+    }
+    }
+}
