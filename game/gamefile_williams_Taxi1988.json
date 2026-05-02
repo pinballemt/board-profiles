@@ -1,0 +1,427 @@
+{
+  "game": {
+    "id": "williams_taxi_1988",
+    "name": "Taxi",
+    "manufacturer": "Williams",
+    "year": 1988,
+    "system": "Williams System 11B",
+    "mpu": "D-11883-553",
+    "version": "1.0",
+    "last_updated": "2026-04-30",
+    "changelog": [
+      "v1.0 (2026-04-30): Initial build from manual solenoid/lamp/switch screenshots. All three sections image-verified. Sound commands stubbed."
+    ],
+    "diagnostic_notes": [
+      "IMPORTANT: Taxi runs on System 11B (D-11883-553), NOT System 11A (D-11392). No board JSON exists for D-11883 yet. PIA addresses and decode parameters must be established before firmware capture work begins on this game.",
+      "Aux Power Driver Board is D-12247, not D-11813 as on System 11A games. Connector layout differs -- solenoid connectors are 2J5/2J10/2J8 vs 1P11/1P12/1P19 on System 11A.",
+      "SW2 (A/C Relay C-Side) is a relay position feedback switch -- CPU reads whether Sol12 relay is actually energized. Unique among the four demo games.",
+      "SW24 (Tips Carried) is a mechanical sensor detecting passenger pickup.",
+      "Sol9 (Top Ball Gate) uses SM1-35-4000-DC motor-type solenoid.",
+      "Sol13 (Bell) uses SM-26-600-DC -- physical bell coil, not a kickback.",
+      "Upper flipper circuits (upper right and upper left) are listed in the manual but NOT populated on the game -- Taxi does not have upper flippers. Standard D-11883 board template includes them regardless."
+    ]
+  },
+
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 8,
+    "notes": [
+      "Williams System 11B switch numbering: column-major order. SW1-8=Col1, SW9-16=Col2, etc.",
+      "Column strobe transistors identical to System 11A D-11392 (Q45/49/44/48/43/47/42/46). Row connectors identical (1J10-9 through 1J10-1).",
+      "Cols 6 and 7 almost entirely Not Used -- only SW43 (Top Kicker) and SW44 (Spinout) populated in col 6.",
+      "SW57/58 (Right/Left Flipper) in col 8 rows 1/2 -- different position from System 11A games where lane change flippers were col 7 rows 7/8.",
+      "SW2 (A/C Relay C-Side): relay position feedback switch, not a playfield switch.",
+      "Two separate 3-bank drop target assemblies: Mid bank SW27-29 (col4 rows 3-5), Right bank SW30-32 (col4 rows 6-8).",
+      "SW24 (Tips Carried): mechanical sensor detecting passenger in cab."
+    ],
+    "column_info": [
+      { "column": 1, "wire_color": "Green-Brown",  "connector": "1J8-1", "transistor": "Q45" },
+      { "column": 2, "wire_color": "Green-Red",    "connector": "1J8-2", "transistor": "Q49" },
+      { "column": 3, "wire_color": "Green-Orange", "connector": "1J8-3", "transistor": "Q44" },
+      { "column": 4, "wire_color": "Green-Yellow", "connector": "1J8-4", "transistor": "Q48" },
+      { "column": 5, "wire_color": "Green-Black",  "connector": "1J8-5", "transistor": "Q43" },
+      { "column": 6, "wire_color": "Green-Blue",   "connector": "1J8-7", "transistor": "Q47" },
+      { "column": 7, "wire_color": "Green-Violet", "connector": "1J8-8", "transistor": "Q42" },
+      { "column": 8, "wire_color": "Green-Grey",   "connector": "1J8-9", "transistor": "Q46" }
+    ],
+    "row_info": [
+      { "row": 1, "wire_color": "White-Brown",  "connector": "1J10-9" },
+      { "row": 2, "wire_color": "White-Red",    "connector": "1J10-8" },
+      { "row": 3, "wire_color": "White-Orange", "connector": "1J10-7" },
+      { "row": 4, "wire_color": "White-Yellow", "connector": "1J10-6" },
+      { "row": 5, "wire_color": "White-Green",  "connector": "1J10-5" },
+      { "row": 6, "wire_color": "White-Blue",   "connector": "1J10-3" },
+      { "row": 7, "wire_color": "White-Violet", "connector": "1J10-2" },
+      { "row": 8, "wire_color": "White-Grey",   "connector": "1J10-1" }
+    ],
+    "switches": [
+      { "switch_id": 1,  "number": 1,  "row": 1, "column": 1, "name": "Plump Bob Tilt",                    "type": "playfield", "used": true  },
+      { "switch_id": 2,  "number": 2,  "row": 2, "column": 1, "name": "A/C Relay C-Side",                  "type": "feedback",  "used": true,
+        "note": "Relay position feedback -- CPU reads whether Sol12 A/C relay is energized. Not a playfield switch." },
+      { "switch_id": 3,  "number": 3,  "row": 3, "column": 1, "name": "Start Button",                      "type": "cabinet",   "used": true  },
+      { "switch_id": 4,  "number": 4,  "row": 4, "column": 1, "name": "Left Coin Switch",                  "type": "cabinet",   "used": true  },
+      { "switch_id": 5,  "number": 5,  "row": 5, "column": 1, "name": "Center Coin Switch",                "type": "cabinet",   "used": true  },
+      { "switch_id": 6,  "number": 6,  "row": 6, "column": 1, "name": "Right Coin Switch",                 "type": "cabinet",   "used": true  },
+      { "switch_id": 7,  "number": 7,  "row": 7, "column": 1, "name": "Slam Tilt",                         "type": "cabinet",   "used": true  },
+      { "switch_id": 8,  "number": 8,  "row": 8, "column": 1, "name": "High Score Reset",                  "type": "cabinet",   "used": true  },
+      { "switch_id": 9,  "number": 9,  "row": 1, "column": 2, "name": "Playfield Tilt",                    "type": "playfield", "used": true  },
+      { "switch_id": 10, "number": 10, "row": 2, "column": 2, "name": "Outhole",                           "type": "playfield", "used": true  },
+      { "switch_id": 11, "number": 11, "row": 3, "column": 2, "name": "Ball Trough 1",                     "type": "playfield", "used": true  },
+      { "switch_id": 12, "number": 12, "row": 4, "column": 2, "name": "Ball Trough 2",                     "type": "playfield", "used": true  },
+      { "switch_id": 13, "number": 13, "row": 5, "column": 2, "name": "Top Hole Eject",                    "type": "playfield", "used": true  },
+      { "switch_id": 14, "number": 14, "row": 6, "column": 2, "name": "C (top lane)",                      "type": "playfield", "used": true  },
+      { "switch_id": 15, "number": 15, "row": 7, "column": 2, "name": "A (top lane)",                      "type": "playfield", "used": true  },
+      { "switch_id": 16, "number": 16, "row": 8, "column": 2, "name": "B (top lane)",                      "type": "playfield", "used": true  },
+      { "switch_id": 17, "number": 17, "row": 1, "column": 3, "name": "Left Jet Bumper",                   "type": "playfield", "used": true  },
+      { "switch_id": 18, "number": 18, "row": 2, "column": 3, "name": "Left Slingshot",                    "type": "playfield", "used": true  },
+      { "switch_id": 19, "number": 19, "row": 3, "column": 3, "name": "Right Jet Bumper",                  "type": "playfield", "used": true  },
+      { "switch_id": 20, "number": 20, "row": 4, "column": 3, "name": "Right Slingshot",                   "type": "playfield", "used": true  },
+      { "switch_id": 21, "number": 21, "row": 5, "column": 3, "name": "Lower Jet Bumper",                  "type": "playfield", "used": true  },
+      { "switch_id": 22, "number": 22, "row": 6, "column": 3, "name": "Ball Shooter",                      "type": "playfield", "used": true  },
+      { "switch_id": 23, "number": 23, "row": 7, "column": 3, "name": "Top Lane Entry",                    "type": "playfield", "used": true  },
+      { "switch_id": 24, "number": 24, "row": 8, "column": 3, "name": "Tips Carried",                      "type": "playfield", "used": true,
+        "note": "Mechanical sensor detecting passenger in cab." },
+      { "switch_id": 25, "number": 25, "row": 1, "column": 4, "name": "Left Ramp Entry",                   "type": "playfield", "used": true  },
+      { "switch_id": 26, "number": 26, "row": 2, "column": 4, "name": "Right Ramp Entry",                  "type": "playfield", "used": true  },
+      { "switch_id": 27, "number": 27, "row": 3, "column": 4, "name": "Mid 3-Bank Drop Target (left)",     "type": "playfield", "used": true  },
+      { "switch_id": 28, "number": 28, "row": 4, "column": 4, "name": "Mid 3-Bank Drop Target (middle)",   "type": "playfield", "used": true  },
+      { "switch_id": 29, "number": 29, "row": 5, "column": 4, "name": "Mid 3-Bank Drop Target (right)",    "type": "playfield", "used": true  },
+      { "switch_id": 30, "number": 30, "row": 6, "column": 4, "name": "Right 3-Bank Drop Target (top)",    "type": "playfield", "used": true  },
+      { "switch_id": 31, "number": 31, "row": 7, "column": 4, "name": "Right 3-Bank Drop Target (middle)", "type": "playfield", "used": true  },
+      { "switch_id": 32, "number": 32, "row": 8, "column": 4, "name": "Right 3-Bank Drop Target (bottom)", "type": "playfield", "used": true  },
+      { "switch_id": 33, "number": 33, "row": 1, "column": 5, "name": "Right Ramp",                        "type": "playfield", "used": true  },
+      { "switch_id": 34, "number": 34, "row": 2, "column": 5, "name": "Left Ramp",                         "type": "playfield", "used": true  },
+      { "switch_id": 35, "number": 35, "row": 3, "column": 5, "name": "Catapult",                          "type": "playfield", "used": true  },
+      { "switch_id": 36, "number": 36, "row": 4, "column": 5, "name": "Right Eject",                       "type": "playfield", "used": true  },
+      { "switch_id": 37, "number": 37, "row": 5, "column": 5, "name": "Left Outlane",                      "type": "playfield", "used": true  },
+      { "switch_id": 38, "number": 38, "row": 6, "column": 5, "name": "Left Return Lane",                  "type": "playfield", "used": true  },
+      { "switch_id": 39, "number": 39, "row": 7, "column": 5, "name": "Right Outlane",                     "type": "playfield", "used": true  },
+      { "switch_id": 40, "number": 40, "row": 8, "column": 5, "name": "Right Return Lane",                 "type": "playfield", "used": true  },
+      { "switch_id": 41, "number": 41, "row": 1, "column": 6, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 42, "number": 42, "row": 2, "column": 6, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 43, "number": 43, "row": 3, "column": 6, "name": "Top Kicker",                        "type": "playfield", "used": true  },
+      { "switch_id": 44, "number": 44, "row": 4, "column": 6, "name": "Spinout",                           "type": "playfield", "used": true  },
+      { "switch_id": 45, "number": 45, "row": 5, "column": 6, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 46, "number": 46, "row": 6, "column": 6, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 47, "number": 47, "row": 7, "column": 6, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 48, "number": 48, "row": 8, "column": 6, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 49, "number": 49, "row": 1, "column": 7, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 50, "number": 50, "row": 2, "column": 7, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 51, "number": 51, "row": 3, "column": 7, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 52, "number": 52, "row": 4, "column": 7, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 53, "number": 53, "row": 5, "column": 7, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 54, "number": 54, "row": 6, "column": 7, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 55, "number": 55, "row": 7, "column": 7, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 56, "number": 56, "row": 8, "column": 7, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 57, "number": 57, "row": 1, "column": 8, "name": "Right Flipper",                     "type": "cabinet",   "used": true  },
+      { "switch_id": 58, "number": 58, "row": 2, "column": 8, "name": "Left Flipper",                      "type": "cabinet",   "used": true  },
+      { "switch_id": 59, "number": 59, "row": 3, "column": 8, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 60, "number": 60, "row": 4, "column": 8, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 61, "number": 61, "row": 5, "column": 8, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 62, "number": 62, "row": 6, "column": 8, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 63, "number": 63, "row": 7, "column": 8, "name": "Not Used",                          "type": "unused",    "used": false },
+      { "switch_id": 64, "number": 64, "row": 8, "column": 8, "name": "Not Used",                          "type": "unused",    "used": false }
+    ]
+  },
+
+  "solenoids": {
+    "notes": [
+      "System 11B D-11883-553. Solenoid architecture similar to System 11A but on different board. Connector layout differs: 2J5/2J10/2J8 vs 1P11/1P12/1P19 on System 11A.",
+      "Aux Power Driver Board is D-12247 (not D-11813 as on System 11A games).",
+      "A/C RELAY (Sol12): A-coils active when Sol12 de-energized, C-coils (flashers) active when Sol12 energized.",
+      "Sol9 Top Ball Gate: SM1-35-4000-DC motor-type solenoid, not a standard coil.",
+      "Sol13 Bell: SM-26-600-DC physical bell coil.",
+      "Sol4A Middle 3-bank reset and Sol6A Right 3-bank reset: two separate drop target assemblies.",
+      "Sol7A Spinout Kickbig and Sol8A Right Lock both use AE-26-1500 -- heavier coils.",
+      "GI relays Sol10/11 use 5580-12145-01 (motor relay part) not the usual 5580-09555-01.",
+      "bcd_code: null throughout -- System 11B PIA addresses not yet established. D-11883 board JSON does not exist. Decode parameters TBD.",
+      "driver_path fields reference D-11883 component designators where known from image; full paths TBD pending board JSON."
+    ],
+    "regular_solenoids": [
+      {
+        "sol_number": 1, "name": "Outhole",
+        "circuit": "A", "type": "switched", "transistor": "Q33",
+        "coil_part": "AE-23-800", "connector": "1P11-1", "wire_color": "Vio-Brn",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "A-circuit. C-circuit (Sol1C): Pin-Bot flasher (#89 x2) via 5J5-9."
+      },
+      {
+        "sol_number": 2, "name": "Shooter Lane Feeder",
+        "circuit": "A", "type": "switched", "transistor": "Q25",
+        "coil_part": "AE-23-800", "connector": "1P11-3", "wire_color": "Vio-Red",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "A-circuit. C-circuit (Sol2C): Dracula flasher (#89 x2) via 5J5-8."
+      },
+      {
+        "sol_number": 3, "name": "Catapult",
+        "circuit": "A", "type": "switched", "transistor": "Q32",
+        "coil_part": "AE-23-800", "connector": "1P11-4", "wire_color": "Vio-Orn",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "A-circuit. C-circuit (Sol3C): Marilyn / Lola flasher (#89 x2) via 5J5-7."
+      },
+      {
+        "sol_number": 4, "name": "Middle 3-Bank Drop Target Reset",
+        "circuit": "A", "type": "switched", "transistor": "Q24",
+        "coil_part": "AE-26-1200", "connector": "1P11-5", "wire_color": "Vio-Yel",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "A-circuit. C-circuit (Sol4C): Santa flasher (#89 x2) via 5J5-5."
+      },
+      {
+        "sol_number": 5, "name": "Top Eject Hole",
+        "circuit": "A", "type": "switched", "transistor": "Q31",
+        "coil_part": "AE-23-800", "connector": "1P11-6", "wire_color": "Vio-Grn",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "A-circuit. C-circuit (Sol5C): Gorbie flasher (#89 x2) via 5J5-4."
+      },
+      {
+        "sol_number": 6, "name": "Right 3-Bank Drop Target Reset",
+        "circuit": "A", "type": "switched", "transistor": "Q23",
+        "coil_part": "AE-26-1200", "connector": "1P11-7", "wire_color": "Vio-Blu",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "A-circuit. C-circuit (Sol6C): Left Ramp flasher (#89, #906 Dome insert) via 5J5-3."
+      },
+      {
+        "sol_number": 7, "name": "Spinout Kickbig",
+        "circuit": "A", "type": "switched", "transistor": "Q30",
+        "coil_part": "AE-26-1500", "connector": "1P11-8", "wire_color": "Vio-Blk",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "A-circuit. AE-26-1500 coil. C-circuit (Sol7C): Right Ramp flasher (#89, #906 Dome insert) via 5J5-2."
+      },
+      {
+        "sol_number": 8, "name": "Right Lock (eject hole)",
+        "circuit": "A", "type": "switched", "transistor": "Q22",
+        "coil_part": "AE-26-1500", "connector": "1P11-9", "wire_color": "Vio-Gry",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "A-circuit. AE-26-1500 coil. C-circuit (Sol8C): Spinout flasher (#89 x2) via 5J5-1."
+      },
+      {
+        "sol_number": 9, "name": "Top Ball Gate",
+        "circuit": "controlled", "type": "motor", "transistor": "Q17",
+        "coil_part": "SM1-35-4000-DC", "connector": "1P12-1", "wire_color": "Brn-Blk",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "SM1-35-4000-DC motor-type solenoid, not a standard coil. Controls top ball gate mechanism."
+      },
+      {
+        "sol_number": 10, "name": "Insert G.I. Relay",
+        "circuit": "controlled", "type": "relay", "transistor": "Q9",
+        "coil_part": "5580-12145-01", "connector": "1P12-2", "wire_color": "Brn-Red",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "GI relay. Uses 5580-12145-01 (motor relay coil part), not the usual 5580-09555-01."
+      },
+      {
+        "sol_number": 11, "name": "Playfield G.I. Relay",
+        "circuit": "controlled", "type": "relay", "transistor": "Q16",
+        "coil_part": "5580-12145-01", "connector": "1P12-4", "wire_color": "Brn-Orn",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "GI relay. Uses 5580-12145-01 (motor relay coil part), not the usual 5580-09555-01."
+      },
+      {
+        "sol_number": 12, "name": "A/C Select Relay",
+        "circuit": "controlled", "type": "relay", "transistor": "Q8",
+        "coil_part": "5580-09555-01", "connector": "1P12-5", "wire_color": "Brn-Yel",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "KEY RELAY on Aux Power Driver Board D-12247. SW2 (A/C Relay C-Side) provides position feedback to CPU. De-energized: Sol1-8 A-circuits active. Energized: Sol1-8 C-circuits (flashers) active."
+      },
+      {
+        "sol_number": 13, "name": "Bell",
+        "circuit": "controlled", "type": "bell", "transistor": "Q15",
+        "coil_part": "SM-26-600-DC", "connector": "1P12-6", "wire_color": "Brn-Grn",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "Physical bell coil (SM-26-600-DC). Actual mechanical bell, not a solenoid or flasher."
+      },
+      {
+        "sol_number": 14, "name": "Knocker",
+        "circuit": "controlled", "type": "switched", "transistor": "Q7",
+        "coil_part": "AE-26-1200", "connector": "1P12-7", "wire_color": "Brn-Blu",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "Knocker in Sol14 position -- different from Space Station/Cyclone where knocker was Sol7."
+      },
+      {
+        "sol_number": 15, "name": "Jackpot Flasher",
+        "circuit": "controlled", "type": "flasher", "transistor": "Q14",
+        "coil_part": "#89 (x2 insert)", "connector": "1P12-8", "wire_color": "Brn-Vio",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "Jackpot flasher lamps."
+      },
+      {
+        "sol_number": 16, "name": "Joyride Flasher",
+        "circuit": "controlled", "type": "flasher", "transistor": "Q6",
+        "coil_part": "#89", "connector": "1P12-9", "wire_color": "Brn-Gry",
+        "bcd_code": null, "bus_visible": true,
+        "notes": "Joyride flasher lamp."
+      }
+    ],
+    "special_solenoids": [
+      {
+        "sol_number": 17, "ss_number": "SS1", "name": "Left Jet Bumper",
+        "transistor": "Q75", "coil_part": "AE-23-800", "connector": "1P19-7",
+        "wire_color": "Blu-Brn", "bcd_code": null, "bus_visible": true
+      },
+      {
+        "sol_number": 18, "ss_number": "SS2", "name": "Left Slingshot",
+        "transistor": "Q71", "coil_part": "AE-26-1500", "connector": "1P19-4",
+        "wire_color": "Blu-Red", "bcd_code": null, "bus_visible": true
+      },
+      {
+        "sol_number": 19, "ss_number": "SS3", "name": "Right Jet Bumper",
+        "transistor": "Q73", "coil_part": "AE-23-800", "connector": "1P19-3",
+        "wire_color": "Blu-Orn", "bcd_code": null, "bus_visible": true
+      },
+      {
+        "sol_number": 20, "ss_number": "SS4", "name": "Right Slingshot",
+        "transistor": "Q69", "coil_part": "AE-26-1500", "connector": "1P19-6",
+        "wire_color": "Blu-Yel", "bcd_code": null, "bus_visible": true
+      },
+      {
+        "sol_number": 21, "ss_number": "SS5", "name": "Lower Jet Bumper",
+        "transistor": "Q77", "coil_part": "AE-23-800", "connector": "1P19-8",
+        "wire_color": "Blu-Grn", "bcd_code": null, "bus_visible": true
+      },
+      {
+        "sol_number": 22, "ss_number": "SS6", "name": "Not Used",
+        "transistor": "Q79", "coil_part": null, "connector": "1P19-9",
+        "wire_color": "Blu-Blk", "bcd_code": null, "bus_visible": false,
+        "notes": "Special solenoid 6 not used on Taxi."
+      }
+    ],
+    "flipper_circuits": [
+      {
+        "name": "Lower Right Flipper",
+        "coil_part": "FL11630/50VDC", "wire_color": "Orn-Vio",
+        "connector": "1P19-1 -> 2J5-5, 2J10-7",
+        "switch_wire": "Blu-Vio -> 2J10-1, 2J8-15",
+        "in_switch_matrix": false, "bus_visible": false
+      },
+      {
+        "name": "Lower Left Flipper",
+        "coil_part": "FL11630/50VDC", "wire_color": "Orn-Gry",
+        "connector": "1P19-2 -> 2J5-4, 2J10-8",
+        "switch_wire": "Blu-Gry -> 2J10-2, 2J8-14",
+        "in_switch_matrix": false, "bus_visible": false
+      },
+      {
+        "name": "Upper Right Flipper",
+        "coil_part": null, "wire_color": null,
+        "connector": null, "in_switch_matrix": false, "bus_visible": false,
+        "notes": "Listed in manual template but NOT populated on Taxi. Game does not have upper flippers."
+      },
+      {
+        "name": "Upper Left Flipper",
+        "coil_part": null, "wire_color": null,
+        "connector": null, "in_switch_matrix": false, "bus_visible": false,
+        "notes": "Listed in manual template but NOT populated on Taxi. Game does not have upper flippers."
+      }
+    ]
+  },
+
+  "lamps": {
+    "notes": [
+      "Williams System 11B lamp matrix: 8 columns x 8 rows = 64 lamps. Column-major numbering.",
+      "Column driver transistors Q52-Q66, row drivers Q80-Q87. Connectors 1J7/1J6 identical to System 11A.",
+      "Row 4 connector 1J6-5 (pin 4 is key -- row 4 uses pin 5).",
+      "Passenger character lamps appear TWICE each: center playfield position (col 3) and cab/taxi position (col 4). Cab lamps show which passenger is currently in the taxi.",
+      "Characters: Pin-Bot, Dracula, Marilyn/Lola, Santa, Gorbie -- five passengers.",
+      "Traffic lights: RED (lamp 53), YELLOW (lamp 54), GREEN (lamp 55) in col 7 rows 5-7.",
+      "Williams Pinball Palace: lamps 6/7/8 (col1 rows 6-8), lamp 56 (col7 row8), lamp 64 (col8 row8).",
+      "Spinout value lamps 57-63 (col 8 rows 1-7): 1K through 75,000 (two 75,000 entries at rows 6 and 7).",
+      "Meter lamps 51/52 (col7 rows 3-4): left below/right below meter positions.",
+      "Airport Ride lamps 41/42 (col6 rows 1-2): right and left directions.",
+      "System 11B lamp decode parameters TBD -- D-11883 board JSON not yet established."
+    ],
+    "column_info": [
+      { "column": 1, "wire_color": "Yellow-Brown",  "connector": "1J7-1", "transistor": "Q66" },
+      { "column": 2, "wire_color": "Yellow-Red",    "connector": "1J7-2", "transistor": "Q64" },
+      { "column": 3, "wire_color": "Yellow-Orange", "connector": "1J7-3", "transistor": "Q62" },
+      { "column": 4, "wire_color": "Yellow-Black",  "connector": "1J7-4", "transistor": "Q60" },
+      { "column": 5, "wire_color": "Yellow-Green",  "connector": "1J7-6", "transistor": "Q58" },
+      { "column": 6, "wire_color": "Yellow-Blue",   "connector": "1J7-7", "transistor": "Q56" },
+      { "column": 7, "wire_color": "Yellow-Violet", "connector": "1J7-8", "transistor": "Q54" },
+      { "column": 8, "wire_color": "Yellow-Grey",   "connector": "1J7-9", "transistor": "Q52" }
+    ],
+    "row_info": [
+      { "row": 1, "wire_color": "Red-Brown",  "connector": "1J6-1", "transistor": "Q80" },
+      { "row": 2, "wire_color": "Red-Black",  "connector": "1J6-2", "transistor": "Q81" },
+      { "row": 3, "wire_color": "Red-Orange", "connector": "1J6-3", "transistor": "Q82" },
+      { "row": 4, "wire_color": "Red-Yellow", "connector": "1J6-5", "transistor": "Q83", "note": "Pin 4 is key -- row 4 uses pin 5" },
+      { "row": 5, "wire_color": "Red-Green",  "connector": "1J6-6", "transistor": "Q84" },
+      { "row": 6, "wire_color": "Red-Blue",   "connector": "1J6-7", "transistor": "Q85" },
+      { "row": 7, "wire_color": "Red-Violet", "connector": "1J6-8", "transistor": "Q86" },
+      { "row": 8, "wire_color": "Red-Grey",   "connector": "1J6-9", "transistor": "Q87" }
+    ],
+    "controlled_lamps": [
+      { "lamp_code": 1,  "row": 1, "column": 1, "name": "JOYRIDE 10,000",                   "type": "playfield" },
+      { "lamp_code": 2,  "row": 2, "column": 1, "name": "JOYRIDE Spot Passenger",           "type": "playfield" },
+      { "lamp_code": 3,  "row": 3, "column": 1, "name": "JOYRIDE Mystery",                  "type": "playfield" },
+      { "lamp_code": 4,  "row": 4, "column": 1, "name": "JOYRIDE Extra Ball",               "type": "playfield" },
+      { "lamp_code": 5,  "row": 5, "column": 1, "name": "JOYRIDE Special",                  "type": "playfield" },
+      { "lamp_code": 6,  "row": 6, "column": 1, "name": "Williams Pinball Palace (upper left)", "type": "backglass" },
+      { "lamp_code": 7,  "row": 7, "column": 1, "name": "Williams Pinball Palace (middle left)", "type": "backglass" },
+      { "lamp_code": 8,  "row": 8, "column": 1, "name": "Williams Pinball Palace (lower left)", "type": "backglass" },
+      { "lamp_code": 9,  "row": 1, "column": 2, "name": "AIRPORT 20K",                      "type": "playfield" },
+      { "lamp_code": 10, "row": 2, "column": 2, "name": "AIRPORT 40K",                      "type": "playfield" },
+      { "lamp_code": 11, "row": 3, "column": 2, "name": "AIRPORT 60K",                      "type": "playfield" },
+      { "lamp_code": 12, "row": 4, "column": 2, "name": "AIRPORT 80K",                      "type": "playfield" },
+      { "lamp_code": 13, "row": 5, "column": 2, "name": "AIRPORT 100K",                     "type": "playfield" },
+      { "lamp_code": 14, "row": 6, "column": 2, "name": "C (top lane)",                     "type": "playfield" },
+      { "lamp_code": 15, "row": 7, "column": 2, "name": "A (top lane)",                     "type": "playfield" },
+      { "lamp_code": 16, "row": 8, "column": 2, "name": "B (top lane)",                     "type": "playfield" },
+      { "lamp_code": 17, "row": 1, "column": 3, "name": "Pin-Bot (center)",                 "type": "playfield", "note": "Character lamp -- playfield position" },
+      { "lamp_code": 18, "row": 2, "column": 3, "name": "Dracula (center)",                 "type": "playfield", "note": "Character lamp -- playfield position" },
+      { "lamp_code": 19, "row": 3, "column": 3, "name": "Marilyn / Lola (center)",          "type": "playfield", "note": "Character lamp -- playfield position" },
+      { "lamp_code": 20, "row": 4, "column": 3, "name": "Santa (center)",                   "type": "playfield", "note": "Character lamp -- playfield position" },
+      { "lamp_code": 21, "row": 5, "column": 3, "name": "Gorbie (center)",                  "type": "playfield", "note": "Character lamp -- playfield position" },
+      { "lamp_code": 22, "row": 6, "column": 3, "name": "1 Express Lane (left)",            "type": "playfield" },
+      { "lamp_code": 23, "row": 7, "column": 3, "name": "2 Express Lane (right)",           "type": "playfield" },
+      { "lamp_code": 24, "row": 8, "column": 3, "name": "Raise Jackpot",                    "type": "playfield" },
+      { "lamp_code": 25, "row": 1, "column": 4, "name": "Pin-Bot cab",                      "type": "playfield", "note": "Character lamp -- cab/taxi position. Lit when Pin-Bot is in the taxi." },
+      { "lamp_code": 26, "row": 2, "column": 4, "name": "Dracula cab",                      "type": "playfield", "note": "Character lamp -- cab/taxi position." },
+      { "lamp_code": 27, "row": 3, "column": 4, "name": "Marilyn / Lola cab",               "type": "playfield", "note": "Character lamp -- cab/taxi position." },
+      { "lamp_code": 28, "row": 4, "column": 4, "name": "Santa cab",                        "type": "playfield", "note": "Character lamp -- cab/taxi position." },
+      { "lamp_code": 29, "row": 5, "column": 4, "name": "Gorbie cab",                       "type": "playfield", "note": "Character lamp -- cab/taxi position." },
+      { "lamp_code": 30, "row": 6, "column": 4, "name": "Ride Again",                       "type": "playfield" },
+      { "lamp_code": 31, "row": 7, "column": 4, "name": "Passengers Carried",               "type": "playfield" },
+      { "lamp_code": 32, "row": 8, "column": 4, "name": "Lock",                             "type": "playfield" },
+      { "lamp_code": 33, "row": 1, "column": 5, "name": "2X cab",                           "type": "playfield" },
+      { "lamp_code": 34, "row": 2, "column": 5, "name": "3X cab",                           "type": "playfield" },
+      { "lamp_code": 35, "row": 3, "column": 5, "name": "4X cab",                           "type": "playfield" },
+      { "lamp_code": 36, "row": 4, "column": 5, "name": "5X cab",                           "type": "playfield" },
+      { "lamp_code": 37, "row": 5, "column": 5, "name": "Left Outlane Special",             "type": "playfield" },
+      { "lamp_code": 38, "row": 6, "column": 5, "name": "Left Return Lane",                 "type": "playfield" },
+      { "lamp_code": 39, "row": 7, "column": 5, "name": "Right Outlane Special",            "type": "playfield" },
+      { "lamp_code": 40, "row": 8, "column": 5, "name": "Right Return Lane",                "type": "playfield" },
+      { "lamp_code": 41, "row": 1, "column": 6, "name": "Airport Ride (right)",             "type": "playfield" },
+      { "lamp_code": 42, "row": 2, "column": 6, "name": "Airport Ride (left)",              "type": "playfield" },
+      { "lamp_code": 43, "row": 3, "column": 6, "name": "Joyride",                          "type": "playfield" },
+      { "lamp_code": 44, "row": 4, "column": 6, "name": "Jackpot When Lit",                 "type": "playfield" },
+      { "lamp_code": 45, "row": 5, "column": 6, "name": "1 Million When Lit",               "type": "playfield" },
+      { "lamp_code": 46, "row": 6, "column": 6, "name": "Extra Ball When Lit",              "type": "playfield" },
+      { "lamp_code": 47, "row": 7, "column": 6, "name": "Carry Passengers When Lit",        "type": "playfield" },
+      { "lamp_code": 48, "row": 8, "column": 6, "name": "Release",                          "type": "playfield" },
+      { "lamp_code": 49, "row": 1, "column": 7, "name": "Jackpot (left above Meter)",       "type": "playfield" },
+      { "lamp_code": 50, "row": 2, "column": 7, "name": "Jackpot (right above Meter)",      "type": "playfield" },
+      { "lamp_code": 51, "row": 3, "column": 7, "name": "Meter (left below Meter)",         "type": "playfield" },
+      { "lamp_code": 52, "row": 4, "column": 7, "name": "Meter (right below Meter)",        "type": "playfield" },
+      { "lamp_code": 53, "row": 5, "column": 7, "name": "RED Traffic Light",                "type": "playfield" },
+      { "lamp_code": 54, "row": 6, "column": 7, "name": "YELLOW Traffic Light",             "type": "playfield" },
+      { "lamp_code": 55, "row": 7, "column": 7, "name": "GREEN Traffic Light",              "type": "playfield" },
+      { "lamp_code": 56, "row": 8, "column": 7, "name": "Williams Pinball Palace (upper right)", "type": "backglass" },
+      { "lamp_code": 57, "row": 1, "column": 8, "name": "Spinout 1,000",                    "type": "playfield" },
+      { "lamp_code": 58, "row": 2, "column": 8, "name": "Spinout 5,000",                    "type": "playfield" },
+      { "lamp_code": 59, "row": 3, "column": 8, "name": "Spinout 10,000",                   "type": "playfield" },
+      { "lamp_code": 60, "row": 4, "column": 8, "name": "Spinout 25,000",                   "type": "playfield" },
+      { "lamp_code": 61, "row": 5, "column": 8, "name": "Spinout 50,000",                   "type": "playfield" },
+      { "lamp_code": 62, "row": 6, "column": 8, "name": "Spinout 75,000",                   "type": "playfield" },
+      { "lamp_code": 63, "row": 7, "column": 8, "name": "Spinout 75,000",                   "type": "playfield", "note": "Second 75,000 entry -- confirmed from image. May represent separate lamp position for same value." },
+      { "lamp_code": 64, "row": 8, "column": 8, "name": "Williams Pinball Palace (lower right)", "type": "backglass" }
+    ]
+  },
+
+  "sound_commands": {
+    "notes": [
+      "Sound command table for Taxi (Williams System 11B) not yet documented.",
+      "Commands will be populated from ROM analysis or empirical live-capture observation.",
+      "Numbered commands will appear in UI as 'SND #NN' until names are added."
+    ],
+    "commands": {}
+  }
+}

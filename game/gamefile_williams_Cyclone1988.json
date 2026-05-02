@@ -1,0 +1,1615 @@
+{
+  "game": {
+    "id": "williams_cyclone_1988",
+    "name": "Cyclone",
+    "manufacturer": "Williams",
+    "year": 1988,
+    "system": "Williams System 11A",
+    "mpu": "D-11392",
+    "version": "1.0",
+    "last_updated": "2026-04-30",
+    "changelog": [
+      "v1.0 (2026-04-30): Initial build from manual solenoid/lamp/switch tables. Sound commands stubbed pending ROM analysis."
+    ],
+    "diagnostic_notes": [
+      "Machine exhibits spontaneous mid-game resets. Prime suspects: Sol13 (Mystery Wheel coil B), Sol14 (Mystery Wheel coil A), Sol16 (Ferris Wheel motor relay). Monitor should log solenoid activity immediately preceding each RESET event.",
+      "Mystery Wheel position tracked via 16 lamp positions (lamps 33-48, 22.5-degree increments) plus SW41 (Home opto). Mechanism requires both coil A and coil B for stepper control.",
+      "Ferris Wheel motor (Sol16) is a continuous-run relay -- monitor will see sustained Sol16 activity during Ferris Wheel sequences."
+    ]
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 8,
+    "notes": [
+      "Williams System 11A switch numbering: column-major order. SW1-8=Col1, SW9-16=Col2, etc.",
+      "Column strobe transistors on D-11392 board. Row return lines via 1J10 connector.",
+      "Gate Lane switches SW14-16 (1/2/3 lanes) in Col2.",
+      "Shuttle value switches SW26-30 in Col4 -- note two separate 25K entries (top and bottom positions).",
+      "Mystery Wheel Home Opto SW41 in Col6 Row1 -- optical sensor, not mechanical.",
+      "SW53-54 (Left/Right Outlane Ex.Ball) in Col7 rows 5-6.",
+      "SW57-58 (Lane Change flipper buttons) in Col8 rows 1-2 -- in switch matrix unlike EOS switches."
+    ],
+    "column_info": [
+      {
+        "column": 1,
+        "wire_color": "Green-Brown",
+        "connector": "1J8-1",
+        "transistor": "Q45"
+      },
+      {
+        "column": 2,
+        "wire_color": "Green-Red",
+        "connector": "1J8-2",
+        "transistor": "Q49"
+      },
+      {
+        "column": 3,
+        "wire_color": "Green-Orange",
+        "connector": "1J8-3",
+        "transistor": "Q44"
+      },
+      {
+        "column": 4,
+        "wire_color": "Green-Yellow",
+        "connector": "1J8-4",
+        "transistor": "Q48"
+      },
+      {
+        "column": 5,
+        "wire_color": "Green-Black",
+        "connector": "1J8-5",
+        "transistor": "Q43"
+      },
+      {
+        "column": 6,
+        "wire_color": "Green-Blue",
+        "connector": "1J8-7",
+        "transistor": "Q47"
+      },
+      {
+        "column": 7,
+        "wire_color": "Green-Violet",
+        "connector": "1J8-8",
+        "transistor": "Q42"
+      },
+      {
+        "column": 8,
+        "wire_color": "Green-Grey",
+        "connector": "1J8-9",
+        "transistor": "Q46"
+      }
+    ],
+    "row_info": [
+      {
+        "row": 1,
+        "wire_color": "White-Brown",
+        "connector": "1J10-9"
+      },
+      {
+        "row": 2,
+        "wire_color": "White-Red",
+        "connector": "1J10-8"
+      },
+      {
+        "row": 3,
+        "wire_color": "White-Orange",
+        "connector": "1J10-7"
+      },
+      {
+        "row": 4,
+        "wire_color": "White-Yellow",
+        "connector": "1J10-6"
+      },
+      {
+        "row": 5,
+        "wire_color": "White-Green",
+        "connector": "1J10-5"
+      },
+      {
+        "row": 6,
+        "wire_color": "White-Blue",
+        "connector": "1J10-3"
+      },
+      {
+        "row": 7,
+        "wire_color": "White-Violet",
+        "connector": "1J10-2"
+      },
+      {
+        "row": 8,
+        "wire_color": "White-Grey",
+        "connector": "1J10-1"
+      }
+    ],
+    "switches": [
+      {
+        "switch_id": 1,
+        "number": 1,
+        "row": 1,
+        "column": 1,
+        "name": "Plump Bob Tilt",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 2,
+        "number": 2,
+        "row": 2,
+        "column": 1,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 3,
+        "number": 3,
+        "row": 3,
+        "column": 1,
+        "name": "Start Button",
+        "type": "cabinet",
+        "used": true
+      },
+      {
+        "switch_id": 4,
+        "number": 4,
+        "row": 4,
+        "column": 1,
+        "name": "Right Coin Switch",
+        "type": "cabinet",
+        "used": true
+      },
+      {
+        "switch_id": 5,
+        "number": 5,
+        "row": 5,
+        "column": 1,
+        "name": "Center Coin Switch",
+        "type": "cabinet",
+        "used": true
+      },
+      {
+        "switch_id": 6,
+        "number": 6,
+        "row": 6,
+        "column": 1,
+        "name": "Left Coin Switch",
+        "type": "cabinet",
+        "used": true
+      },
+      {
+        "switch_id": 7,
+        "number": 7,
+        "row": 7,
+        "column": 1,
+        "name": "Slam Tilt",
+        "type": "cabinet",
+        "used": true
+      },
+      {
+        "switch_id": 8,
+        "number": 8,
+        "row": 8,
+        "column": 1,
+        "name": "High Score Reset",
+        "type": "cabinet",
+        "used": true
+      },
+      {
+        "switch_id": 9,
+        "number": 9,
+        "row": 1,
+        "column": 2,
+        "name": "Playfield Tilt",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 10,
+        "number": 10,
+        "row": 2,
+        "column": 2,
+        "name": "Outhole",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 11,
+        "number": 11,
+        "row": 3,
+        "column": 2,
+        "name": "Score Spook House",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 12,
+        "number": 12,
+        "row": 4,
+        "column": 2,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 13,
+        "number": 13,
+        "row": 5,
+        "column": 2,
+        "name": "Boomerang Kickbig",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 14,
+        "number": 14,
+        "row": 6,
+        "column": 2,
+        "name": "1 Lane (Gate)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 15,
+        "number": 15,
+        "row": 7,
+        "column": 2,
+        "name": "2 Lane (Gate)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 16,
+        "number": 16,
+        "row": 8,
+        "column": 2,
+        "name": "3 Lane (Gate)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 17,
+        "number": 17,
+        "row": 1,
+        "column": 3,
+        "name": "Ferris Wheel Entrance",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 18,
+        "number": 18,
+        "row": 2,
+        "column": 3,
+        "name": "Drop Target (center)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 19,
+        "number": 19,
+        "row": 3,
+        "column": 3,
+        "name": "Ducks (top)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 20,
+        "number": 20,
+        "row": 4,
+        "column": 3,
+        "name": "Ducks (middle)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 21,
+        "number": 21,
+        "row": 5,
+        "column": 3,
+        "name": "Ducks (bottom)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 22,
+        "number": 22,
+        "row": 6,
+        "column": 3,
+        "name": "Ball Toss (top)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 23,
+        "number": 23,
+        "row": 7,
+        "column": 3,
+        "name": "Ball Toss (middle)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 24,
+        "number": 24,
+        "row": 8,
+        "column": 3,
+        "name": "Ball Toss (bottom)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 25,
+        "number": 25,
+        "row": 1,
+        "column": 4,
+        "name": "Ball Shooter Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 26,
+        "number": 26,
+        "row": 2,
+        "column": 4,
+        "name": "Shuttle 10K (kickbig)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 27,
+        "number": 27,
+        "row": 3,
+        "column": 4,
+        "name": "Shuttle 25K (bottom)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 28,
+        "number": 28,
+        "row": 4,
+        "column": 4,
+        "name": "Shuttle 100K",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 29,
+        "number": 29,
+        "row": 5,
+        "column": 4,
+        "name": "Shuttle 25K (top)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 30,
+        "number": 30,
+        "row": 6,
+        "column": 4,
+        "name": "Shuttle 5K (top)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 31,
+        "number": 31,
+        "row": 7,
+        "column": 4,
+        "name": "Enter COMET Ramp",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 32,
+        "number": 32,
+        "row": 8,
+        "column": 4,
+        "name": "Score COMET Ramp",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 33,
+        "number": 33,
+        "row": 1,
+        "column": 5,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 34,
+        "number": 34,
+        "row": 2,
+        "column": 5,
+        "name": "Score CYCLONE",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 35,
+        "number": 35,
+        "row": 3,
+        "column": 5,
+        "name": "10-Point (right bottom)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 36,
+        "number": 36,
+        "row": 4,
+        "column": 5,
+        "name": "10-Point (right middle)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 37,
+        "number": 37,
+        "row": 5,
+        "column": 5,
+        "name": "10-Point (right top)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 38,
+        "number": 38,
+        "row": 6,
+        "column": 5,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 39,
+        "number": 39,
+        "row": 7,
+        "column": 5,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 40,
+        "number": 40,
+        "row": 8,
+        "column": 5,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 41,
+        "number": 41,
+        "row": 1,
+        "column": 6,
+        "name": "Mystery Wheel Home Opto",
+        "type": "opto",
+        "used": true,
+        "note": "Optical sensor. Fires when wheel returns to home position. Key for stepper motor sequencing."
+      },
+      {
+        "switch_id": 42,
+        "number": 42,
+        "row": 2,
+        "column": 6,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 43,
+        "number": 43,
+        "row": 3,
+        "column": 6,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 44,
+        "number": 44,
+        "row": 4,
+        "column": 6,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 45,
+        "number": 45,
+        "row": 5,
+        "column": 6,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 46,
+        "number": 46,
+        "row": 6,
+        "column": 6,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 47,
+        "number": 47,
+        "row": 7,
+        "column": 6,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 48,
+        "number": 48,
+        "row": 8,
+        "column": 6,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 49,
+        "number": 49,
+        "row": 1,
+        "column": 7,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 50,
+        "number": 50,
+        "row": 2,
+        "column": 7,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 51,
+        "number": 51,
+        "row": 3,
+        "column": 7,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 52,
+        "number": 52,
+        "row": 4,
+        "column": 7,
+        "name": "Not Used",
+        "type": "unused",
+        "used": false
+      },
+      {
+        "switch_id": 53,
+        "number": 53,
+        "row": 5,
+        "column": 7,
+        "name": "Left Outlane Extra Ball",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 54,
+        "number": 54,
+        "row": 6,
+        "column": 7,
+        "name": "Right Outlane Extra Ball",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 55,
+        "number": 55,
+        "row": 7,
+        "column": 7,
+        "name": "Left Return Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 56,
+        "number": 56,
+        "row": 8,
+        "column": 7,
+        "name": "Right Return Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 57,
+        "number": 57,
+        "row": 1,
+        "column": 8,
+        "name": "Lane Change Left Flipper",
+        "type": "cabinet",
+        "used": true
+      },
+      {
+        "switch_id": 58,
+        "number": 58,
+        "row": 2,
+        "column": 8,
+        "name": "Lane Change Right Flipper",
+        "type": "cabinet",
+        "used": true
+      },
+      {
+        "switch_id": 59,
+        "number": 59,
+        "row": 3,
+        "column": 8,
+        "name": "Spot Ball Toss",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 60,
+        "number": 60,
+        "row": 4,
+        "column": 8,
+        "name": "Left Jet Bumper",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 61,
+        "number": 61,
+        "row": 5,
+        "column": 8,
+        "name": "Right Jet Bumper",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 62,
+        "number": 62,
+        "row": 6,
+        "column": 8,
+        "name": "Bottom Jet Bumper",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 63,
+        "number": 63,
+        "row": 7,
+        "column": 8,
+        "name": "Left Slingshot",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 64,
+        "number": 64,
+        "row": 8,
+        "column": 8,
+        "name": "Right Slingshot",
+        "type": "playfield",
+        "used": true
+      }
+    ]
+  },
+  "solenoids": {
+    "notes": [
+      "System 11A D-11392 solenoid architecture identical to Space Station. SOL1-8 via U28 latch, SOL9-16 via U10 PB ($2100), specials SS1-SS6 via dedicated drivers.",
+      "A/C RELAY (Sol12): A-coils active when Sol12 de-energized, C-coils (flashers) active when Sol12 energized.",
+      "Sol13 and Sol14 are Mystery Wheel stepper coils (coil B and coil A respectively). Two-coil stepper -- both must be sequenced correctly. DIAGNOSTIC: sustained or rapid firing of Sol13/14 may cause voltage sag and resets.",
+      "Sol16 (Ferris Wheel motor relay) is a continuous-run device during Ferris Wheel sequences. DIAGNOSTIC: monitor sustained Sol16 activity.",
+      "Sol22 Special #6 is Not Used on Cyclone.",
+      "bcd_code: null throughout -- PIA write values to be determined via scan_trace on live board.",
+      "Coil part numbers: AE-23-800, AE-24-900, AE-26-1200, AE-26-1500 (note 1500-ohm variant used on Boomerang and slingshots)."
+    ],
+    "regular_solenoids": [
+      {
+        "sol_number": 1,
+        "name": "Outhole Kicker",
+        "circuit": "A",
+        "type": "switched",
+        "transistor": "Q33",
+        "driver_path": "U28-1Q -> U20 -> Q29 predriver -> Q33 TIP122",
+        "coil_part": "AE-23-800",
+        "connector": "1P11-1",
+        "wire_color": "Vio-Brn",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "A-circuit. C-circuit (Sol1C): Left Ferris Wheel & Jackpot flashers (#89 x2) via 5J5-9."
+      },
+      {
+        "sol_number": 2,
+        "name": "Not Used",
+        "circuit": "A",
+        "type": "unused",
+        "transistor": "Q25",
+        "driver_path": "U28-2Q -> U20 -> Q21 predriver -> Q25 TIP122",
+        "coil_part": null,
+        "connector": "1P11-3",
+        "wire_color": "Vio-Red",
+        "bcd_code": null,
+        "bus_visible": false,
+        "notes": "A-circuit not used. C-circuit (Sol2C): Right Ferris Wheel & Teeth flashers (#89 x2) via 5J5-8."
+      },
+      {
+        "sol_number": 3,
+        "name": "Ball Shooter Kickbig",
+        "circuit": "A",
+        "type": "switched",
+        "transistor": "Q32",
+        "driver_path": "U28-3Q -> U20 -> Q28 predriver -> Q32 TIP122",
+        "coil_part": "AE-24-900",
+        "connector": "1P11-4",
+        "wire_color": "Vio-Orn",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "A-circuit. C-circuit (Sol3C): Top mid playfield & left Eye flashers (#89 x2) via 5J5-7."
+      },
+      {
+        "sol_number": 4,
+        "name": "Boomerang Kickbig",
+        "circuit": "A",
+        "type": "switched",
+        "transistor": "Q24",
+        "driver_path": "U28-4Q -> U20 -> predriver -> Q24 TIP122",
+        "coil_part": "AE-26-1500",
+        "connector": "1P11-5",
+        "wire_color": "Vio-Yel",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "A-circuit. AE-26-1500 coil (heavier than typical). C-circuit (Sol4C): Cats & lower Fireworks flashers (#89 x2) via 5J5-5."
+      },
+      {
+        "sol_number": 5,
+        "name": "Drop Target Reset",
+        "circuit": "A",
+        "type": "switched",
+        "transistor": "Q31",
+        "driver_path": "U28-5Q -> U19 -> predriver -> Q31 TIP122",
+        "coil_part": "AE-23-800",
+        "connector": "1P11-6",
+        "wire_color": "Vio-Grn",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "A-circuit. Single drop target reset. C-circuit (Sol5C): Ducks & right Fireworks flashers (#89 x2) via 5J5-4."
+      },
+      {
+        "sol_number": 6,
+        "name": "Not Used",
+        "circuit": "A",
+        "type": "unused",
+        "transistor": "Q23",
+        "driver_path": "U28-6Q -> U19 -> predriver -> Q23 TIP122",
+        "coil_part": null,
+        "connector": "1P11-7",
+        "wire_color": "Vio-Blu",
+        "bcd_code": null,
+        "bus_visible": false,
+        "notes": "A-circuit not used. C-circuit (Sol6C): Ferris Wheel flasher (#89 x2) via 5J5-3."
+      },
+      {
+        "sol_number": 7,
+        "name": "Knocker",
+        "circuit": "A",
+        "type": "switched",
+        "transistor": "Q30",
+        "driver_path": "U28-7Q -> U19 -> predriver -> Q30 TIP122",
+        "coil_part": "AE-26-1200",
+        "connector": "1P11-8",
+        "wire_color": "Vio-Blk",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "A-circuit. C-circuit (Sol7C): Cyclone & right Eye flashers (#89 x2) via 5J5-2."
+      },
+      {
+        "sol_number": 8,
+        "name": "Not Used",
+        "circuit": "A",
+        "type": "unused",
+        "transistor": "Q22",
+        "driver_path": "U28-8Q -> U19 -> predriver -> Q22 TIP122",
+        "coil_part": null,
+        "connector": "1P11-9",
+        "wire_color": "Vio-Gry",
+        "bcd_code": null,
+        "bus_visible": false,
+        "notes": "A-circuit not used. C-circuit (Sol8C): Spook House & left Fireworks flasher (#89 x2) via 5J5-1."
+      },
+      {
+        "sol_number": 9,
+        "name": "Spook House Bonus Flasher",
+        "circuit": "controlled",
+        "type": "flasher",
+        "transistor": "Q17",
+        "driver_path": "PIA PB0 -> U18 -> predriver -> Q17 TIP122",
+        "coil_part": "#89",
+        "connector": "1P12-1",
+        "wire_color": "Brn-Blk",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "Controlled flasher, not a GI relay. Single #89 lamp."
+      },
+      {
+        "sol_number": 10,
+        "name": "Playfield G.I. Relay",
+        "circuit": "controlled",
+        "type": "relay",
+        "transistor": "Q9",
+        "driver_path": "PIA PB1 -> U18 -> predriver -> Q9 TIP122",
+        "coil_part": "5580-09555-01",
+        "connector": "1P12-2",
+        "wire_color": "Brn-Red",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "GI relay on Relay Board C-11998-1. Controls playfield general illumination."
+      },
+      {
+        "sol_number": 11,
+        "name": "Backglass G.I. Relay",
+        "circuit": "controlled",
+        "type": "relay",
+        "transistor": "Q16",
+        "driver_path": "PIA PB2 -> U18 -> predriver -> Q16 TIP122",
+        "coil_part": "5580-09555-01",
+        "connector": "1P12-4",
+        "wire_color": "Brn-Orn",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "GI relay on Relay Board C-11998-1. Controls backglass general illumination."
+      },
+      {
+        "sol_number": 12,
+        "name": "Solenoid A/C Select Relay",
+        "circuit": "controlled",
+        "type": "relay",
+        "transistor": "Q8",
+        "driver_path": "PIA PB3 -> U18 -> predriver -> Q8 TIP122",
+        "coil_part": "5580-09555-01",
+        "connector": "1P12-5",
+        "wire_color": "Brn-Yel",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "KEY RELAY on Aux Power Driver Board D-11813. De-energized: Sol1-8 A-circuits active. Energized: Sol1-8 C-circuits (flashers) active."
+      },
+      {
+        "sol_number": 13,
+        "name": "Mystery Wheel Coil B",
+        "circuit": "controlled",
+        "type": "stepper",
+        "transistor": "Q15",
+        "driver_path": "PIA PB4 -> U17 -> predriver -> Q15 TIP122",
+        "coil_part": "14-7948 / D-12045",
+        "connector": "6J2-3",
+        "wire_color": "Brn-Grn",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "DIAGNOSTIC PRIORITY: Mystery Wheel stepper motor coil B. Paired with Sol14 (coil A) for two-phase stepper control. SW41 (Home Opto) provides position feedback. Abnormal firing patterns may indicate wheel jam or motor fault. Suspect in spontaneous reset events."
+      },
+      {
+        "sol_number": 14,
+        "name": "Mystery Wheel Coil A",
+        "circuit": "controlled",
+        "type": "stepper",
+        "transistor": "Q7",
+        "driver_path": "PIA PB5 -> U17 -> predriver -> Q7 TIP122",
+        "coil_part": "14-7948 / D-12045",
+        "connector": "6J2-4",
+        "wire_color": "Brn-Blu",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "DIAGNOSTIC PRIORITY: Mystery Wheel stepper motor coil A. See Sol13 notes. Monitor Sol13+Sol14 firing sequence and timing relative to SW41 Home Opto events."
+      },
+      {
+        "sol_number": 15,
+        "name": "Boomerang Flasher",
+        "circuit": "controlled",
+        "type": "flasher",
+        "transistor": "Q14",
+        "driver_path": "PIA PB6 -> U17 -> predriver -> Q14 TIP122",
+        "coil_part": "#1251 (x3)",
+        "connector": "1P12-8",
+        "wire_color": "Brn-Vio",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "Three #1251 flasher lamps on Boomerang."
+      },
+      {
+        "sol_number": 16,
+        "name": "Ferris Wheel Motor / Relay",
+        "circuit": "controlled",
+        "type": "motor_relay",
+        "transistor": "Q6",
+        "driver_path": "PIA PB7 -> U17 -> predriver -> Q6 TIP122",
+        "coil_part": "14-7941-3 / 5580-12145-01",
+        "connector": "1P12-9",
+        "wire_color": "Brn-Gry",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "DIAGNOSTIC PRIORITY: Ferris Wheel motor relay on Relay Board C-11902-1. Continuous-run during Ferris Wheel sequences. Sustained on-state is normal. Abnormal rapid toggling or failure to energize indicates motor or relay fault. Suspect in spontaneous reset events."
+      }
+    ],
+    "special_solenoids": [
+      {
+        "sol_number": 17,
+        "ss_number": "SS1",
+        "name": "Left Jet Bumper",
+        "transistor": "Q75",
+        "driver_path": "U45/U50 logic -> predriver -> Q75 TIP122",
+        "coil_part": "AE-23-800",
+        "connector": "1P19-7",
+        "wire_color": "Blu-Brn",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "Special solenoid 1."
+      },
+      {
+        "sol_number": 18,
+        "ss_number": "SS2",
+        "name": "Left Slingshot",
+        "transistor": "Q71",
+        "driver_path": "U45/U50 logic -> predriver -> Q71 TIP122",
+        "coil_part": "AE-26-1500",
+        "connector": "1P19-4",
+        "wire_color": "Blu-Red",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "Special solenoid 2. AE-26-1500 coil."
+      },
+      {
+        "sol_number": 19,
+        "ss_number": "SS3",
+        "name": "Right Jet Bumper",
+        "transistor": "Q73",
+        "driver_path": "U45/U50 logic -> predriver -> Q73 TIP122",
+        "coil_part": "AE-23-800",
+        "connector": "1P19-3",
+        "wire_color": "Blu-Orn",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "Special solenoid 3."
+      },
+      {
+        "sol_number": 20,
+        "ss_number": "SS4",
+        "name": "Right Slingshot",
+        "transistor": "Q69",
+        "driver_path": "U45/U50 logic -> predriver -> Q69 TIP122",
+        "coil_part": "AE-26-1500",
+        "connector": "1P19-6",
+        "wire_color": "Blu-Yel",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "Special solenoid 4. AE-26-1500 coil."
+      },
+      {
+        "sol_number": 21,
+        "ss_number": "SS5",
+        "name": "Bottom Jet Bumper",
+        "transistor": "Q77",
+        "driver_path": "U45/U50 logic -> predriver -> Q77 TIP122",
+        "coil_part": "AE-23-800",
+        "connector": "1P19-8",
+        "wire_color": "Blu-Grn",
+        "bcd_code": null,
+        "bus_visible": true,
+        "notes": "Special solenoid 5."
+      },
+      {
+        "sol_number": 22,
+        "ss_number": "SS6",
+        "name": "Not Used",
+        "transistor": "Q79",
+        "driver_path": "U45/U50 logic -> predriver -> Q79 TIP122",
+        "coil_part": null,
+        "connector": "1P19-9",
+        "wire_color": "Blu-Blk",
+        "bcd_code": null,
+        "bus_visible": false,
+        "notes": "Special solenoid 6 not used on Cyclone."
+      }
+    ],
+    "flipper_circuits": [
+      {
+        "name": "Lower Right Flipper",
+        "coil_part": "FL11630/50VDC",
+        "wire_color": "Orn-Vio",
+        "connector": "1P19-1 -> 7P1-15",
+        "switch_wire": "Blu-Vio -> 7P1-16, 8P3-34",
+        "in_switch_matrix": false,
+        "bus_visible": false,
+        "notes": "Direct-wired via flipper button switch."
+      },
+      {
+        "name": "Lower Left Flipper",
+        "coil_part": "FL11630/50VDC",
+        "wire_color": "Orn-Gry",
+        "connector": "1P19-2 -> 7P1-18",
+        "switch_wire": "Blu-Gry -> 7P1-19, 8P3-32",
+        "in_switch_matrix": false,
+        "bus_visible": false,
+        "notes": "Direct-wired via flipper button switch."
+      }
+    ]
+  },
+  "lamps": {
+    "notes": [
+      "Williams System 11A lamp matrix: 8 columns x 8 rows = 64 lamps. Column-major numbering.",
+      "Column driver transistors Q52-Q66, row drivers Q80-Q87. Row 4 connector 1J6-5 (key pin).",
+      "Mystery Wheel position lamps: lamps 33-48 span cols 5 and 6 entirely, representing 22.5-degree steps around the full 360 degrees. Combined with SW41 (Home Opto) for position tracking.",
+      "Comet scoring lamps 27-32 (20K through 1 Million) in col 4 rows 3-8.",
+      "Backglass bonus lamps 57-64 (500K through 4 Million) in col 8.",
+      "MYSTERY/WHEEL backglass lamps at positions 55/56 (col 7 rows 7-8).",
+      "Multiplier lamps 49-54 (2X through 7X, non-sequential) in col 7 rows 1-6.",
+      "System 11A lamp decode parameters TBD via scan_trace on live board."
+    ],
+    "column_info": [
+      {
+        "column": 1,
+        "wire_color": "Yellow-Brown",
+        "connector": "1J7-1",
+        "transistor": "Q66"
+      },
+      {
+        "column": 2,
+        "wire_color": "Yellow-Red",
+        "connector": "1J7-2",
+        "transistor": "Q64"
+      },
+      {
+        "column": 3,
+        "wire_color": "Yellow-Orange",
+        "connector": "1J7-3",
+        "transistor": "Q62"
+      },
+      {
+        "column": 4,
+        "wire_color": "Yellow-Black",
+        "connector": "1J7-4",
+        "transistor": "Q60"
+      },
+      {
+        "column": 5,
+        "wire_color": "Yellow-Green",
+        "connector": "1J7-6",
+        "transistor": "Q58"
+      },
+      {
+        "column": 6,
+        "wire_color": "Yellow-Blue",
+        "connector": "1J7-7",
+        "transistor": "Q56"
+      },
+      {
+        "column": 7,
+        "wire_color": "Yellow-Violet",
+        "connector": "1J7-8",
+        "transistor": "Q54"
+      },
+      {
+        "column": 8,
+        "wire_color": "Yellow-Grey",
+        "connector": "1J7-9",
+        "transistor": "Q52"
+      }
+    ],
+    "row_info": [
+      {
+        "row": 1,
+        "wire_color": "Red-Brown",
+        "connector": "1J6-1",
+        "transistor": "Q80"
+      },
+      {
+        "row": 2,
+        "wire_color": "Red-Black",
+        "connector": "1J6-2",
+        "transistor": "Q81"
+      },
+      {
+        "row": 3,
+        "wire_color": "Red-Orange",
+        "connector": "1J6-3",
+        "transistor": "Q82"
+      },
+      {
+        "row": 4,
+        "wire_color": "Red-Yellow",
+        "connector": "1J6-5",
+        "transistor": "Q83",
+        "note": "Pin 4 is key -- row 4 uses pin 5"
+      },
+      {
+        "row": 5,
+        "wire_color": "Red-Green",
+        "connector": "1J6-6",
+        "transistor": "Q84"
+      },
+      {
+        "row": 6,
+        "wire_color": "Red-Blue",
+        "connector": "1J6-7",
+        "transistor": "Q85"
+      },
+      {
+        "row": 7,
+        "wire_color": "Red-Violet",
+        "connector": "1J6-8",
+        "transistor": "Q86"
+      },
+      {
+        "row": 8,
+        "wire_color": "Red-Grey",
+        "connector": "1J6-9",
+        "transistor": "Q87"
+      }
+    ],
+    "controlled_lamps": [
+      {
+        "lamp_code": 1,
+        "row": 1,
+        "column": 1,
+        "name": "HOLD",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 2,
+        "row": 2,
+        "column": 1,
+        "name": "BONUS",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 3,
+        "row": 3,
+        "column": 1,
+        "name": "DOUBLE",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 4,
+        "row": 4,
+        "column": 1,
+        "name": "SCORES",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 5,
+        "row": 5,
+        "column": 1,
+        "name": "CYCLONE 50K",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 6,
+        "row": 6,
+        "column": 1,
+        "name": "CYCLONE 100K",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 7,
+        "row": 7,
+        "column": 1,
+        "name": "CYCLONE Gate Bonus",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 8,
+        "row": 8,
+        "column": 1,
+        "name": "RIDE THE COMET (on ramp)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 9,
+        "row": 1,
+        "column": 2,
+        "name": "W/L Score Ferris Wheel Bonus",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 10,
+        "row": 2,
+        "column": 2,
+        "name": "Advance X",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 11,
+        "row": 3,
+        "column": 2,
+        "name": "Balloon 25K (Ducks)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 12,
+        "row": 4,
+        "column": 2,
+        "name": "Balloon 50K (Ducks)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 13,
+        "row": 5,
+        "column": 2,
+        "name": "Balloon Lights Extra Ball (Ducks)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 14,
+        "row": 6,
+        "column": 2,
+        "name": "1 (Gate lane)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 15,
+        "row": 7,
+        "column": 2,
+        "name": "2 (Gate lane)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 16,
+        "row": 8,
+        "column": 2,
+        "name": "3 (Gate lane)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 17,
+        "row": 1,
+        "column": 3,
+        "name": "RIDE AGAIN",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 18,
+        "row": 2,
+        "column": 3,
+        "name": "SPINS MYSTERY WHEEL",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 19,
+        "row": 3,
+        "column": 3,
+        "name": "Ducks (top)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 20,
+        "row": 4,
+        "column": 3,
+        "name": "Ducks (middle)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 21,
+        "row": 5,
+        "column": 3,
+        "name": "Ducks (bottom)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 22,
+        "row": 6,
+        "column": 3,
+        "name": "Ball Toss (top)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 23,
+        "row": 7,
+        "column": 3,
+        "name": "Ball Toss (middle)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 24,
+        "row": 8,
+        "column": 3,
+        "name": "Ball Toss (bottom)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 25,
+        "row": 1,
+        "column": 4,
+        "name": "EXTRA BALL Left Outlane",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 26,
+        "row": 2,
+        "column": 4,
+        "name": "EXTRA BALL Right Outlane",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 27,
+        "row": 3,
+        "column": 4,
+        "name": "COMET 20K",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 28,
+        "row": 4,
+        "column": 4,
+        "name": "COMET 40K",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 29,
+        "row": 5,
+        "column": 4,
+        "name": "COMET 60K",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 30,
+        "row": 6,
+        "column": 4,
+        "name": "COMET 80K",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 31,
+        "row": 7,
+        "column": 4,
+        "name": "COMET 100K",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 32,
+        "row": 8,
+        "column": 4,
+        "name": "COMET 1 Million",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 33,
+        "row": 1,
+        "column": 5,
+        "name": "Mystery Wheel 0 deg (top dead center)",
+        "type": "playfield",
+        "note": "SW41 Home Opto corresponds to this position"
+      },
+      {
+        "lamp_code": 34,
+        "row": 2,
+        "column": 5,
+        "name": "Mystery Wheel 22.5 deg right of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 35,
+        "row": 3,
+        "column": 5,
+        "name": "Mystery Wheel 45 deg right of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 36,
+        "row": 4,
+        "column": 5,
+        "name": "Mystery Wheel 67.5 deg right of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 37,
+        "row": 5,
+        "column": 5,
+        "name": "Mystery Wheel 90 deg right of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 38,
+        "row": 6,
+        "column": 5,
+        "name": "Mystery Wheel 112.5 deg right of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 39,
+        "row": 7,
+        "column": 5,
+        "name": "Mystery Wheel 135 deg right of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 40,
+        "row": 8,
+        "column": 5,
+        "name": "Mystery Wheel 157.5 deg right of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 41,
+        "row": 1,
+        "column": 6,
+        "name": "Mystery Wheel 180 deg (bottom)",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 42,
+        "row": 2,
+        "column": 6,
+        "name": "Mystery Wheel 157.5 deg left of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 43,
+        "row": 3,
+        "column": 6,
+        "name": "Mystery Wheel 135 deg left of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 44,
+        "row": 4,
+        "column": 6,
+        "name": "Mystery Wheel 112.5 deg left of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 45,
+        "row": 5,
+        "column": 6,
+        "name": "Mystery Wheel 90 deg left of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 46,
+        "row": 6,
+        "column": 6,
+        "name": "Mystery Wheel 67.5 deg left of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 47,
+        "row": 7,
+        "column": 6,
+        "name": "Mystery Wheel 45 deg left of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 48,
+        "row": 8,
+        "column": 6,
+        "name": "Mystery Wheel 22.5 deg left of TDC",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 49,
+        "row": 1,
+        "column": 7,
+        "name": "2X",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 50,
+        "row": 2,
+        "column": 7,
+        "name": "7X",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 51,
+        "row": 3,
+        "column": 7,
+        "name": "6X",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 52,
+        "row": 4,
+        "column": 7,
+        "name": "5X",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 53,
+        "row": 5,
+        "column": 7,
+        "name": "4X",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 54,
+        "row": 6,
+        "column": 7,
+        "name": "3X",
+        "type": "playfield"
+      },
+      {
+        "lamp_code": 55,
+        "row": 7,
+        "column": 7,
+        "name": "MYSTERY (backglass)",
+        "type": "backglass"
+      },
+      {
+        "lamp_code": 56,
+        "row": 8,
+        "column": 7,
+        "name": "WHEEL (backglass)",
+        "type": "backglass"
+      },
+      {
+        "lamp_code": 57,
+        "row": 1,
+        "column": 8,
+        "name": "500,000 Bonus (backglass)",
+        "type": "backglass"
+      },
+      {
+        "lamp_code": 58,
+        "row": 2,
+        "column": 8,
+        "name": "1,000,000 Bonus (backglass)",
+        "type": "backglass"
+      },
+      {
+        "lamp_code": 59,
+        "row": 3,
+        "column": 8,
+        "name": "1,500,000 Bonus (backglass)",
+        "type": "backglass"
+      },
+      {
+        "lamp_code": 60,
+        "row": 4,
+        "column": 8,
+        "name": "2,000,000 Bonus (backglass)",
+        "type": "backglass"
+      },
+      {
+        "lamp_code": 61,
+        "row": 5,
+        "column": 8,
+        "name": "2,500,000 Bonus (backglass)",
+        "type": "backglass"
+      },
+      {
+        "lamp_code": 62,
+        "row": 6,
+        "column": 8,
+        "name": "3,000,000 Bonus (backglass)",
+        "type": "backglass"
+      },
+      {
+        "lamp_code": 63,
+        "row": 7,
+        "column": 8,
+        "name": "3,500,000 Bonus (backglass)",
+        "type": "backglass"
+      },
+      {
+        "lamp_code": 64,
+        "row": 8,
+        "column": 8,
+        "name": "4,000,000 Bonus (backglass)",
+        "type": "backglass"
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound command table for Cyclone (Williams System 11A) not yet documented.",
+      "Commands will be populated from ROM analysis or empirical live-capture observation.",
+      "Numbered commands will appear in UI as 'SND #NN' until names are added."
+    ],
+    "commands": {}
+  }
+}
