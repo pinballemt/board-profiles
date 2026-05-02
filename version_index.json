@@ -1,0 +1,83 @@
+{
+  "updated": "2026-04-18",
+  "repo": "https://github.com/pinballemt/board-profiles",
+  "notes": [
+    "Hand-maintained manifest of latest files available on GitHub.",
+    "Compared against the Pico's /manifest endpoint to decide CURRENT/UPDATE/NEW.",
+    "Bump the version when replacing a file; the update UI keys on this."
+  ],
+  "files": {
+    "bally_mpu_35_v1_7.json": {
+      "version": "1.7",
+      "type": "board_profile",
+      "path": "board/bally_mpu_35_v1_7.json",
+      "description": "Bally AS-2518-35 MPU board profile (v1.6 -- U7 6810 SRAM correction, U10 CA2 master display strobe, U11 PB2/PB3 serial sound interface)"
+    },
+    "gamefile_bally_EBD1981.json": {
+      "version": "1.1",
+      "type": "game_file",
+      "path": "game/gamefile_bally_EBD1981.json",
+      "description": "Eight Ball Deluxe 1981 -- switch matrix, 22 solenoids, 88 lamps with lamp_code, 56 sound commands"
+    },
+    "gamefile_williams_SpaceStation1987.json": {
+      "version": "1.0",
+      "type": "game_file",
+      "path": "game/gamefile_williams_SpaceStation1987.json",
+      "description": "Cyclone 1988"
+    },
+    "gamefile_williams_Cyclone1988.json": {
+      "version": "1.0",
+      "type": "game_file",
+      "path": "game/gamefile_williams_Cyclone1988.json",
+      "description": "Cyclone 1988"
+    },
+    "gamefile_williams_Taxi1988.json": {
+      "version": "1.0",
+      "type": "game_file",
+      "path": "game/gamefile_williams_Cyclone1988.json",
+      "description": "Cyclone 1988"
+    },
+    "bally_as-2518-66_solenoid.json": {
+      "version": "1.0",
+      "type": "board_profile",
+      "path": "board/bally_as-2518-66_solenoid.json",
+      "description": "Bally AS-2518-66 solenoid driver board"
+    },
+    "bally_driver_16.json": {
+      "version": "1.0",
+      "type": "board_profile",
+      "path": "board/bally_driver_16.json",
+      "description": "Bally AS-2518-16 driver board"
+    },
+    "bally_driver_22.json": {
+      "version": "1.0",
+      "type": "board_profile",
+      "path": "board/bally_driver_22.json",
+      "description": "Bally AS-2518-22 driver board"
+    },
+    "bally_lampdriver_23.json": {
+      "version": "1.0",
+      "type": "board_profile",
+      "path": "board/bally_lampdriver_23.json",
+      "description": "Bally AS-2518-23 lamp driver board -- 4x MC14514CP decoders"
+    },
+    "stern_driver_m200.json": {
+      "version": "1.0",
+      "type": "board_profile",
+      "path": "board/stern_driver_m200.json",
+      "description": "Stern M-200 driver board"
+    },
+    "AS-2518-61_FINAL.json": {
+      "version": "1.0",
+      "type": "board_profile",
+      "path": "board/AS-2518-61_FINAL.json",
+      "description": "Bally AS-2518-61 sound board"
+    },
+    "System11_Platform_v1.1.json": {
+      "version": "1.1",
+      "type": "board_profile",
+      "path": "board/System11_Platform_v1.1.json",
+      "description": "Williams System 11 D-11882 combined CPU/driver board"
+    }
+  }
+}
