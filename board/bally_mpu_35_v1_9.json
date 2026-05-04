@@ -1,5 +1,5 @@
 {
-  "version": "1.7.4",
+  "version": "1.9",
   "board_info": {
     "model": "AS-2518-35",
     "type": "MPU",
@@ -38,12 +38,12 @@
       "J5 pin numbering corrected: pin 1=D7, pin 8=D0 (verified against physical board)",
       "J5-28 and J5-29 marked DO NOT CONNECT for satellite/monitor use",
       "NMI and IRQ not available on J5 - not routed to this connector",
-      "VERSION 1.3 (2026-03-26): PIA address space analysis complete. Confirmed $0090-$009F is the valid PIA range (CS0=A4, CS1=A7 \u2014 both HIGH required). $0080-$008F is NOT PIA space (A4=0 throughout). U10 vs U11 CS2 boundary not fully traced in schematic. U17/U18 clarified as 7404 inverters in address decode chain, not decoder ICs. satellite_notes block added from live EBD testing.",
+      "VERSION 1.3 (2026-03-26): PIA address space analysis complete. Confirmed $0090-$009F is the valid PIA range (CS0=A4, CS1=A7 — both HIGH required). $0080-$008F is NOT PIA space (A4=0 throughout). U10 vs U11 CS2 boundary not fully traced in schematic. U17/U18 clarified as 7404 inverters in address decode chain, not decoder ICs. satellite_notes block added from live EBD testing.",
       "PIA address space: $0090-$009F confirmed. CS0=A4 (J5-18), CS1=A7 (J5-15). RS0=A0, RS1=A1.",
-      "U10/U11 CS2 differentiation: CS2 (active low, pin 23) source is address decode logic via U17/U18 7404 inverters. Exact address bit driving each CS2 not schematic-verified \u2014 boundary within $0090-$009F is UNVERIFIED.",
+      "U10/U11 CS2 differentiation: CS2 (active low, pin 23) source is address decode logic via U17/U18 7404 inverters. Exact address bit driving each CS2 not schematic-verified — boundary within $0090-$009F is UNVERIFIED.",
       "U17 and U18 are 7404 hex inverters, not decoder ICs. References to them as 'address decoders' in earlier versions were misleading.",
-      "VERSION 1.4 (2026-03-26): Schematic-verified U17 corrected from 7404 to 7400 NAND. CS2 logic fully traced: NAND(NOT A9, NOT A12) via U18A/U18D/U17C. U10 and U11 confirmed to share identical CS2 \u2014 no address boundary between them. PIA space $0090-$009F fully verified. RAM decode chain U19C/U19D/U17D documented. All chip select logic now schematic-verified.",
-      "VERSION 1.4.1 (2026-03-26): Removed known_faults_in_test_game from satellite_notes. That fault (Sol 4 Q5 Left Thumper Bumper) is specific to a AS-2518-16 driver board under bench repair \u2014 it is not a fault of the EBD game or the AS-2518-35 MPU."
+      "VERSION 1.4 (2026-03-26): Schematic-verified U17 corrected from 7404 to 7400 NAND. CS2 logic fully traced: NAND(NOT A9, NOT A12) via U18A/U18D/U17C. U10 and U11 confirmed to share identical CS2 — no address boundary between them. PIA space $0090-$009F fully verified. RAM decode chain U19C/U19D/U17D documented. All chip select logic now schematic-verified.",
+      "VERSION 1.4.1 (2026-03-26): Removed known_faults_in_test_game from satellite_notes. That fault (Sol 4 Q5 Left Thumper Bumper) is specific to a AS-2518-16 driver board under bench repair — it is not a fault of the EBD game or the AS-2518-35 MPU."
     ],
     "file_version": "1.4.1"
   },
@@ -1044,7 +1044,7 @@
           ]
         },
         "27": {
-          "label": "\u00cf\u20202",
+          "label": "Ï†2",
           "role": "control_signal",
           "direction": "output",
           "net_label": "2.2 V.D.C.",
@@ -1084,7 +1084,7 @@
               "signal": "U19B-14"
             },
             {
-              "note": "Chain: U19B-10 \u00e2\u2020\u2019 U14D-11 \u00e2\u2020\u2019 U14D-12 \u00e2\u2020\u2019 U15C-4 \u00e2\u2020\u2019 U15C-6 \u00e2\u2020\u2019 U15D-1,2 \u00e2\u2020\u2019 U15D-3 (1.8V output)"
+              "note": "Chain: U19B-10 â†’ U14D-11 â†’ U14D-12 â†’ U15C-4 â†’ U15C-6 â†’ U15D-1,2 â†’ U15D-3 (1.8V output)"
             },
             {
               "resistor": "R137",
@@ -1492,7 +1492,7 @@
             },
             {
               "capacitor": "C32",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1502,7 +1502,7 @@
             },
             {
               "capacitor": "C81",
-              "value": "0.01\u00c2\u00b5F",
+              "value": "0.01ÂµF",
               "to": "GND"
             },
             {
@@ -1525,7 +1525,7 @@
             },
             {
               "capacitor": "C78",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1544,7 +1544,7 @@
             },
             {
               "capacitor": "C31",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1563,11 +1563,11 @@
             },
             {
               "capacitor": "C33",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
-              "note": "Merges with J2-8 \u00e2\u2020\u2019 U10-10"
+              "note": "Merges with J2-8 â†’ U10-10"
             }
           ]
         },
@@ -1582,11 +1582,11 @@
             },
             {
               "capacitor": "C34",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
-              "note": "Merges with J2-9 \u00e2\u2020\u2019 U10-11"
+              "note": "Merges with J2-9 â†’ U10-11"
             }
           ]
         },
@@ -1601,11 +1601,11 @@
             },
             {
               "capacitor": "C35",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
-              "note": "Merges with J2-10 \u00e2\u2020\u2019 U10-12"
+              "note": "Merges with J2-10 â†’ U10-12"
             }
           ]
         },
@@ -1620,11 +1620,11 @@
             },
             {
               "capacitor": "C36",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
-              "note": "Merges with J2-11 \u00e2\u2020\u2019 U10-13"
+              "note": "Merges with J2-11 â†’ U10-13"
             }
           ]
         },
@@ -1639,11 +1639,11 @@
             },
             {
               "capacitor": "C37",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
-              "note": "Merges with J2-12 \u00e2\u2020\u2019 U10-14"
+              "note": "Merges with J2-12 â†’ U10-14"
             }
           ]
         },
@@ -1658,11 +1658,11 @@
             },
             {
               "capacitor": "C38",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
-              "note": "Merges with J2-13 \u00e2\u2020\u2019 U10-15"
+              "note": "Merges with J2-13 â†’ U10-15"
             }
           ]
         },
@@ -1677,11 +1677,11 @@
             },
             {
               "capacitor": "C39",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
-              "note": "Merges with J2-14 \u00e2\u2020\u2019 U10-16"
+              "note": "Merges with J2-14 â†’ U10-16"
             }
           ]
         },
@@ -1696,18 +1696,18 @@
             },
             {
               "capacitor": "C40",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
-              "note": "Merges with J2-15 \u00e2\u2020\u2019 U10-17"
+              "note": "Merges with J2-15 â†’ U10-17"
             }
           ]
         }
       },
       "notes": [
         "Pins 4-8 do not exist - connector has 10 active pins only",
-        "Cabinet matrix: 2 strobes \u00c3\u2014 8 returns = 16 switches",
+        "Cabinet matrix: 2 strobes Ã— 8 returns = 16 switches",
         "Merges with playfield (J2) for unified scanning"
       ]
     },
@@ -1727,7 +1727,7 @@
             },
             {
               "capacitor": "C73",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1746,7 +1746,7 @@
             },
             {
               "capacitor": "C74",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1765,7 +1765,7 @@
             },
             {
               "capacitor": "C75",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             }
           ]
@@ -1781,7 +1781,7 @@
             },
             {
               "capacitor": "C76",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             }
           ]
@@ -1797,7 +1797,7 @@
             },
             {
               "capacitor": "C77",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             }
           ]
@@ -1829,7 +1829,7 @@
             },
             {
               "capacitor": "C41",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1852,7 +1852,7 @@
             },
             {
               "capacitor": "C42",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1875,7 +1875,7 @@
             },
             {
               "capacitor": "C43",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1898,7 +1898,7 @@
             },
             {
               "capacitor": "C44",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1921,7 +1921,7 @@
             },
             {
               "capacitor": "C45",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1944,7 +1944,7 @@
             },
             {
               "capacitor": "C46",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1967,7 +1967,7 @@
             },
             {
               "capacitor": "C47",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -1990,7 +1990,7 @@
             },
             {
               "capacitor": "C48",
-              "value": "0.003\u00c2\u00b5F",
+              "value": "0.003ÂµF",
               "to": "GND"
             },
             {
@@ -2004,9 +2004,9 @@
         }
       },
       "notes": [
-        "Playfield matrix: 5 strobes \u00c3\u2014 8 returns = 40 switches",
-        "Combined with J3: 7 strobes \u00c3\u2014 8 returns = 56 total switch positions",
-        "All inputs: 110 series + 0.003\u00c2\u00b5F filter caps"
+        "Playfield matrix: 5 strobes Ã— 8 returns = 40 switches",
+        "Combined with J3: 7 strobes Ã— 8 returns = 56 total switch positions",
+        "All inputs: 110 series + 0.003ÂµF filter caps"
       ]
     },
     "J1": {
@@ -2642,7 +2642,7 @@
       "function": "Program ROM #6",
       "capacity": "2KB",
       "notes": [
-        "Total ROM: 12KB (6 \u00c3\u2014 2KB)"
+        "Total ROM: 12KB (6 Ã— 2KB)"
       ]
     },
     "U7": {
@@ -2713,7 +2713,7 @@
       "key_pins": {
         "1": "VSS (GND)",
         "2": "HALT from J5-24",
-        "3": "\u00cf\u20201 clock",
+        "3": "Ï†1 clock",
         "4": "IRQ from PIAs",
         "5": "VMA to J5-26/TP7",
         "6": "NMI",
@@ -2721,8 +2721,8 @@
         "10-24": "Address A0-A14",
         "26-33": "Data D7-D0",
         "34": "R/W to J5-23",
-        "36": "DBE (tied to \u00cf\u20202)",
-        "37": "\u00cf\u20202 clock",
+        "36": "DBE (tied to Ï†2)",
+        "37": "Ï†2 clock",
         "40": "RESET from J5-25"
       },
       "notes": [
@@ -2732,64 +2732,127 @@
       ]
     },
     "U10": {
-      "part_number": "MC6821",
       "type": "PIA",
-      "function": "PIA #1 - Switches and Lamp addressing (CS0=A3, CS1=A7)",
-      "key_pins": {
-        "1": "VSS (GND)",
-        "2-9": "Port A (PA0-PA7 - multiplexed)",
-        "10-17": "Port B (PB0-PB7 - multiplexed)",
-        "18": "CB1 (from +43V zero-cross)",
-        "19": "CB2 output -> J1-11 (Lamp Strobe #1) to main lamp driver AS-2518-23",
-        "20": "VCC (+5V)",
-        "21": "R/W from J5-23",
-        "22": "CS0 from A3 (CORRECTED v1.5 \u2014 was incorrectly listed as A4)",
-        "23": "CS2 (active low)",
-        "24": "CS1 from A7",
-        "25": "E (1.8V memory enable)",
-        "26-33": "Data D7-D0",
-        "34": "RESET from J5-25",
-        "35": "RS1 from A1",
-        "36": "RS0 from A0",
-        "37": "IRQB to CPU",
-        "38": "IRQA to CPU",
-        "40": "CA1 (self-test from J3-1)"
+      "function": "PIA #1 -- Switch matrix, lamp matrix, display latch strobes (CS0=A3, CS1=A7)",
+      "chip_select": {
+        "CS0": "A3 (VERIFIED)",
+        "CS1": "A7 (VERIFIED)",
+        "CS2": "active-low -- NAND(NOT A9, NOT A12) via U17 (VERIFIED)"
       },
-      "port_functions": {
-        "Port_A_output": "BCD-A, Lamp strobes (unused in this mode)",
-        "Port_A_input": "Not used",
-        "Port_B_input": "Switch matrix returns (J2+J3)",
-        "Port_B_output": "BCD-B,C,D + Comma + Lamp strobes #3-6"
-      }
+      "selection_condition": "A9=0 AND A12=0 AND A3=1 AND A7=1 (VERIFIED)",
+      "verification": "VERIFIED from Bally AS-2518-35 and Stern MPU-200 schematics. Identical on both platforms.",
+      "port_A": {
+        "note": "FIRMWARE CRITICAL: PA is fully time-multiplexed. PA0-PA4 are triple-duty; PA5-PA7 are dual-duty. Context (CRB mode, CA2 state) determines which destination latches each PA write.",
+        "PA0": {
+          "triple_duty": true,
+          "switch_strobe": "ST0 via CR43 diode -> J2-1 (column 1)",
+          "lamp_address": "AD0 -> J1-15",
+          "display_latch": "input to U20A (gated with CA2) -> display latch strobe #1"
+        },
+        "PA1": {
+          "triple_duty": true,
+          "switch_strobe": "ST1 via CR1 diode -> J2-2 (column 2)",
+          "lamp_address": "AD1 -> J1-14",
+          "display_latch": "input to U20B -> display latch strobe #2"
+        },
+        "PA2": {
+          "triple_duty": true,
+          "switch_strobe": "ST2 via CR2 diode -> J2-3 (column 3)",
+          "lamp_address": "AD2 -> J1-13",
+          "display_latch": "input to U20C -> display latch strobe #3"
+        },
+        "PA3": {
+          "triple_duty": true,
+          "switch_strobe": "ST3 via CR3 diode -> J2-4 (column 4)",
+          "lamp_address": "AD3 -> J1-12",
+          "display_latch": "input to U20D -> display latch strobe #4"
+        },
+        "PA4": {
+          "triple_duty": true,
+          "switch_strobe": "ST4 via CR4 diode -> J2-5 (column 5)",
+          "lamp_data": "PD0 -> J1-16",
+          "display_bcd": "D0 -> J1-25 (display BCD bit 0, LSB)"
+        },
+        "PA5": {
+          "dual_duty": true,
+          "lamp_data": "PD1 -> J1-17",
+          "display_bcd": "D1 -> J1-26"
+        },
+        "PA6": {
+          "dual_duty": true,
+          "lamp_data": "PD2 -> J1-18",
+          "display_bcd": "D2 -> J1-27"
+        },
+        "PA7": {
+          "dual_duty": true,
+          "lamp_data": "PD3 -> J1-19",
+          "display_bcd": "D3 -> J1-28 (MSB)"
+        },
+        "switch_return_note": "PA also serves as switch return INPUT during switch scan phase. CPU reads PA after writing strobe."
+      },
+      "port_B": {
+        "note": "Pure INPUT -- no multiplexing.",
+        "PB0-PB7": "Switch matrix returns from playfield (J2) and cabinet (J3). Active-low. Filtered via 1.2K + 390pF/0.003uF per line."
+      },
+      "control_pins": {
+        "CA1_pin40": "Cabinet self-test switch input from J3-1 (coin door test button). Active-low. Interrupts CPU to enter test mode. VERIFIED -- identical on Bally -35 and MPU-200.",
+        "CA2_pin39": "Master display strobe output. Carries PA0-PA3 through U20A-D AND gates to generate display latch strobes 1-4. Also gates U11-PA0 via U20E for strobe 5. Feeds blanking via U20F -> U14E inverter -> U19A -> J1-10. VERIFIED -- identical mechanism on Bally -35 and MPU-200.",
+        "CB1_pin18": "Zero crossing detector input from 43V AC line (60Hz heartbeat of display/lamp/switch scan cycle). VERIFIED.",
+        "CB2_pin19": {
+          "function": "Lamp Strobe #1 -- auto-pulses on every U10 PB data register access",
+          "destination": "J1-11 -> lamp driver board AS-2518-23 (Bally) / M-200 driver (Stern)",
+          "runtime_mode": "CRB = 0x27 (0b00100111) -- AUTO_PULSE mode (CRB bits 5:4 = 10). CB2 pulses automatically on PB access.",
+          "verified": true
+        }
+      },
+      "part_number": "MC6821"
     },
     "U11": {
-      "part_number": "MC6821",
       "type": "PIA",
-      "function": "PIA #2 - Displays and Solenoids (CS0=A4, CS1=A7)",
-      "key_pins": {
-        "1": "VSS (GND)",
-        "2-9": "Port A (PA0-PA7 - digit strobes/lamp returns)",
-        "10-17": "Port B (PB0-PB7 - solenoid control)",
-        "18": "CB1 from J5-32",
-        "19": "CB2 to J4-10 (bank/sound)",
-        "20": "VCC (+5V)",
-        "21": "R/W from J5-23",
-        "22": "CS0 from A4",
-        "23": "CS2 (active low)",
-        "24": "CS1 from A7",
-        "25": "E (1.8V memory enable)",
-        "26-33": "Data D7-D0",
-        "34": "RESET from J5-25",
-        "35": "RS1 from A1",
-        "36": "RS0 from A0",
-        "37": "IRQB to CPU",
-        "38": "IRQA to CPU",
-        "39": "CA2 to J1-8 (Lamp Strobe #2)"
+      "function": "PIA #2 -- Display digit enables, solenoid drives, sound interface (CS0=A4, CS1=A7)",
+      "chip_select": {
+        "CS0": "A4 (VERIFIED)",
+        "CS1": "A7 (VERIFIED)",
+        "CS2": "active-low -- NAND(NOT A9, NOT A12) shared with U10 (VERIFIED)"
       },
-      "port_functions": {
-        "Port_A_output": "Display digit strobes + lamp returns (multiplexed)",
-        "Port_B_output": "Solenoid select (PB0-PB3) + Continuous solenoids (PB4-PB7)"
-      }
+      "selection_condition": "A9=0 AND A12=0 AND A4=1 AND A7=1 (VERIFIED)",
+      "verification": "VERIFIED from Bally AS-2518-35 schematic.",
+      "port_A": {
+        "note": "Display digit enables and display latch strobe #5. Output only.",
+        "PA0": "Display latch strobe #5 via U20E (gated with U10 CA2) -> J1-24. VERIFIED.",
+        "PA1": "Sound Module Address E -> sound board. VERIFIED.",
+        "PA2-PA7": "Display digit enable strobes -> J1 display connectors (digit select for multiplexed display scan)."
+      },
+      "port_B": {
+        "note": "Solenoid drives and sound command nibble. Output. PB0-PB3 are shared between solenoid BCD and sound.",
+        "PB0": "Momentary solenoid BCD bit A (LSB) -> J4-4. Also sound nibble bit 0.",
+        "PB1": "Momentary solenoid BCD bit B -> J4-3. Also sound nibble bit 1.",
+        "PB2": "Momentary solenoid BCD bit C -> J4-2. Also sound nibble bit 2. NOT a serial clock.",
+        "PB3": "Momentary solenoid BCD bit D (MSB) -> J4-1. Also sound nibble bit 3. NOT serial data.",
+        "PB4": "Continuous solenoid bit 0 -> J4-5",
+        "PB5": "Continuous solenoid bit 1 -> J4-6",
+        "PB6": "Continuous solenoid bit 2 -> J4-7",
+        "PB7": "Continuous solenoid bit 3 -> J4-8",
+        "sound_note": "PB0-PB3 carry 4-bit parallel sound nibble to Squawk and Talk board. Interface is parallel NOT serial. Two consecutive nibble writes build the full sound command byte.",
+        "corrections": "v1.5 incorrectly documented PB2=serial clock PB3=serial data. CORRECTED in v1.6."
+      },
+      "control_pins": {
+        "CA1_pin40": "Display interrupt generator input (U12). Provides timing pulse for display multiplexing cycle. VERIFIED -- connects ONLY to U11-40.",
+        "CA2_pin39": "Lamp Strobe #2 output -> J1-8 lamp driver board. Also drives MPU onboard LED (activity indicator) and TP6. VERIFIED. Separate from U10-CA2 which handles display strobes.",
+        "CB1_pin18": {
+          "function": "Lamp interrupt input",
+          "connection": "J5-32 via R24 (8.2K pulldown to GND)",
+          "status": "Signal present, no external driver identified on Bally -35. Line sits low by default due to pulldown.",
+          "mpu200_note": "On MPU-200: same signal routed to J4-11 labeled LAMP INTERRUPT -- explicitly named and used."
+        },
+        "CB2_pin19": {
+          "function": "Solenoid bank select / sound interrupt",
+          "destination": "J4-10 via R20 (3.3K pullup to +5V) -> solenoid driver board AND Squawk and Talk J1-8 (Sound Interrupt)",
+          "runtime_mode": "CRB = 0x13 (0b00010011) -- CB2 mode is INPUT (bit5=0). Sound protocol is pure software convention via PB nibble writes.",
+          "platform_difference": "MPU-200 U11 CB2 = Solenoid Bank Select (different function). Bally CB2 = Lamp Strobe #2 is on CA2 not CB2."
+        }
+      },
+      "part_number": "MC6821"
     },
     "U14": {
       "part_number": "7404",
@@ -2823,10 +2886,10 @@
           "pins": {
             "input_4": "NOT A9 (from U18A-15)",
             "input_5": "NOT A12 (from U18D-12)",
-            "output_6": "CS2 active low \u2192 U10-23 AND U11-23"
+            "output_6": "CS2 active low → U10-23 AND U11-23"
           },
-          "logic": "NAND(NOT A9, NOT A12) \u2014 output LOW when A9=0 AND A12=0",
-          "function": "Generates CS2 for both U10 and U11 simultaneously. Both PIAs share this signal \u2014 no address-based differentiation between U10 and U11.",
+          "logic": "NAND(NOT A9, NOT A12) — output LOW when A9=0 AND A12=0",
+          "function": "Generates CS2 for both U10 and U11 simultaneously. Both PIAs share this signal — no address-based differentiation between U10 and U11.",
           "verified": true
         },
         "U17D": {
@@ -2835,12 +2898,12 @@
             "input_10": "U19D-3 output",
             "output_8": "U8-19 CE1 active low (RAM chip select)"
           },
-          "function": "RAM chip select \u2014 drives U8 (5101 CMOS RAM) CE1 pin 19",
+          "function": "RAM chip select — drives U8 (5101 CMOS RAM) CE1 pin 19",
           "verified": true
         }
       },
       "notes": [
-        "U17 is a 7400 Quad 2-input NAND \u2014 NOT a 7404 hex inverter as previously documented",
+        "U17 is a 7400 Quad 2-input NAND — NOT a 7404 hex inverter as previously documented",
         "Previous JSON versions (through v1.3) incorrectly listed U17 as part 7404 type Hex Inverter",
         "U17C generates CS2 shared by both PIAs: active low when A9=0 AND A12=0",
         "U17D generates CE1 for RAM U8 pin 19 via the U19C/U19D decode chain"
@@ -2854,7 +2917,7 @@
         "U18A": {
           "pins": {
             "input_14": "A9",
-            "output_15": "NOT A9 \u2192 U17C-4 and U17D-9"
+            "output_15": "NOT A9 → U17C-4 and U17D-9"
           },
           "function": "Inverts A9 for use in both PIA CS2 and RAM CE1 decode chains",
           "verified": true
@@ -2862,14 +2925,14 @@
         "U18D": {
           "pins": {
             "input_11": "A12",
-            "output_12": "NOT A12 \u2192 U17C-5 and U19C-12"
+            "output_12": "NOT A12 → U17C-5 and U19C-12"
           },
           "function": "Inverts A12 for use in both PIA CS2 and RAM CE1 decode chains",
           "verified": true
         }
       },
       "notes": [
-        "U18 is a 7404 Hex Inverter \u2014 confirmed correct part number",
+        "U18 is a 7404 Hex Inverter — confirmed correct part number",
         "U18A and U18D are the two gates with confirmed schematic traces",
         "Both feed into U17C (PIA CS2) and the RAM CE1 chain (U19C/U19D/U17D)"
       ]
@@ -2880,16 +2943,16 @@
       "function": "RAM chip select decode and memory enable logic",
       "gates": {
         "U19B": {
-          "function": "Memory enable logic \u2014 part of VMA/EXT MEM chain (U19B\u2192U14D\u2192U15C\u2192U15D)",
+          "function": "Memory enable logic — part of VMA/EXT MEM chain (U19B→U14D→U15C→U15D)",
           "verified": true
         },
         "U19C": {
           "pins": {
             "input_13": "A9",
             "input_12": "NOT A12 (from U18D-12)",
-            "output_11": "\u2192 U19D-1 and U19D-2"
+            "output_11": "→ U19D-1 and U19D-2"
           },
-          "logic": "NAND(A9, NOT A12) \u2014 output LOW when A9=1 AND A12=0",
+          "logic": "NAND(A9, NOT A12) — output LOW when A9=1 AND A12=0",
           "function": "First stage of RAM CE1 decode chain",
           "verified": true
         },
@@ -2897,18 +2960,18 @@
           "pins": {
             "input_1": "U19C-11",
             "input_2": "U19C-11 (both inputs tied together)",
-            "output_3": "\u2192 U17D-10",
+            "output_3": "→ U17D-10",
             "pin_7": "GND"
           },
-          "logic": "NAND with both inputs tied = inverter \u2014 inverts U19C output",
-          "function": "Inverting buffer \u2014 second stage of RAM CE1 decode chain",
+          "logic": "NAND with both inputs tied = inverter — inverts U19C output",
+          "function": "Inverting buffer — second stage of RAM CE1 decode chain",
           "verified": true
         }
       },
       "notes": [
         "U19C/U19D together invert the RAM decode signal before it reaches U17D",
         "RAM U8 CE1 is ultimately active when A9=1 AND A12=0",
-        "This is complementary to PIA CS2 which requires A9=0 \u2014 cleanly separates address spaces",
+        "This is complementary to PIA CS2 which requires A9=0 — cleanly separates address spaces",
         "U19D with both inputs tied acts as a NAND-based inverter (standard 7400 technique)"
       ]
     }
@@ -2920,8 +2983,8 @@
         "External CLOCK"
       ],
       "outputs": {
-        "\u00cf\u20201": "CPU U9-3",
-        "\u00cf\u20202": "CPU U9-37 and J5-27"
+        "Ï†1": "CPU U9-3",
+        "Ï†2": "CPU U9-37 and J5-27"
       },
       "components": [
         "U16",
@@ -2931,7 +2994,7 @@
       "frequency": "~1 MHz typical",
       "notes": [
         "Two-phase non-overlapping clock for 6800",
-        "\u00cf\u20201 and \u00cf\u20202 must have proper timing",
+        "Ï†1 and Ï†2 must have proper timing",
         "Clock distributed to external boards via J5-27"
       ]
     },
@@ -2958,13 +3021,13 @@
     "memory_enable_logic": {
       "description": "Combines VMA and EXT MEM for memory/PIA enable",
       "signal_flow": [
-        "J5-28 EXT MEM (4.4V) \u00e2\u2020\u2019 U19B-9",
-        "R15 (30K) pullup to +5V \u00e2\u2020\u2019 U19B-14",
-        "U19B-7 \u00e2\u2020\u2019 GND",
-        "U19B-10 (1.2V) \u00e2\u2020\u2019 U14D-11",
-        "U14D-12 (5V) \u00e2\u2020\u2019 U15C-4",
-        "U15C-6 (3V) \u00e2\u2020\u2019 U15D-1, U15D-2",
-        "U15D-3 (1.8V) \u00e2\u2020\u2019 Memory enable",
+        "J5-28 EXT MEM (4.4V) â†’ U19B-9",
+        "R15 (30K) pullup to +5V â†’ U19B-14",
+        "U19B-7 â†’ GND",
+        "U19B-10 (1.2V) â†’ U14D-11",
+        "U14D-12 (5V) â†’ U15C-4",
+        "U15C-6 (3V) â†’ U15D-1, U15D-2",
+        "U15D-3 (1.8V) â†’ Memory enable",
         "R137 (150K) pullup to +5V"
       ],
       "inputs": [
@@ -3006,7 +3069,7 @@
   "test_points": {
     "TP1": {
       "signal": "+5V",
-      "voltage": "5.0V \u00c2\u00b15%",
+      "voltage": "5.0V Â±5%",
       "purpose": "Main logic power monitoring"
     },
     "TP4": {
@@ -3016,7 +3079,7 @@
     },
     "TP5": {
       "signal": "+5V",
-      "voltage": "5.0V \u00c2\u00b15%",
+      "voltage": "5.0V Â±5%",
       "purpose": "Alternate +5V test point"
     },
     "TP7": {
@@ -3315,10 +3378,10 @@
         "ST1": "J3-3 (merged with J2-2)"
       },
       "switch_returns": {
-        "I0-I7": "J2-8 to 15 merged with J3-9 to 16 \u00e2\u2020\u2019 U10 PB0-PB7"
+        "I0-I7": "J2-8 to 15 merged with J3-9 to 16 â†’ U10 PB0-PB7"
       },
       "scanning_method": "CPU sets strobe low, reads return lines, determines closed switches",
-      "filtering": "All inputs: 110 series resistors + 0.003\u00c2\u00b5F caps for debounce",
+      "filtering": "All inputs: 110 series resistors + 0.003ÂµF caps for debounce",
       "self_test": "Dedicated CA1 input on U10-40 from J3-1"
     },
     "lamp_matrix": {
@@ -3412,8 +3475,8 @@
       "5. Inspect for shorts before powering up"
     ],
     "clock_checks": [
-      "1. Scope \u00cf\u20202 at U9-37 and J5-27: ~1MHz square wave",
-      "2. Scope \u00cf\u20201 at U9-3: Complementary to \u00cf\u20202",
+      "1. Scope Ï†2 at U9-37 and J5-27: ~1MHz square wave",
+      "2. Scope Ï†1 at U9-3: Complementary to Ï†2",
       "3. Check edges: Clean, no ringing",
       "4. Duty cycle: ~50%"
     ],
@@ -3435,7 +3498,7 @@
       "2. Check RAM U8: CE1, CE2 timing correct",
       "3. Data bus: Valid data during ROM reads",
       "4. RAM test: Write/read patterns to 0x0000-0x00FF",
-      "5. If memory fails: Check enable chain U19B\u00e2\u2020\u2019U14D\u00e2\u2020\u2019U15C\u00e2\u2020\u2019U15D"
+      "5. If memory fails: Check enable chain U19Bâ†’U14Dâ†’U15Câ†’U15D"
     ],
     "common_failures": [
       "Dead board: Check +5V, clock, RESET",
@@ -3452,7 +3515,7 @@
     "recommended_sequence": [
       "1. Power: +5V stable at TP1/TP5, battery 3-4V",
       "2. RESET: Must be high (>4V) for CPU to run",
-      "3. Clock: \u00cf\u20202 present at U9-37 and J5-27 (~1MHz)",
+      "3. Clock: Ï†2 present at U9-37 and J5-27 (~1MHz)",
       "4. Address bus: A0-A14 changing patterns",
       "5. Data bus: D0-D7 changing during execution",
       "6. VMA at TP7: Pulsing during memory access",
@@ -3496,8 +3559,8 @@
       "version": "1.2",
       "date": "2026-03-25",
       "changes": [
-        "PIA address decode analysis: CS0=A4, CS1=A7 \u2014 both must be HIGH to select any PIA",
-        "Confirmed $0088 (A4=0) CANNOT select any PIA \u2014 previous documentation was incorrect",
+        "PIA address decode analysis: CS0=A4, CS1=A7 — both must be HIGH to select any PIA",
+        "Confirmed $0088 (A4=0) CANNOT select any PIA — previous documentation was incorrect",
         "All PIA activity confirmed in $0090-$009F range",
         "U17/U18 clarified as 7404 hex inverters, not decoder ICs"
       ]
@@ -3507,7 +3570,7 @@
       "date": "2026-03-26",
       "changes": [
         "Added pia_address_map section documenting confirmed and unverified aspects of PIA decode",
-        "U10/U11 CS2 noted as unverified \u2014 exact address bit driving each PIA's CS2 not traced",
+        "U10/U11 CS2 noted as unverified — exact address bit driving each PIA's CS2 not traced",
         "common_failures entry corrected: 'address decoder' changed to 'memory enable chain'",
         "U17/U18 IC entries updated with clarifying notes",
         "U10/U11 pin 23 CS2 connected_to fields updated to reference U17/U18 inverters",
@@ -3520,9 +3583,9 @@
       "changes": [
         "CRITICAL FIX: U17 corrected from 7404 Hex Inverter to 7400 Quad 2-input NAND",
         "CS2 logic fully schematic-verified: U17C NAND(NOT A9, NOT A12) drives both U10-23 and U11-23",
-        "U10 and U11 confirmed to share identical chip select \u2014 no address-based differentiation",
+        "U10 and U11 confirmed to share identical chip select — no address-based differentiation",
         "PIA address space $0090-$009F fully verified with complete gate-level logic",
-        "RAM decode chain documented: U19C/U19D/U17D \u2192 U8-19 CE1",
+        "RAM decode chain documented: U19C/U19D/U17D → U8-19 CE1",
         "U18A (inverts A9) and U18D (inverts A12) gate usage confirmed from schematic",
         "address_space_separation section added documenting PIA vs RAM space relationship",
         "All CS entries in U10/U11 supplement updated with verified schematic paths"
@@ -3579,7 +3642,7 @@
           ]
         },
         "3": {
-          "label": "\u00cf\u20201",
+          "label": "Ï†1",
           "function": "Phase 1 clock input",
           "connected_to": [
             {
@@ -3874,15 +3937,15 @@
             {
               "ic": "U9",
               "pin": "37",
-              "note": "Tied directly to \u00cf\u20202"
+              "note": "Tied directly to Ï†2"
             }
           ],
           "notes": [
-            "DBE enables data bus, tied to \u00cf\u20202 clock"
+            "DBE enables data bus, tied to Ï†2 clock"
           ]
         },
         "37": {
-          "label": "\u00cf\u20202",
+          "label": "Ï†2",
           "function": "Phase 2 clock input",
           "connected_to": [
             {
@@ -4096,7 +4159,7 @@
             {
               "mode": "input",
               "source": "J2-8/J3-9 (I0) - switch return",
-              "filtering": "R83 (110) + C41 (0.003\u00c2\u00b5F)"
+              "filtering": "R83 (110) + C41 (0.003ÂµF)"
             },
             {
               "mode": "output",
@@ -4111,7 +4174,7 @@
             {
               "mode": "input",
               "source": "J2-9/J3-10 (I1) - switch return",
-              "filtering": "R84 (110) + C42 (0.003\u00c2\u00b5F)"
+              "filtering": "R84 (110) + C42 (0.003ÂµF)"
             },
             {
               "mode": "output",
@@ -4126,7 +4189,7 @@
             {
               "mode": "input",
               "source": "J2-10/J3-11 (I2) - switch return",
-              "filtering": "R85 (110) + C43 (0.003\u00c2\u00b5F)"
+              "filtering": "R85 (110) + C43 (0.003ÂµF)"
             },
             {
               "mode": "output",
@@ -4141,7 +4204,7 @@
             {
               "mode": "input",
               "source": "J2-11/J3-12 (I3) - switch return",
-              "filtering": "R86 (110) + C44 (0.003\u00c2\u00b5F)"
+              "filtering": "R86 (110) + C44 (0.003ÂµF)"
             },
             {
               "mode": "output",
@@ -4156,7 +4219,7 @@
             {
               "mode": "input",
               "source": "J2-12/J3-13 (I4) - switch return",
-              "filtering": "R87 (110) + C45 (0.003\u00c2\u00b5F)"
+              "filtering": "R87 (110) + C45 (0.003ÂµF)"
             },
             {
               "mode": "output",
@@ -4171,7 +4234,7 @@
             {
               "mode": "input",
               "source": "J2-13/J3-14 (I5) - switch return",
-              "filtering": "R88 (110) + C46 (0.003\u00c2\u00b5F)"
+              "filtering": "R88 (110) + C46 (0.003ÂµF)"
             },
             {
               "mode": "output",
@@ -4186,7 +4249,7 @@
             {
               "mode": "input",
               "source": "J2-14/J3-15 (I6) - switch return",
-              "filtering": "R89 (110) + C47 (0.003\u00c2\u00b5F)"
+              "filtering": "R89 (110) + C47 (0.003ÂµF)"
             },
             {
               "mode": "output",
@@ -4201,7 +4264,7 @@
             {
               "mode": "input",
               "source": "J2-15/J3-16 (I7) - switch return",
-              "filtering": "R90 (110) + C48 (0.003\u00c2\u00b5F)"
+              "filtering": "R90 (110) + C48 (0.003ÂµF)"
             },
             {
               "mode": "output",
@@ -4243,10 +4306,10 @@
           "label": "CS2",
           "function": "Chip Select 2 (active low)",
           "connected_to": "U17C-6 (shared with U11-23)",
-          "logic": "NAND(NOT A9, NOT A12) via U18A + U18D + U17C \u2014 active when A9=0 AND A12=0",
+          "logic": "NAND(NOT A9, NOT A12) via U18A + U18D + U17C — active when A9=0 AND A12=0",
           "verified": true,
           "notes": [
-            "Same signal as U11-23 \u2014 U10 and U11 are not address-differentiated",
+            "Same signal as U11-23 — U10 and U11 are not address-differentiated",
             "Schematic-verified: U17C pin 6 drives both U10-23 and U11-23 directly"
           ]
         },
@@ -4258,7 +4321,7 @@
         "25": {
           "label": "E",
           "function": "Enable",
-          "connected_to": "VUA-\u00cf\u20202 (1.8VDC memory enable from U15D-3, R137 pullup)"
+          "connected_to": "VUA-Ï†2 (1.8VDC memory enable from U15D-3, R137 pullup)"
         },
         "26": {
           "label": "D7",
@@ -4339,13 +4402,13 @@
               "resistor": "R59 (110)"
             },
             {
-              "capacitor": "C32 (0.003\u00c2\u00b5F)"
+              "capacitor": "C32 (0.003ÂµF)"
             },
             {
               "resistor": "R19 (1.2K) pullup"
             },
             {
-              "capacitor": "C81 (0.01\u00c2\u00b5F)"
+              "capacitor": "C81 (0.01ÂµF)"
             }
           ],
           "notes": [
@@ -4522,10 +4585,10 @@
           "label": "CS2",
           "function": "Chip Select 2 (active low)",
           "connected_to": "U17C-6 (shared with U10-23)",
-          "logic": "NAND(NOT A9, NOT A12) via U18A + U18D + U17C \u2014 active when A9=0 AND A12=0",
+          "logic": "NAND(NOT A9, NOT A12) via U18A + U18D + U17C — active when A9=0 AND A12=0",
           "verified": true,
           "notes": [
-            "Same signal as U10-23 \u2014 U10 and U11 are not address-differentiated",
+            "Same signal as U10-23 — U10 and U11 are not address-differentiated",
             "Schematic-verified: U17C pin 6 drives both U10-23 and U11-23 directly"
           ]
         },
@@ -4537,7 +4600,7 @@
         "25": {
           "label": "E",
           "function": "Enable",
-          "connected_to": "VUA-\u00cf\u20202 (1.8VDC memory enable from U15D-3, R137 pullup)"
+          "connected_to": "VUA-Ï†2 (1.8VDC memory enable from U15D-3, R137 pullup)"
         },
         "26": {
           "label": "D7",
@@ -4718,12 +4781,13 @@
         "PA7"
       ],
       "function": "Synchronizes display refresh to prevent flicker, likely derived from AC zero-crossing"
-    }
+    },
+    "_status": "HISTORICAL REFERENCE ONLY -- content reconciled into integrated_circuits as of v1.9. Do not use for firmware development."
   },
   "pia_address_map": {
     "description": "SCHEMATIC-VERIFIED PIA chip select decode for U10 and U11 on AS-2518-35",
     "analysis_date": "2026-03-30",
-    "confidence": "VERIFIED \u2014 U10/U11 boundary confirmed from schematic pin traces",
+    "confidence": "VERIFIED — U10/U11 boundary confirmed from schematic pin traces",
     "chip_select_inputs": {
       "U10": {
         "CS0": {
@@ -4792,7 +4856,7 @@
     "u10_selection": {
       "full_condition": "A9=0 AND A12=0 AND A3=1 AND A7=1",
       "monitor_gate": "(addr & 0x11) === 0x11 where A7=bit0, A3=bit4",
-      "note": "U10 uses A3 for CS0. CORRECTED in v1.5 \u2014 was incorrectly documented as A4 in v1.0-1.4.1."
+      "note": "U10 uses A3 for CS0. CORRECTED in v1.5 — was incorrectly documented as A4 in v1.0-1.4.1."
     },
     "u11_selection": {
       "full_condition": "A9=0 AND A12=0 AND A4=1 AND A7=1",
@@ -4800,7 +4864,7 @@
       "note": "U11 uses A4 for CS0."
     },
     "u10_u11_boundary": {
-      "status": "VERIFIED \u2014 boundary EXISTS via different CS0 inputs",
+      "status": "VERIFIED — boundary EXISTS via different CS0 inputs",
       "finding": "U10 CS0=A3 (pin 22), U11 CS0=A4 (pin 22). U10 and U11 are ADDRESS-DIFFERENTIATED.",
       "implication": "A3=1,A4=0: only U10. A4=1,A3=0: only U11. A3=1,A4=1: both selected.",
       "correction_note": "v1.0-1.4.1 incorrectly stated no address boundary. This caused display segment contamination in monitor decode."
@@ -4845,7 +4909,7 @@
     "description": "Confirmed findings from live monitor board testing in Eight Ball Deluxe (EBD) 1981",
     "monitor_hardware": "Pico W + 3x SN74LVC245AN level shifters on perfboard, 89.9x70.1mm",
     "test_date": "2026-03-19 (ongoing)",
-    "status": "WORKING \u2014 monitor running in EBD continuously since 2026-03-19",
+    "status": "WORKING — monitor running in EBD continuously since 2026-03-19",
     "j5_do_not_connect": {
       "J5-28": {
         "label": "EXT MEM",
@@ -4854,50 +4918,50 @@
       },
       "J5-29": {
         "label": "KEY",
-        "reason": "Mechanical key position pin \u2014 no functional connection needed",
+        "reason": "Mechanical key position pin — no functional connection needed",
         "confirmed": true
       }
     },
     "j5_ground_note": {
       "correct_ground": "Cabinet braid ground or ribbon cable ground path",
-      "do_not_use": "J5-31 \u2014 this pin carries signals only on some board revisions; using it as ground caused CPU hangs during development",
+      "do_not_use": "J5-31 — this pin carries signals only on some board revisions; using it as ground caused CPU hangs during development",
       "confirmed": true
     },
     "data_bus_orientation": {
-      "note": "J5 pin 1 = D7 (MSB), J5 pin 8 = D0 (LSB) \u2014 physically reversed from labelling on some documentation",
+      "note": "J5 pin 1 = D7 (MSB), J5 pin 8 = D0 (LSB) — physically reversed from labelling on some documentation",
       "firmware_fix": "Assemble data byte as D7<<7 | D6<<6 | ... | D0<<0 to get correct value",
       "confirmed": true
     },
     "level_shifter_config": {
       "ic": "SN74LVC245AN",
       "count": 3,
-      "vcc": "3.3V from LDO (NOT 5V \u2014 absolute max input on LVC variant is 3.6V)",
-      "dir": "GND (A-to-B direction always \u2014 game signals in, Pico GPIOs out)",
-      "oe": "Tied to GND permanently \u2014 shifters always enabled",
-      "shifter_1": "D0-D7 (data bus, 8 signals) \u2014 GP0-GP7",
-      "shifter_2": "A0-A7 (address bus lower byte, 8 signals) \u2014 GP8-GP15",
-      "shifter_3": "E(PHI2), R/W, VMA, RESET + spare channels \u2014 GP16-GP19",
+      "vcc": "3.3V from LDO (NOT 5V — absolute max input on LVC variant is 3.6V)",
+      "dir": "GND (A-to-B direction always — game signals in, Pico GPIOs out)",
+      "oe": "Tied to GND permanently — shifters always enabled",
+      "shifter_1": "D0-D7 (data bus, 8 signals) — GP0-GP7",
+      "shifter_2": "A0-A7 (address bus lower byte, 8 signals) — GP8-GP15",
+      "shifter_3": "E(PHI2), R/W, VMA, RESET + spare channels — GP16-GP19",
       "confirmed": true
     },
     "pico_w_gpio_map": {
-      "GP0_GP7": "D7-D0 data bus (D7 on GP0, D0 on GP7 \u2014 reversed)",
-      "GP8_GP15": "A7-A0 address bus lower byte (A7 on GP8, A0 on GP15 \u2014 reversed)",
+      "GP0_GP7": "D7-D0 data bus (D7 on GP0, D0 on GP7 — reversed)",
+      "GP8_GP15": "A7-A0 address bus lower byte (A7 on GP8, A0 on GP15 — reversed)",
       "GP16": "PHI2 (E clock)",
       "GP17": "R/W",
       "GP18": "VMA",
-      "GP19": "RESET (pin assignment subject to verification \u2014 see firmware notes)",
-      "GP20": "No-connect (reserved \u2014 candidate for A8)",
-      "GP21": "No-connect (reserved \u2014 candidate for A9 or RESET per state doc)",
-      "GP22": "OE_SHIFTERS (tied to GND) \u2014 pin now free for future use",
-      "ADC3_GP29": "VSYS voltage sense \u2014 on-board Pico W divider reads J5-30 +5V rail",
-      "note": "GP19 vs GP21 for RESET requires field verification \u2014 probe both pins during game power cycle"
+      "GP19": "RESET (pin assignment subject to verification — see firmware notes)",
+      "GP20": "No-connect (reserved — candidate for A8)",
+      "GP21": "No-connect (reserved — candidate for A9 or RESET per state doc)",
+      "GP22": "OE_SHIFTERS (tied to GND) — pin now free for future use",
+      "ADC3_GP29": "VSYS voltage sense — on-board Pico W divider reads J5-30 +5V rail",
+      "note": "GP19 vs GP21 for RESET requires field verification — probe both pins during game power cycle"
     },
     "vsys_voltage_sense": {
       "method": "ADC3 (GP29) reads VSYS via Pico W on-board 200k/100k divider (ratio 1/3)",
       "formula": "vsys_v = (adc_raw / 65535.0) * 3.3 * 3",
       "threshold_ok": 4.75,
       "threshold_low": 4.5,
-      "source": "J5-30 (+5V game rail) \u2014 confirmed 4.85V post 1N4004 protection diode on EBD",
+      "source": "J5-30 (+5V game rail) — confirmed 4.85V post 1N4004 protection diode on EBD",
       "confirmed": true
     }
   },
@@ -5044,7 +5108,7 @@
     },
     {
       "version": "1.7.4",
-      "date": "2026-04-19",
+      "date": "2026-04-20",
       "author": "Baseline data alignment pass",
       "changes": [
         "U11_CB2 runtime_mode CONFIRMED: INPUT (CRB=0x13, bit5=0). All baseline captures show identical value.",
@@ -5054,6 +5118,40 @@
         "Zero crossing detector 60Hz confirmed as scan heartbeat: pb_all shows 4-cycle spacing between successive PB reads within each column.",
         "Added CRB_runtime_confirmed section with decoded field values from live baseline data."
       ]
+    },
+    {
+      "version": "1.8",
+      "date": "2026-05-01",
+      "changes": [
+        "U10 PA port_functions completely rewritten -- previous description was severely incomplete",
+        "U10 PA now correctly documented as fully time-multiplexed: switch strobes (out), switch returns (in), lamp address/data (out), display BCD (out)",
+        "U10 CA1 corrected: cabinet self-test switch (was partially documented)",
+        "U10 CA2 corrected: display latch strobe carrying PA0-PA3 nibble (was missing this detail)",
+        "U11 PA corrected: display digit enables only -- removed incorrect sound reference for -35",
+        "U11 CB2 clarified: Lamp Strobe #2 on Bally (differs from MPU-200 Solenoid Bank Select)",
+        "U11 CB1 clarified: lamp interrupt on J5-32 (unlabeled on Bally, labeled LAMP INTERRUPT on MPU-200 J4-11)",
+        "Cross-platform verification note added throughout -- verified identical to MPU-200 where applicable"
+      ]
+    },
+    {
+      "version": "1.9",
+      "date": "2026-05-01",
+      "changes": [
+        "MAJOR: Full reconciliation pass -- all verified content from SUPPLEMENT_CRITICAL_ADDITIONS and signal_multiplexing consolidated into integrated_circuits.U10 and integrated_circuits.U11",
+        "U10 PA: complete pin-by-pin triple/dual duty assignments with connector destinations",
+        "U10 CA2: master display strobe mechanism via U20A-E fully documented",
+        "U10 CA1: self-test switch confirmed",
+        "U10 CB1: zero crossing detector confirmed",
+        "U10 CB2: Lamp Strobe #1, auto-pulse mode, CRB=0x27 documented",
+        "U11 PA0: display latch strobe #5 via U20E confirmed",
+        "U11 PA1: Sound Module Address E confirmed",
+        "U11 PB: parallel 4-bit solenoid BCD and sound nibble interface confirmed (NOT serial)",
+        "U11 CA1: display interrupt generator confirmed",
+        "U11 CA2: Lamp Strobe #2 confirmed (separate from U10 CA2)",
+        "U11 CB1: lamp interrupt on J5-32 documented",
+        "U11 CB2: solenoid bank/sound select, CRB=0x13 (INPUT mode) documented",
+        "SUPPLEMENT_CRITICAL_ADDITIONS marked as historical reference"
+      ]
     }
   ],
   "CRB_runtime_confirmed": {
@@ -5062,7 +5160,7 @@
       "base_value": "0x27 (39 decimal)",
       "base_binary": "00100111",
       "CB2_mode": "AUTO_PULSE (bits 5:4 = 10)",
-      "CB2_function": "Lamp Strobe #1 on J1-11. Pulses automatically on every U10 PB data register access (read or write when bit2=1).",
+      "CB2_function": "Lamp Strobe #1 on J1-11. Pulses automatically on every U10 PB data register access.",
       "PB_default_mode": "DATA (bit2=1)",
       "CB1_control": "bits 1:0 = 11 (interrupt enabled, positive edge)",
       "variants_observed": [
@@ -5077,7 +5175,7 @@
       "value": "0x13 (19 decimal)",
       "binary": "00010011",
       "CB2_mode": "INPUT (bit5=0)",
-      "CB2_implication": "U11 CB2 does NOT auto-pulse on PB writes. Sound board interrupt line (J4-10 -> J1-8) is NOT driven by PIA auto-pulse. Sound protocol is pure software: two consecutive PB writes per command.",
+      "CB2_implication": "U11 CB2 does NOT auto-pulse on PB writes. Sound protocol is pure software convention.",
       "PB_mode": "DATA (bit2=1)",
       "CB1_control": "bits 1:0 = 11 (interrupt enabled, positive edge)"
     }
