@@ -1,0 +1,1941 @@
+{
+  "game": {
+    "id": "williams_the_machine_bride_of_pinbot",
+    "name": "The Machine Bride of Pinbot",
+    "manufacturer": "Williams",
+    "year": null,
+    "system": "Williams (System 11 / WPC)",
+    "mpu": "(varies)",
+    "platform_id": "williams_matrix",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Williams_The_Machine_Bride_of_Pinbot_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "TBD"
+      },
+      "DRIVER": {
+        "part": "TBD"
+      },
+      "LAMP": {
+        "part": "TBD"
+      },
+      "SOUND": {
+        "part": "TBD"
+      },
+      "POWER": {
+        "part": "TBD"
+      },
+      "DISPLAY": {
+        "part": "TBD"
+      },
+      "UNCLASSIFIED": [
+        {
+          "part": "A-14406",
+          "note": "likely coil designator (no board role label nearby)"
+        },
+        {
+          "part": "A-14423-1",
+          "note": "likely coil designator (no board role label nearby)"
+        },
+        {
+          "part": "A-14119",
+          "note": "likely coil designator (no board role label nearby)"
+        }
+      ]
+    },
+    "decode_complete": false
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [],
+    "return_signals": [],
+    "switches": [
+      {
+        "id": 11,
+        "id_str": "11",
+        "name": "Right Flipper",
+        "strobe": 1,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "id_str": "12",
+        "name": "Left Flipper",
+        "strobe": 1,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "id_str": "13",
+        "name": "Start Button",
+        "strobe": 1,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "id_str": "14",
+        "name": "Plumb Bob Tilt",
+        "strobe": 1,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "id_str": "15",
+        "name": "Left Outlane",
+        "strobe": 1,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "id_str": "16",
+        "name": "Left Return Lane",
+        "strobe": 1,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "id_str": "17",
+        "name": "Right Return Lane",
+        "strobe": 1,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "id_str": "18",
+        "name": "Right Outlane",
+        "strobe": 1,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "id_str": "21",
+        "name": "Slam Tilt",
+        "strobe": 2,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "id_str": "22",
+        "name": "Coin Door Closed",
+        "strobe": 2,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "id_str": "23",
+        "name": "Ticket Dispenser",
+        "strobe": 2,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "id_str": "24",
+        "name": "Always Closed",
+        "strobe": 2,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "id_str": "25",
+        "name": "Right Trough",
+        "strobe": 2,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "id_str": "26",
+        "name": "Center Trough",
+        "strobe": 2,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "id_str": "27",
+        "name": "Left Trough",
+        "strobe": 2,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "id_str": "28",
+        "name": "Left Stand-Up Target",
+        "strobe": 2,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "id_str": "31",
+        "name": "Skill Shot 50K",
+        "strobe": 3,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "id_str": "32",
+        "name": "Skill Shot 75K",
+        "strobe": 3,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "id_str": "33",
+        "name": "Skill Shot 100K",
+        "strobe": 3,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "id_str": "34",
+        "name": "Skill Shot 200K",
+        "strobe": 3,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "id_str": "35",
+        "name": "Skill Shot 25K",
+        "strobe": 3,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "id_str": "36",
+        "name": "Right Top Stand-Up Target",
+        "strobe": 3,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "id_str": "37",
+        "name": "Right Bottom Stand-Up Target",
+        "strobe": 3,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "id_str": "38",
+        "name": "Outhole",
+        "strobe": 3,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "id_str": "41",
+        "name": "Right Ramp Made",
+        "strobe": 4,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "id_str": "42",
+        "name": "Not Used",
+        "strobe": 4,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "id_str": "43",
+        "name": "Left Loop",
+        "strobe": 4,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "id_str": "44",
+        "name": "Right Loop Top",
+        "strobe": 4,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "id_str": "45",
+        "name": "Right Loop Bottom",
+        "strobe": 4,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "id_str": "46",
+        "name": "Under Playfield Kickback",
+        "strobe": 4,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "id_str": "47",
+        "name": "Enter Head",
+        "strobe": 4,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "id_str": "48",
+        "name": "Not Used",
+        "strobe": 4,
+        "return": 8,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "id_str": "51",
+        "name": "Spinner",
+        "strobe": 5,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "id_str": "52",
+        "name": "Shooter",
+        "strobe": 5,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "id_str": "53",
+        "name": "Upper Right Jet Bumper",
+        "strobe": 5,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "id_str": "54",
+        "name": "Upper Left Jet Bumper",
+        "strobe": 5,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "id_str": "55",
+        "name": "Lower Jet Bumper",
+        "strobe": 5,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "id_str": "56",
+        "name": "Jet Bumper Slingshot",
+        "strobe": 5,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "id_str": "57",
+        "name": "Left Slingshot",
+        "strobe": 5,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "id_str": "58",
+        "name": "Right Slingshot",
+        "strobe": 5,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "id_str": "61",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 1,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "id_str": "62",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "id_str": "63",
+        "name": "Head Left Eye",
+        "strobe": 6,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "id_str": "64",
+        "name": "Head Left Eye",
+        "strobe": 6,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 65,
+        "id_str": "65",
+        "name": "Head Mouth",
+        "strobe": 6,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 66,
+        "id_str": "66",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 6,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 67,
+        "id_str": "67",
+        "name": "Face Position",
+        "strobe": 6,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 68,
+        "id_str": "68",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 8,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 71,
+        "id_str": "71",
+        "name": "Wireform Top",
+        "strobe": 7,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 72,
+        "id_str": "72",
+        "name": "Wireform Bottom",
+        "strobe": 7,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 73,
+        "id_str": "73",
+        "name": "Enter Mini Playfield",
+        "strobe": 7,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 74,
+        "id_str": "74",
+        "name": "Mini Playfield Exit Left",
+        "strobe": 7,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 75,
+        "id_str": "75",
+        "name": "Mini Playfield Exit Right",
+        "strobe": 7,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 76,
+        "id_str": "76",
+        "name": "Left Ramp Enter",
+        "strobe": 7,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 77,
+        "id_str": "77",
+        "name": "Right Ramp Enter",
+        "strobe": 7,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 78,
+        "id_str": "78",
+        "name": "Not Used",
+        "strobe": 7,
+        "return": 8,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 81,
+        "id_str": "81",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 1,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 82,
+        "id_str": "82",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 83,
+        "id_str": "83",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 3,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 84,
+        "id_str": "84",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 4,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 85,
+        "id_str": "85",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 5,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 86,
+        "id_str": "86",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 6,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 87,
+        "id_str": "87",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 7,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 88,
+        "id_str": "88",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 8,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D1",
+        "name": "LEFT COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D2",
+        "name": "CENTER COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D3",
+        "name": "RIGHT COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D4",
+        "name": "4TH COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D5",
+        "name": "Normal Test Function Function Srv Credits Escape",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D6",
+        "name": "Normal Test Function Function Volume Dn Down",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D7",
+        "name": "Normal Test Function Function Volume Up Up",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D8",
+        "name": "Normal Test Function Function Begin Test Enter",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "Williams System 11 / WPC matrix",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [
+      {
+        "sol_number": 1,
+        "name": "OUTHOLE",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q82",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-BRN",
+        "sol_exp_color": null,
+        "coil_type": "AE-27-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 2,
+        "name": "BALL RELEASE",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q80",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-RED",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 3,
+        "name": "UNDER PLAYFIELD KICKER",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q78",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-ORG",
+        "sol_exp_color": null,
+        "coil_type": "AE-23-800",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 4,
+        "name": "CONTROLLED GATE",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q76",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-YEL",
+        "sol_exp_color": null,
+        "coil_type": "A-14406",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 5,
+        "name": "SKILL SHOT KICKER",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q64",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-GRN",
+        "sol_exp_color": null,
+        "coil_type": "AE-24-900",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 6,
+        "name": "WIRE BALL HOLDER",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q66",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-BLU",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 7,
+        "name": "KNOCKER",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q68",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-BLK",
+        "sol_exp_color": null,
+        "coil_type": "AE-23-800",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 8,
+        "name": "HEAD - MOUTH",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q70",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-GRY",
+        "sol_exp_color": null,
+        "coil_type": "AE-30-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 9,
+        "name": "UPPER LEFT JET BUMPER",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q58",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-BLK",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 10,
+        "name": "LEFT SLINGSHOT",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q56",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-RED",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1500",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 11,
+        "name": "UPPER RIGHT JET BUMPER",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q54",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-ORG",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 12,
+        "name": "RIGHT SLINGSHOT",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q52",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-YEL",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1500",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 13,
+        "name": "LOWER JET BUMPER",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q50",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-GRN",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 14,
+        "name": "JETS SLINGSHOT",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q48",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-BLU",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1500",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 15,
+        "name": "HEAD - LEFT EYE",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q46",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-VIO",
+        "sol_exp_color": null,
+        "coil_type": "AE-30-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 16,
+        "name": "HEAD - RIGHT EYE",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q44",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-GRY",
+        "sol_exp_color": null,
+        "coil_type": "AE-30-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 17,
+        "name": "BILLION FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q42",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-BRN",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 18,
+        "name": "LEFT RAMP FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q40",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-RED",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 19,
+        "name": "JACKPOT FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q38",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-ORG",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 20,
+        "name": "SKILL SHOT FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q36",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-YEL",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 21,
+        "name": "LEFT HELMET FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q28",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-GRN",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 22,
+        "name": "RIGHT HELMET FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q30",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-BLK",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 23,
+        "name": "JETS ENTER FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q34",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-VIO",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 24,
+        "name": "LEFT LOOP FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q32",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-GRY",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 25,
+        "name": "HELMET LIGHTS DATA PORT",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q26",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-BRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 26,
+        "name": "HELMET LIGHTS CLOCK PORT",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q24",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-RED",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 27,
+        "name": "MOTOR RELAY",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q22",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-ORG",
+        "sol_exp_color": null,
+        "coil_type": "A-14423-1",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 28,
+        "name": "HEAD MOTOR",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q20",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-YEL",
+        "sol_exp_color": null,
+        "coil_type": "A-14119",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 28,
+        "name": "HEAD MOTOR (SECONDARY)",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Drive",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "Bulb Type",
+        "fault_flag": false,
+        "note": "Continuation row -- additional driver for parent solenoid."
+      },
+      {
+        "sol_number": 28,
+        "name": "HEAD MOTOR (SECONDARY #2)",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Xistor",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "Playfield Backbox",
+        "fault_flag": false,
+        "note": "Continuation row -- additional driver for parent solenoid."
+      },
+      {
+        "sol_number": 1,
+        "name": "BACKGLASS BODY STRING",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q18",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-BRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 2,
+        "name": "USED IN HELMET",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q10",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-ORG",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 3,
+        "name": "REAR PLAYFIELD",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q14",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-YEL",
+        "sol_exp_color": null,
+        "coil_type": "#555",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 4,
+        "name": "BACKGLASS - NO BODY",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q16",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-GRN",
+        "sol_exp_color": null,
+        "coil_type": "#555",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 5,
+        "name": "FRONT PLAYFIELD STRING",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q12",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-VIO",
+        "sol_exp_color": null,
+        "coil_type": "#555",
+        "fault_flag": false
+      }
+    ],
+    "flipper_circuits": [
+      {
+        "name": "Upper Left Flipper (Not Used)",
+        "power_wire": "Flipper",
+        "coil_wire": "",
+        "coil_connector": "",
+        "button_wire": "J109-1 (BLK-BLU)",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "Upper Right Flipper (Not Used)",
+        "power_wire": "Flipper",
+        "coil_wire": "",
+        "coil_connector": "",
+        "button_wire": "J109-2 (BLK-YEL)",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "Lower Left Flipper",
+        "power_wire": "Flipper",
+        "coil_wire": "J109-5 (GRY-YEL)",
+        "coil_connector": "",
+        "button_wire": "J109-3 (BLU-GRY)",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "Lower Right Flipper",
+        "power_wire": "Flipper",
+        "coil_wire": "J109-7 (BLU-YEL)",
+        "coil_connector": "",
+        "button_wire": "J109-4 (BLU-VIO)",
+        "button_connector": "",
+        "coil_part": ""
+      }
+    ]
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": [
+      {
+        "id": 11,
+        "name": "Left Outlane",
+        "col": 1,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "name": "Left Return Lane",
+        "col": 1,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "name": "Right Return Lane",
+        "col": 1,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "name": "Right Outlane",
+        "col": 1,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "name": "Left Standup",
+        "col": 1,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "name": "Right Top Standup",
+        "col": 1,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "name": "Right Bottom Standup",
+        "col": 1,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "name": "Shoot Again",
+        "col": 1,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "name": "Circle Lite Jackpot",
+        "col": 2,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "name": "Circle Lite Billion",
+        "col": 2,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "name": "Circle Extra Ball",
+        "col": 2,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "name": "Circle Lite Extra Ball",
+        "col": 2,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "name": "Circle 500K",
+        "col": 2,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "name": "Circle 100K",
+        "col": 2,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "name": "Value Doubled",
+        "col": 2,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "name": "Spin Small Wheel",
+        "col": 2,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "name": "Circle 250K",
+        "col": 3,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "name": "Circle 10 Million",
+        "col": 3,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "name": "Circle 50 Million",
+        "col": 3,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "name": "Circle Special",
+        "col": 3,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "name": "Circle 5 Million",
+        "col": 3,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "name": "Circle 1 Million",
+        "col": 3,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "name": "Space Shuttle",
+        "col": 3,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "name": "Launch Pad",
+        "col": 3,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "name": "Skill Shot 50K",
+        "col": 4,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "name": "Skill Shot 75K",
+        "col": 4,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "name": "Skill Shot 100K",
+        "col": 4,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "name": "Skill Shot 200K",
+        "col": 4,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "name": "Skill Shot 25K",
+        "col": 4,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "name": "Head Left Eye",
+        "col": 4,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "name": "Head Right Eye",
+        "col": 4,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "name": "Head Mouth",
+        "col": 4,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "name": "Left Loop 500K",
+        "col": 5,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "name": "Left Loop 100K",
+        "col": 5,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "name": "Left Loop 50K",
+        "col": 5,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "name": "Left Loop 25K",
+        "col": 5,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "name": "Right Loop 500K",
+        "col": 5,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "name": "Right Loop 100K",
+        "col": 5,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "name": "Right Loop 50K",
+        "col": 5,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "name": "Right Loop 25K",
+        "col": 5,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "name": "Right Ramp 100K",
+        "col": 6,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "name": "Right Ramp 500K",
+        "col": 6,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "name": "Right Ramp Million",
+        "col": 6,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "name": "Wire Ball Lock",
+        "col": 6,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 65,
+        "name": "Jet Enter 500K",
+        "col": 6,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 66,
+        "name": "Jet Enter 100K",
+        "col": 6,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 67,
+        "name": "Jet Enter 50K",
+        "col": 6,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 68,
+        "name": "Jet Enter 25K",
+        "col": 6,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 71,
+        "name": "Jackpot 8 Million",
+        "col": 7,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 72,
+        "name": "Jackpot 7 Million",
+        "col": 7,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 73,
+        "name": "Jackpot 6 Million",
+        "col": 7,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 74,
+        "name": "Jackpot 5 Million",
+        "col": 7,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 75,
+        "name": "Jackpot 4 Million",
+        "col": 7,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 76,
+        "name": "Jackpot 3 Million",
+        "col": 7,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 77,
+        "name": "Jackpot 2 Million",
+        "col": 7,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 78,
+        "name": "Jackpot 1 Million",
+        "col": 7,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 81,
+        "name": "Backglass Hip",
+        "col": 8,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 82,
+        "name": "Backglass Middle Leg",
+        "col": 8,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 83,
+        "name": "Backglass Knee",
+        "col": 8,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 84,
+        "name": "Backglass Foot",
+        "col": 8,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 85,
+        "name": "Backglass Shoulder",
+        "col": 8,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 86,
+        "name": "Mini Playfield 100K",
+        "col": 8,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 87,
+        "name": "Mini Playfield 200K",
+        "col": 8,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 88,
+        "name": "Mini Playfield 300K",
+        "col": 8,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}

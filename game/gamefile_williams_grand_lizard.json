@@ -1,0 +1,964 @@
+{
+  "game": {
+    "id": "williams_grand_lizard",
+    "name": "Grand Lizard",
+    "manufacturer": "Williams",
+    "year": null,
+    "system": "Williams (System 11 / WPC)",
+    "mpu": "(varies)",
+    "platform_id": "williams_matrix",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Williams_Grand_Lizard_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "D-8345"
+      },
+      "DRIVER": {
+        "part": "TBD"
+      },
+      "LAMP": {
+        "part": "TBD"
+      },
+      "SOUND": {
+        "part": "TBD"
+      },
+      "POWER": {
+        "part": "D-8245",
+        "note": "role discovered from chart context: 'Power Supply'",
+        "discovered": true
+      },
+      "DISPLAY": {
+        "part": "TBD"
+      },
+      "UNCLASSIFIED": [
+        {
+          "part": "D-11029",
+          "note": "likely coil designator (no board role label nearby)"
+        },
+        {
+          "part": "D-10881",
+          "note": "likely coil designator (no board role label nearby)"
+        }
+      ]
+    },
+    "decode_complete": false
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [],
+    "return_signals": [],
+    "switches": [
+      {
+        "id": 11,
+        "id_str": "11",
+        "name": "Shooter Lane",
+        "strobe": 1,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "id_str": "12",
+        "name": "Ball Trough #1 (lower right)",
+        "strobe": 1,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "id_str": "13",
+        "name": "Ball Trough #2 (center)",
+        "strobe": 1,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "id_str": "14",
+        "name": "Ball Trough #3 (upper left)",
+        "strobe": 1,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "id_str": "15",
+        "name": "Turnaround",
+        "strobe": 1,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "id_str": "16",
+        "name": "Left Return Lane",
+        "strobe": 1,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "id_str": "17",
+        "name": "Right Return Lane",
+        "strobe": 1,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "id_str": "18",
+        "name": "Left Outlane",
+        "strobe": 1,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "id_str": "21",
+        "name": "4-Bank",
+        "strobe": 2,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "id_str": "22",
+        "name": "4-Bank",
+        "strobe": 2,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "id_str": "23",
+        "name": "4-Bank",
+        "strobe": 2,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "id_str": "24",
+        "name": "Top Right Standup",
+        "strobe": 2,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "id_str": "25",
+        "name": "3-Bank",
+        "strobe": 2,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "id_str": "26",
+        "name": "3-Bank",
+        "strobe": 2,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "id_str": "27",
+        "name": "3-Bank",
+        "strobe": 2,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "id_str": "28",
+        "name": "Spinner",
+        "strobe": 2,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "id_str": "31",
+        "name": "Left Ramp",
+        "strobe": 3,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "id_str": "32",
+        "name": "Multi-Ball 1",
+        "strobe": 3,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "id_str": "33",
+        "name": "Multi-Ball 2",
+        "strobe": 3,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "id_str": "34",
+        "name": "Multi-Ball 3",
+        "strobe": 3,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "id_str": "35",
+        "name": "L",
+        "strobe": 3,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "id_str": "36",
+        "name": "I",
+        "strobe": 3,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "id_str": "37",
+        "name": "Z",
+        "strobe": 3,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "id_str": "38",
+        "name": "A",
+        "strobe": 3,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "id_str": "41",
+        "name": "Right Special Arrow",
+        "strobe": 4,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "id_str": "42",
+        "name": "Ramp Tongue",
+        "strobe": 4,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "id_str": "43",
+        "name": "Left Slingshot",
+        "strobe": 4,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "id_str": "44",
+        "name": "Right Slingshot",
+        "strobe": 4,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "id_str": "45",
+        "name": "Left Magnet",
+        "strobe": 4,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "id_str": "46",
+        "name": "Right Magnet",
+        "strobe": 4,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "id_str": "47",
+        "name": "Not Used",
+        "strobe": 4,
+        "return": 7,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "id_str": "48",
+        "name": "Right Flipper (EOS)",
+        "strobe": 4,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "id_str": "51",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 1,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "id_str": "52",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "id_str": "53",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 3,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "id_str": "54",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 4,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "id_str": "55",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 5,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "id_str": "56",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 6,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "id_str": "57",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 7,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "id_str": "58",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 8,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "id_str": "61",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 1,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "id_str": "62",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "id_str": "63",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 3,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "id_str": "64",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 4,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "Williams System 11 / WPC matrix",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [],
+    "flipper_circuits": []
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": [
+      {
+        "id": 11,
+        "name": "10X",
+        "col": 1,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "name": "Shoot Again (Playfield)",
+        "col": 1,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "name": "1",
+        "col": 1,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "name": "2",
+        "col": 1,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "name": "3",
+        "col": 1,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "name": "4",
+        "col": 1,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "name": "5",
+        "col": 1,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "name": "6",
+        "col": 1,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "name": "9",
+        "col": 2,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "name": "10",
+        "col": 2,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "name": "20",
+        "col": 2,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "name": "Extra Ball (bottom)",
+        "col": 2,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "name": "All Scores 2X",
+        "col": 2,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "name": "All Scores 3X",
+        "col": 2,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "name": "Bonus Holdover Collected",
+        "col": 2,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "name": "Spinner",
+        "col": 2,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "name": "Left Ramp A",
+        "col": 3,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "name": "Multi-Ball Arrow (lower)",
+        "col": 3,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "name": "Multi-Ball Arrow (middle)",
+        "col": 3,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "name": "Multi-Ball Arrow (upper)",
+        "col": 3,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "name": "L",
+        "col": 3,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "name": "I",
+        "col": 3,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "name": "Z",
+        "col": 3,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "name": "A",
+        "col": 3,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "name": "Special (Bottom Right Standup)",
+        "col": 4,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "name": "Left Magnet (lower)",
+        "col": 4,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "name": "Left Magnet (middle)",
+        "col": 4,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "name": "Left Magnet (upper)",
+        "col": 4,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "name": "Right Magnet (lower)",
+        "col": 4,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "name": "Right Magnet (middle)",
+        "col": 4,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "name": "Right Magnet (upper)",
+        "col": 4,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "name": "Right Ramp Mystery",
+        "col": 4,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "name": "Not Used",
+        "col": 5,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "name": "Left Ramp Mystery",
+        "col": 5,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "name": "Extra Ball (top)",
+        "col": 5,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "name": "Turn 10K",
+        "col": 5,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "name": "Turn 20K",
+        "col": 5,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "name": "Turn 40K",
+        "col": 5,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "name": "4-Bank 20K",
+        "col": 5,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "name": "4-Bank 40K",
+        "col": 5,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "name": "4-Bank 100K",
+        "col": 6,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "name": "Top Right 50K",
+        "col": 6,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "name": "Top Right Release",
+        "col": 6,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "name": "3-Bank Special",
+        "col": 6,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}

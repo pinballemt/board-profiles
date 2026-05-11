@@ -1,0 +1,962 @@
+{
+  "game": {
+    "id": "williams_whirlwind",
+    "name": "Whirlwind",
+    "manufacturer": "Williams",
+    "year": null,
+    "system": "Williams (System 11 / WPC)",
+    "mpu": "(varies)",
+    "platform_id": "williams_matrix",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Williams_Whirlwind_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "D-11883"
+      },
+      "DRIVER": {
+        "part": "D-12247",
+        "note": "role discovered from chart context: 'Aux. Power Driver Board'",
+        "discovered": true
+      },
+      "LAMP": {
+        "part": "TBD"
+      },
+      "SOUND": {
+        "part": "TBD"
+      },
+      "POWER": {
+        "part": "D-12246",
+        "note": "role discovered from chart context: 'Power Supply'",
+        "discovered": true
+      },
+      "DISPLAY": {
+        "part": "TBD"
+      },
+      "UNCLASSIFIED": [
+        {
+          "part": "D-12313",
+          "note": "unrecognized role label nearby: 'Interconnect Board'"
+        }
+      ]
+    },
+    "decode_complete": false
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [],
+    "return_signals": [],
+    "switches": [
+      {
+        "id": 11,
+        "id_str": "11",
+        "name": "Ball Trough 1 (left)",
+        "strobe": 1,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "id_str": "12",
+        "name": "Ball Trough 2 (middle)",
+        "strobe": 1,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "id_str": "13",
+        "name": "Ball Trough 3 (right)",
+        "strobe": 1,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "id_str": "14",
+        "name": "Not Used",
+        "strobe": 1,
+        "return": 4,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "id_str": "15",
+        "name": "Right Return Lane",
+        "strobe": 1,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "id_str": "16",
+        "name": "Right Outlane",
+        "strobe": 1,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "id_str": "17",
+        "name": "Left Outlane",
+        "strobe": 1,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "id_str": "18",
+        "name": "Left Return Lane",
+        "strobe": 1,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "id_str": "21",
+        "name": "Left Standup",
+        "strobe": 2,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "id_str": "22",
+        "name": "Left Lock 1 (lower)",
+        "strobe": 2,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "id_str": "23",
+        "name": "Left Lock 2 (middle)",
+        "strobe": 2,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "id_str": "24",
+        "name": "Left Lock 3 (top)",
+        "strobe": 2,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "id_str": "25",
+        "name": "Right Standup",
+        "strobe": 2,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "id_str": "26",
+        "name": "Top Single Drop Target",
+        "strobe": 2,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "id_str": "27",
+        "name": "M 3-Bank Drop Target (lower)",
+        "strobe": 2,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "id_str": "28",
+        "name": "M 3-Bank Drop Target (middle)",
+        "strobe": 2,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "id_str": "31",
+        "name": "Not Used",
+        "strobe": 3,
+        "return": 1,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "id_str": "32",
+        "name": "Not Used",
+        "strobe": 3,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "id_str": "33",
+        "name": "Enter Left Ramp",
+        "strobe": 3,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "id_str": "34",
+        "name": "Left Ramp Score (top)",
+        "strobe": 3,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "id_str": "35",
+        "name": "Left Ramp Score (bottom)",
+        "strobe": 3,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "id_str": "36",
+        "name": "Left Loop (top)",
+        "strobe": 3,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "id_str": "37",
+        "name": "Left Loop (bottom)",
+        "strobe": 3,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "id_str": "38",
+        "name": "Right Loop (top)",
+        "strobe": 3,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "id_str": "41",
+        "name": "Spinner",
+        "strobe": 4,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "id_str": "42",
+        "name": "Right Ramp Down",
+        "strobe": 4,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "id_str": "43",
+        "name": "Top Right Eject",
+        "strobe": 4,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "id_str": "44",
+        "name": "Right Ramp Score (top)",
+        "strobe": 4,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "id_str": "45",
+        "name": "Right Ramp Score (bottom)",
+        "strobe": 4,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "id_str": "46",
+        "name": "Not Used",
+        "strobe": 4,
+        "return": 6,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "id_str": "47",
+        "name": "Left Standup (Right Ramp)",
+        "strobe": 4,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "id_str": "48",
+        "name": "Right Standup (Right Ramp)",
+        "strobe": 4,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "id_str": "51",
+        "name": "Top Jet Bumper (bottom)",
+        "strobe": 5,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "id_str": "52",
+        "name": "Bottom Jet Bumper (left)",
+        "strobe": 5,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "id_str": "53",
+        "name": "Bottom Jet Bumper (right)",
+        "strobe": 5,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "id_str": "54",
+        "name": "Bottom Jet Bumper (top)",
+        "strobe": 5,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "id_str": "55",
+        "name": "Left Slingshot",
+        "strobe": 5,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "id_str": "56",
+        "name": "Right Slingshot",
+        "strobe": 5,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "id_str": "57",
+        "name": "Right Flipper",
+        "strobe": 5,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "id_str": "58",
+        "name": "Left Flipper",
+        "strobe": 5,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "id_str": "61",
+        "name": "Right 110 Points",
+        "strobe": 6,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "id_str": "62",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "id_str": "63",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 3,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "id_str": "64",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 4,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "Williams System 11 / WPC matrix",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [],
+    "flipper_circuits": []
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": [
+      {
+        "id": 11,
+        "name": "Top Drop 50K",
+        "col": 1,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "name": "Top Drop 75K",
+        "col": 1,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "name": "Top Drop 100K",
+        "col": 1,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "name": "Top Drop 150K",
+        "col": 1,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "name": "Top Drop Quick",
+        "col": 1,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "name": "Top Drop Extra Ball",
+        "col": 1,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "name": "S Arrow",
+        "col": 1,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "name": "SW Arrow",
+        "col": 1,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "name": "N Arrow",
+        "col": 2,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "name": "NE Arrow",
+        "col": 2,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "name": "E Arrow",
+        "col": 2,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "name": "SE Arrow",
+        "col": 2,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "name": "Toll 1",
+        "col": 2,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "name": "Toll 2",
+        "col": 2,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "name": "Toll 3",
+        "col": 2,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "name": "Toll 4",
+        "col": 2,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "name": "Toll 20",
+        "col": 3,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "name": "Toll 10",
+        "col": 3,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "name": "Bottom Jets Left",
+        "col": 3,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "name": "Bottom Jets Top",
+        "col": 3,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "name": "Bottom Jets Right",
+        "col": 3,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "name": "Top Jets Left",
+        "col": 3,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "name": "Top Jets Right",
+        "col": 3,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "name": "Top Jets Bottom",
+        "col": 3,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "name": "Right Ramp Lock",
+        "col": 4,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "name": "Right Ramp Double",
+        "col": 4,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "name": "Left Ramp Million Plus",
+        "col": 4,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "name": "Left Ramp Million",
+        "col": 4,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "name": "Left Ramp Release",
+        "col": 4,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "name": "Skill Shot Right",
+        "col": 4,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "name": "Skill Shot Middle",
+        "col": 4,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "name": "Skill Shot Left",
+        "col": 4,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "name": "Left Standup",
+        "col": 5,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "name": "Inner Loop Arrow",
+        "col": 5,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "name": "Right Ramp Left Standup",
+        "col": 5,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "name": "Right Ramp Right Standup",
+        "col": 5,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "name": "Right Loop",
+        "col": 5,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "name": "Right Standup",
+        "col": 5,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "name": "Shoot Again",
+        "col": 5,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "name": "2X",
+        "col": 5,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "name": "5X",
+        "col": 6,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "name": "6X Lites Extra Ball",
+        "col": 6,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "name": "6X Lites Special",
+        "col": 6,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "name": "Right Spinner",
+        "col": 6,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}

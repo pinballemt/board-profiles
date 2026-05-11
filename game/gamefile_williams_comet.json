@@ -1,0 +1,1285 @@
+{
+  "game": {
+    "id": "williams_comet",
+    "name": "Comet",
+    "manufacturer": "Williams",
+    "year": null,
+    "system": "Williams (System 11 / WPC)",
+    "mpu": "(varies)",
+    "platform_id": "williams_matrix",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Williams_Comet_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "D-8345"
+      },
+      "DRIVER": {
+        "part": "TBD"
+      },
+      "LAMP": {
+        "part": "TBD"
+      },
+      "SOUND": {
+        "part": "TBD"
+      },
+      "POWER": [
+        {
+          "part": "D-10749",
+          "note": "role discovered from chart context: 'Power Supply'",
+          "discovered": true
+        },
+        {
+          "part": "D-8245",
+          "note": "role discovered from chart context: 'Power Supply'",
+          "discovered": true
+        }
+      ],
+      "DISPLAY": {
+        "part": "TBD"
+      }
+    },
+    "decode_complete": false
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [],
+    "return_signals": [],
+    "switches": [
+      {
+        "id": 11,
+        "id_str": "11",
+        "name": "Duck- Target #2",
+        "strobe": 1,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "id_str": "12",
+        "name": "Duck- Target #3",
+        "strobe": 1,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "id_str": "13",
+        "name": "Duck- Target #4",
+        "strobe": 1,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "id_str": "14",
+        "name": "Rabbit- Target #1",
+        "strobe": 1,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "id_str": "15",
+        "name": "Rabbit- Target #2",
+        "strobe": 1,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "id_str": "16",
+        "name": "Rabbit- Target #3",
+        "strobe": 1,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "id_str": "17",
+        "name": "Rabbit- Target #4",
+        "strobe": 1,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "id_str": "18",
+        "name": "Advance Bonus X (Eye)",
+        "strobe": 1,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "id_str": "21",
+        "name": "Top Lanes 9",
+        "strobe": 2,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "id_str": "22",
+        "name": "Top Lanes 8",
+        "strobe": 2,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "id_str": "23",
+        "name": "Top Lanes 6",
+        "strobe": 2,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "id_str": "24",
+        "name": "Funhouse (Eject Hole)",
+        "strobe": 2,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "id_str": "25",
+        "name": "Cycle-Jump Lower Ring Eject",
+        "strobe": 2,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "id_str": "26",
+        "name": "Cycle-Jump Center Ring Switch",
+        "strobe": 2,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "id_str": "27",
+        "name": "Cycle-Jump Upper Ring Switch",
+        "strobe": 2,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "id_str": "28",
+        "name": "COMET Ramp Upper Sw.",
+        "strobe": 2,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "id_str": "31",
+        "name": "Right Outlane Special",
+        "strobe": 3,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "id_str": "32",
+        "name": "Left Outlane Special",
+        "strobe": 3,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "id_str": "33",
+        "name": "Lower Left Stand-Up Switch",
+        "strobe": 3,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "id_str": "34",
+        "name": "Upper Left Stand-Up Switch",
+        "strobe": 3,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "id_str": "35",
+        "name": "Upper Right Stand-Up Switch",
+        "strobe": 3,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "id_str": "36",
+        "name": "Left Center Stand-Up Switch",
+        "strobe": 3,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "id_str": "37",
+        "name": "Lower Right Stand-Up Switch",
+        "strobe": 3,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "id_str": "38",
+        "name": "Center Stand-Up Switch",
+        "strobe": 3,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "id_str": "41",
+        "name": "Left Jet Bumper",
+        "strobe": 4,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "id_str": "42",
+        "name": "Lower Jet Bumper",
+        "strobe": 4,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "id_str": "43",
+        "name": "Left Outside Lane",
+        "strobe": 4,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "id_str": "44",
+        "name": "Left Inside Lane",
+        "strobe": 4,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "id_str": "45",
+        "name": "Outhole",
+        "strobe": 4,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "id_str": "46",
+        "name": "Plunger Switch",
+        "strobe": 4,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "id_str": "47",
+        "name": "Left Slingshot",
+        "strobe": 4,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "id_str": "48",
+        "name": "Right Slingshot",
+        "strobe": 4,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "id_str": "51",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 1,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "id_str": "52",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "id_str": "53",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 3,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "id_str": "54",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 4,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "id_str": "55",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 5,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "id_str": "56",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 6,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "id_str": "57",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 7,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "id_str": "58",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 8,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "id_str": "61",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 1,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "id_str": "62",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "id_str": "63",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 3,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "id_str": "64",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 4,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "Williams System 11 / WPC matrix",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [
+      {
+        "sol_number": 1,
+        "name": "Outhole Kicker",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q47",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SA-23-850-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 2,
+        "name": "Drop Target",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q48",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SA-5-24-750-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 3,
+        "name": "\u201cFunhouse\u201d Eject Hole",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q49",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SG1-23-850-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 4,
+        "name": "\u201cCorkscrew\u201d Flashers",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q50",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "#63 Flashlamps",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 5,
+        "name": "\u201cCycle Jump\u201d Flashers",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q39",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "#63 Flashlamps",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 6,
+        "name": "\u201cCycle Jump\u201d Eject Hole",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q40",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SG1-23-850-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 7,
+        "name": "Player-3 Flashers",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q41",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 8,
+        "name": "Player-1 Flashers",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q42",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 9,
+        "name": "Player-4 Flashers",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q54",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 10,
+        "name": "Player-2 Flashers",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q55",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 11,
+        "name": "Playfield General Illumination Relay",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q56",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "5580-09555-00 3",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 12,
+        "name": "Not Used",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q57",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 13,
+        "name": "Not Used",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q58",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 14,
+        "name": "Not Used",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q59",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 15,
+        "name": "Knocker",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q60",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SA4-23-850-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 16,
+        "name": "Coin-Lockout Relay",
+        "type": "controlled",
+        "bcd_code": null,
+        "transistor": "Q61",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SM-35-4000-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 17,
+        "name": "Left Slingshot",
+        "type": "special #1",
+        "bcd_code": null,
+        "transistor": "Q75",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SG1-23-850-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 18,
+        "name": "Right Slingshot",
+        "type": "special #2",
+        "bcd_code": null,
+        "transistor": "Q77",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SG1-23-850-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 19,
+        "name": "Upper Jet Bumper",
+        "type": "special #3",
+        "bcd_code": null,
+        "transistor": "Q79",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SG1-23-850-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 20,
+        "name": "Left Jet Bumper",
+        "type": "special #4",
+        "bcd_code": null,
+        "transistor": "Q81",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SG1-23-850-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 21,
+        "name": "Lower Jet Bumper",
+        "type": "special #5",
+        "bcd_code": null,
+        "transistor": "Q83",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "SG1-23-850-DC",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 22,
+        "name": "Not Used",
+        "type": "special #6",
+        "bcd_code": null,
+        "transistor": "Q85",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      }
+    ],
+    "flipper_circuits": [
+      {
+        "name": "Right Flipper",
+        "power_wire": "Flipper",
+        "coil_wire": "Orn-Vio",
+        "coil_connector": "1J19-1",
+        "button_wire": "7P1-7",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "Right Flipper switch 2",
+        "power_wire": "Switch",
+        "coil_wire": "Blu-Vio",
+        "coil_connector": "",
+        "button_wire": "7J1-8, 8P3-34",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "Left Flipper",
+        "power_wire": "Flipper",
+        "coil_wire": "Orn-Gry",
+        "coil_connector": "1J19-2",
+        "button_wire": "7P1-9",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "Left Flipper switch 2",
+        "power_wire": "Switch",
+        "coil_wire": "Blu-Gry",
+        "coil_connector": "",
+        "button_wire": "7J1-10, 8P3-32",
+        "button_connector": "",
+        "coil_part": ""
+      }
+    ]
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": [
+      {
+        "id": 11,
+        "name": "Duck Target #2",
+        "col": 1,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "name": "Duck Target #3",
+        "col": 1,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "name": "Duck Target #4",
+        "col": 1,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "name": "Rabbit Target #1",
+        "col": 1,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "name": "Rabbit Target #2",
+        "col": 1,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "name": "Rabbit Target #3",
+        "col": 1,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "name": "Rabbit Target #4",
+        "col": 1,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "name": "Advance Bonus Multiplier",
+        "col": 1,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "name": "Top Lanes 9",
+        "col": 2,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "name": "Top Lanes 8",
+        "col": 2,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "name": "Top Lanes 6",
+        "col": 2,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "name": "Collect Rabbit Bonus",
+        "col": 2,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "name": "Cycle- Jump 20K",
+        "col": 2,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "name": "Cycle- Jump 50K",
+        "col": 2,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "name": "Cycle- Jump 200K",
+        "col": 2,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "name": "Cycle-Jump Extra Ball (Bottom)",
+        "col": 2,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "name": "Right Outlane Special",
+        "col": 3,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "name": "Left Outlane Special",
+        "col": 3,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "name": "Duck- Outhole Bonus",
+        "col": 3,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "name": "Duck- Bonus #1",
+        "col": 3,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "name": "Duck- Bonus #2",
+        "col": 3,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "name": "Duck- Bonus #4",
+        "col": 3,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "name": "Duck- Bonus #8",
+        "col": 3,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "name": "Duck- Bonus #16",
+        "col": 3,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "name": "Rabbit- Outhole Bonus",
+        "col": 4,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "name": "Rabbit Bonus #1",
+        "col": 4,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "name": "Rabbit Bonus #2",
+        "col": 4,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "name": "Rabbit Bonus #4",
+        "col": 4,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "name": "Rabbit Bonus #8",
+        "col": 4,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "name": "Rabbit Bonus #16",
+        "col": 4,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "name": "Rabbit Bonus #32",
+        "col": 4,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "name": "All Ducks Down",
+        "col": 4,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "name": "100K Lites Extra Ball",
+        "col": 5,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "name": "100K Lites Special",
+        "col": 5,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "name": "All Scores 2X",
+        "col": 5,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "name": "All Scores 3X",
+        "col": 5,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "name": "All Scores 5X",
+        "col": 5,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "name": "Cork- Screw Extra Ball",
+        "col": 5,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "name": "One Million",
+        "col": 5,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "name": "Win a Million (Backbox)",
+        "col": 5,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "name": "2X",
+        "col": 6,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "name": "3X",
+        "col": 6,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "name": "4X",
+        "col": 6,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "name": "5X",
+        "col": 6,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}

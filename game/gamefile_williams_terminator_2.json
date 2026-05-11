@@ -1,0 +1,1927 @@
+{
+  "game": {
+    "id": "williams_terminator_2",
+    "name": "Terminator 2",
+    "manufacturer": "Williams",
+    "year": null,
+    "system": "Williams (System 11 / WPC)",
+    "mpu": "(varies)",
+    "platform_id": "williams_matrix",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Williams_Terminator_2_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "TBD"
+      },
+      "DRIVER": {
+        "part": "TBD"
+      },
+      "LAMP": {
+        "part": "TBD"
+      },
+      "SOUND": {
+        "part": "TBD"
+      },
+      "POWER": {
+        "part": "TBD"
+      },
+      "DISPLAY": {
+        "part": "TBD"
+      }
+    },
+    "decode_complete": false
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [],
+    "return_signals": [],
+    "switches": [
+      {
+        "id": 11,
+        "id_str": "11",
+        "name": "Right Flipper",
+        "strobe": 1,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "id_str": "12",
+        "name": "Left Flipper",
+        "strobe": 1,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "id_str": "13",
+        "name": "Start Button",
+        "strobe": 1,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "id_str": "14",
+        "name": "Plumb Bob Tilt",
+        "strobe": 1,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "id_str": "15",
+        "name": "Trough Left",
+        "strobe": 1,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "id_str": "16",
+        "name": "Trough Center",
+        "strobe": 1,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "id_str": "17",
+        "name": "Trough Right",
+        "strobe": 1,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "id_str": "18",
+        "name": "Outhole",
+        "strobe": 1,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "id_str": "21",
+        "name": "Slam Tilt",
+        "strobe": 2,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "id_str": "22",
+        "name": "Coin Door Closed",
+        "strobe": 2,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "id_str": "23",
+        "name": "Ticket Dispenser",
+        "strobe": 2,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "id_str": "24",
+        "name": "Always Closed",
+        "strobe": 2,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "id_str": "25",
+        "name": "Left Outlane",
+        "strobe": 2,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "id_str": "26",
+        "name": "Left Return Lane",
+        "strobe": 2,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "id_str": "27",
+        "name": "Right Return Lane",
+        "strobe": 2,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "id_str": "28",
+        "name": "Right Outlane",
+        "strobe": 2,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "id_str": "31",
+        "name": "Gun Loaded",
+        "strobe": 3,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "id_str": "32",
+        "name": "Gun Mark",
+        "strobe": 3,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "id_str": "33",
+        "name": "Gun Home",
+        "strobe": 3,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "id_str": "34",
+        "name": "Grip Trigger",
+        "strobe": 3,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "id_str": "35",
+        "name": "Not Used",
+        "strobe": 3,
+        "return": 5,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "id_str": "36",
+        "name": "Mid Left Stand-Up Target",
+        "strobe": 3,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "id_str": "37",
+        "name": "Mid Center Stand-Up Target",
+        "strobe": 3,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "id_str": "38",
+        "name": "Mid Right Stand-Up Target",
+        "strobe": 3,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "id_str": "41",
+        "name": "Left Jet",
+        "strobe": 4,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "id_str": "42",
+        "name": "Right Jet",
+        "strobe": 4,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "id_str": "43",
+        "name": "Bottom Jet",
+        "strobe": 4,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "id_str": "44",
+        "name": "Left Slingshot",
+        "strobe": 4,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "id_str": "45",
+        "name": "Right Slingshot",
+        "strobe": 4,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "id_str": "46",
+        "name": "Top Right Stand-Up Target",
+        "strobe": 4,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "id_str": "47",
+        "name": "Mid Right Stand-Up Target",
+        "strobe": 4,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "id_str": "48",
+        "name": "Bottom Right Stand-Up Target",
+        "strobe": 4,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "id_str": "51",
+        "name": "Left Lock",
+        "strobe": 5,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "id_str": "52",
+        "name": "Not Used",
+        "strobe": 5,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "id_str": "53",
+        "name": "Low Escape Route",
+        "strobe": 5,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "id_str": "54",
+        "name": "High Escape Route",
+        "strobe": 5,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "id_str": "55",
+        "name": "Top Lock",
+        "strobe": 5,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "id_str": "56",
+        "name": "Top Lane Left",
+        "strobe": 5,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "id_str": "57",
+        "name": "Top Lane Center",
+        "strobe": 5,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "id_str": "58",
+        "name": "Top Lane Right",
+        "strobe": 5,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "id_str": "61",
+        "name": "Left Ramp Entry",
+        "strobe": 6,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "id_str": "62",
+        "name": "Left Ramp made",
+        "strobe": 6,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "id_str": "63",
+        "name": "Right Ramp Entry",
+        "strobe": 6,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "id_str": "64",
+        "name": "Right Ramp Made",
+        "strobe": 6,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 65,
+        "id_str": "65",
+        "name": "Low Chase Loop",
+        "strobe": 6,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 66,
+        "id_str": "66",
+        "name": "High Chase Loop",
+        "strobe": 6,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 67,
+        "id_str": "67",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 7,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 68,
+        "id_str": "68",
+        "name": "Not Used",
+        "strobe": 6,
+        "return": 8,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 71,
+        "id_str": "71",
+        "name": "Target 1 High",
+        "strobe": 7,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 72,
+        "id_str": "72",
+        "name": "Target 2",
+        "strobe": 7,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 73,
+        "id_str": "73",
+        "name": "Target 3",
+        "strobe": 7,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 74,
+        "id_str": "74",
+        "name": "Target 4",
+        "strobe": 7,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 75,
+        "id_str": "75",
+        "name": "Target 5 Low",
+        "strobe": 7,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 76,
+        "id_str": "76",
+        "name": "Ball Popper",
+        "strobe": 7,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 77,
+        "id_str": "77",
+        "name": "Drop Target",
+        "strobe": 7,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 78,
+        "id_str": "78",
+        "name": "Shooter",
+        "strobe": 7,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 81,
+        "id_str": "81",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 1,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 82,
+        "id_str": "82",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 2,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 83,
+        "id_str": "83",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 3,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 84,
+        "id_str": "84",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 4,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 85,
+        "id_str": "85",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 5,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 86,
+        "id_str": "86",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 6,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 87,
+        "id_str": "87",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 7,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 88,
+        "id_str": "88",
+        "name": "Not Used",
+        "strobe": 8,
+        "return": 8,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D1",
+        "name": "LEFT COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D2",
+        "name": "CENTER COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D3",
+        "name": "RIGHT COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D4",
+        "name": "4TH COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D5",
+        "name": "Normal Test Function Function Srv Credits Escape",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D6",
+        "name": "Normal Test Function Function Volume Dn Down",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D7",
+        "name": "Normal Test Function Function Volume Up Up",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D8",
+        "name": "Normal Test Function Function Begin Test Enter",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "Williams System 11 / WPC matrix",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [
+      {
+        "sol_number": 1,
+        "name": "Ball Popper",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q82",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-BRN",
+        "sol_exp_color": null,
+        "coil_type": "AE-23-800",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 2,
+        "name": "Gun Kicker",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q80",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-RED",
+        "sol_exp_color": null,
+        "coil_type": "AE-24-900",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 3,
+        "name": "Outhole",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q78",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-ORG",
+        "sol_exp_color": null,
+        "coil_type": "AE-27-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 4,
+        "name": "Trough",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q76",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-YEL",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 5,
+        "name": "Right Slingshot",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q64",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-GRN",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1500",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 6,
+        "name": "Left Slingshot",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q66",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-BLU",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1500",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 7,
+        "name": "Knocker",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q68",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-BLK",
+        "sol_exp_color": null,
+        "coil_type": "AE-23-800",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 8,
+        "name": "Kickback",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q70",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-GRY",
+        "sol_exp_color": null,
+        "coil_type": "AE-23-800",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 9,
+        "name": "Plunger",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q58",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-BLK",
+        "sol_exp_color": null,
+        "coil_type": "AE-23-800",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 10,
+        "name": "Top Lock",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q56",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-RED",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1500",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 11,
+        "name": "Gun Motor",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q54",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-ORG",
+        "sol_exp_color": null,
+        "coil_type": "14-7963",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 12,
+        "name": "Drop Target Knock Down",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q52",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-YEL",
+        "sol_exp_color": null,
+        "coil_type": "SM1-26-600",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 13,
+        "name": "Left Jet",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q50",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-GRN",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 14,
+        "name": "Right Jet",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q48",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-BLU",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 15,
+        "name": "Bottom Jet",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q46",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-VIO",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 16,
+        "name": "Left Lock",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q44",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-GRY",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1500",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 17,
+        "name": "Autofire (Hot Dog) Flashlamps",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q42",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-BRN",
+        "sol_exp_color": null,
+        "coil_type": "#906 (4)",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 18,
+        "name": "Right Slingshot Flashlamps",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q40",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-RED",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 19,
+        "name": "Left Slingshot Flashlamps",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q38",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-ORG",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 20,
+        "name": "Left Lock Flashlamps",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q36",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-YEL",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 21,
+        "name": "Gun Flashlamps",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q28",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-GRN",
+        "sol_exp_color": null,
+        "coil_type": "#89(2)",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 22,
+        "name": "Right Ramp Flashlamps",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q30",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-BLK",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 23,
+        "name": "Left Ramp Flashlamps",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q34",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-VIO",
+        "sol_exp_color": null,
+        "coil_type": "#89",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 24,
+        "name": "Backglass Flashlamps",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q32",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-GRY",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 25,
+        "name": "Targets Flashlamps",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q26",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-BRN",
+        "sol_exp_color": null,
+        "coil_type": "#89 (2)",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 26,
+        "name": "Left Popper Flaslamps",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q24",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-RED",
+        "sol_exp_color": null,
+        "coil_type": "#89 (2)",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 27,
+        "name": "Right Popper Flashlamps",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q22",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-ORG",
+        "sol_exp_color": null,
+        "coil_type": "#89 (2)",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 28,
+        "name": "Drop Target Reset",
+        "type": "special",
+        "bcd_code": null,
+        "transistor": "Q20",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-YEL",
+        "sol_exp_color": null,
+        "coil_type": "AE-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 28,
+        "name": "Drop Target Reset (SECONDARY)",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Drive",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "Bulb Type",
+        "fault_flag": false,
+        "note": "Continuation row -- additional driver for parent solenoid."
+      },
+      {
+        "sol_number": 28,
+        "name": "Drop Target Reset (SECONDARY #2)",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Xistor",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "Playfield Backbox",
+        "fault_flag": false,
+        "note": "Continuation row -- additional driver for parent solenoid."
+      },
+      {
+        "sol_number": 1,
+        "name": "Top Insert String",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q18",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-BRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 2,
+        "name": "Bottom Insert String",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q10",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-ORG",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 3,
+        "name": "Right Playfield String",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q14",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-YEL",
+        "sol_exp_color": null,
+        "coil_type": "#555",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 4,
+        "name": "CPU Playfield String",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q16",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-GRN",
+        "sol_exp_color": null,
+        "coil_type": "#555",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 5,
+        "name": "Left Playfield String",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q12",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-VIO",
+        "sol_exp_color": null,
+        "coil_type": "#555",
+        "fault_flag": false
+      }
+    ],
+    "flipper_circuits": [
+      {
+        "name": "Upper Left Flipper (Not Used)",
+        "power_wire": "Flipper",
+        "coil_wire": "",
+        "coil_connector": "",
+        "button_wire": "",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "Upper Right Flipper (Not Used)",
+        "power_wire": "Flipper",
+        "coil_wire": "",
+        "coil_connector": "",
+        "button_wire": "",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "Lower Left Flipper",
+        "power_wire": "Flipper",
+        "coil_wire": "J109-5 (GRY-YEL)",
+        "coil_connector": "",
+        "button_wire": "J109-3 (BLU-GRY)",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "Lower Right Flipper",
+        "power_wire": "Flipper",
+        "coil_wire": "J109-7 (BLU-YEL)",
+        "coil_connector": "",
+        "button_wire": "J109-4 (BLU-VIO)",
+        "button_connector": "",
+        "coil_part": ""
+      }
+    ]
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": [
+      {
+        "id": 11,
+        "name": "Multiplier 2X",
+        "col": 1,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "name": "Multiplier 4X",
+        "col": 1,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "name": "Hold Bonus",
+        "col": 1,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "name": "Multiplier 6X",
+        "col": 1,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "name": "Multiplier 8X",
+        "col": 1,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "name": "Shoot Again",
+        "col": 1,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "name": "Mouth",
+        "col": 1,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "name": "Not Used",
+        "col": 1,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "name": "Kickback",
+        "col": 2,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "name": "Special",
+        "col": 2,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "name": "Left Return Lane",
+        "col": 2,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "name": "Right Return Lane",
+        "col": 2,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "name": "Data Base 3",
+        "col": 2,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "name": "Load Gun",
+        "col": 2,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "name": "Extra Ball",
+        "col": 2,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "name": "Load for Jackpot",
+        "col": 2,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "name": "Target 1 High",
+        "col": 3,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "name": "Target 2",
+        "col": 3,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "name": "Target 3",
+        "col": 3,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "name": "Target 4",
+        "col": 3,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "name": "Target 5 Low",
+        "col": 3,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "name": "Middle Target Bank Left",
+        "col": 3,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "name": "Middle Target Bank Center",
+        "col": 3,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "name": "Middle Target Bank Right",
+        "col": 3,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "name": "Lock Two",
+        "col": 4,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "name": "Data Base 2",
+        "col": 4,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "name": "10 Million",
+        "col": 4,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "name": "Extra Ball",
+        "col": 4,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "name": "Multiball",
+        "col": 4,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "name": "Light Hurry Up",
+        "col": 4,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "name": "Hold Bonus",
+        "col": 4,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "name": "Security Pass",
+        "col": 4,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "name": "Eyes Lower",
+        "col": 5,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "name": "Upper Eyes",
+        "col": 5,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "name": "5 Million",
+        "col": 5,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "name": "3 Million",
+        "col": 5,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "name": "1 Million",
+        "col": 5,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "name": "750,000",
+        "col": 5,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "name": "500,000",
+        "col": 5,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "name": "250,000",
+        "col": 5,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "name": "Left CPU Lit",
+        "col": 6,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "name": "Left Vault Key",
+        "col": 6,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "name": "Left Silent Alarm",
+        "col": 6,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "name": "Left Passcode",
+        "col": 6,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 65,
+        "name": "Left Checkpoint",
+        "col": 6,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 66,
+        "name": "Lock 1",
+        "col": 6,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 67,
+        "name": "Data Base 1",
+        "col": 6,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 68,
+        "name": "Left Ramp",
+        "col": 6,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 71,
+        "name": "Right CPU Lit",
+        "col": 7,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 72,
+        "name": "Right Vault Key",
+        "col": 7,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 73,
+        "name": "Right Silent Alarm",
+        "col": 7,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 74,
+        "name": "Right Passcode",
+        "col": 7,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 75,
+        "name": "Right Checkpoint",
+        "col": 7,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 76,
+        "name": "Right Bank Top",
+        "col": 7,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 77,
+        "name": "Right Bank Middle",
+        "col": 7,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 78,
+        "name": "Right Bank Bottom",
+        "col": 7,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 81,
+        "name": "Chase Value",
+        "col": 8,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 82,
+        "name": "Right Ramp",
+        "col": 8,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 83,
+        "name": "Hurry Up",
+        "col": 8,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 84,
+        "name": "Start Button",
+        "col": 8,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 85,
+        "name": "Drop Target",
+        "col": 8,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 86,
+        "name": "Top Lane Left",
+        "col": 8,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 87,
+        "name": "Top Lane Center",
+        "col": 8,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 88,
+        "name": "Top Lane Right",
+        "col": 8,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}

@@ -1,0 +1,2048 @@
+{
+  "game": {
+    "id": "williams_no_good_gofers",
+    "name": "No Good Gofers",
+    "manufacturer": "Williams",
+    "year": null,
+    "system": "Williams (System 11 / WPC)",
+    "mpu": "(varies)",
+    "platform_id": "williams_matrix",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Williams_No_Good_Gofers_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "TBD"
+      },
+      "DRIVER": {
+        "part": "TBD"
+      },
+      "LAMP": {
+        "part": "TBD"
+      },
+      "SOUND": {
+        "part": "TBD"
+      },
+      "POWER": {
+        "part": "TBD"
+      },
+      "DISPLAY": {
+        "part": "TBD"
+      }
+    },
+    "decode_complete": false
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [],
+    "return_signals": [],
+    "switches": [
+      {
+        "id": 11,
+        "id_str": "11",
+        "name": "NOT USED",
+        "strobe": 1,
+        "return": 1,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "id_str": "12",
+        "name": "LEFT RAMP MAKE",
+        "strobe": 1,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "id_str": "13",
+        "name": "START BUTTON",
+        "strobe": 1,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "id_str": "14",
+        "name": "PLUMB BOB TILT",
+        "strobe": 1,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "id_str": "15",
+        "name": "CENTER RAMP MAKE",
+        "strobe": 1,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "id_str": "16",
+        "name": "LEFT OUTLANE",
+        "strobe": 1,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "id_str": "17",
+        "name": "RIGHT IN-LANE",
+        "strobe": 1,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "id_str": "18",
+        "name": "BALL SHOOTER",
+        "strobe": 1,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "id_str": "21",
+        "name": "SLAM TILT",
+        "strobe": 2,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "id_str": "22",
+        "name": "COIN DOOR CLOSED",
+        "strobe": 2,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "id_str": "23",
+        "name": "JET ADVANCE STANDUP",
+        "strobe": 2,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "id_str": "24",
+        "name": "ALWAYS CLOSED",
+        "strobe": 2,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "id_str": "25",
+        "name": "UNDER- GROUND PASS",
+        "strobe": 2,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "id_str": "26",
+        "name": "LEFT IN-LANE",
+        "strobe": 2,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "id_str": "27",
+        "name": "RIGHT OUTLANE",
+        "strobe": 2,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "id_str": "28",
+        "name": "KICK BACK",
+        "strobe": 2,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "id_str": "31",
+        "name": "(unnamed)",
+        "strobe": 3,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "id_str": "32",
+        "name": "(unnamed)",
+        "strobe": 3,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "id_str": "33",
+        "name": "(unnamed)",
+        "strobe": 3,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "id_str": "34",
+        "name": "(unnamed)",
+        "strobe": 3,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "id_str": "35",
+        "name": "(unnamed)",
+        "strobe": 3,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "id_str": "36",
+        "name": "(unnamed)",
+        "strobe": 3,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "id_str": "37",
+        "name": "(unnamed)",
+        "strobe": 3,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "id_str": "38",
+        "name": "(unnamed)",
+        "strobe": 3,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "id_str": "41",
+        "name": "(unnamed)",
+        "strobe": 4,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "id_str": "42",
+        "name": "(unnamed)",
+        "strobe": 4,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "id_str": "43",
+        "name": "NOT USED",
+        "strobe": 4,
+        "return": 3,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "id_str": "44",
+        "name": "(unnamed)",
+        "strobe": 4,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "id_str": "45",
+        "name": "(unnamed)",
+        "strobe": 4,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "id_str": "46",
+        "name": "(unnamed)",
+        "strobe": 4,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "id_str": "47",
+        "name": "LEFT RAMP DOWN",
+        "strobe": 4,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "id_str": "48",
+        "name": "RIGHT RAMP DOWN",
+        "strobe": 4,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "id_str": "51",
+        "name": "LEFT SLING",
+        "strobe": 5,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "id_str": "52",
+        "name": "RIGHT SLING",
+        "strobe": 5,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "id_str": "53",
+        "name": "TOP JET BUMPER",
+        "strobe": 5,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "id_str": "54",
+        "name": "MIDDLE JET BUMPER",
+        "strobe": 5,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "id_str": "55",
+        "name": "BOTTOM JET BUMPER",
+        "strobe": 5,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "id_str": "56",
+        "name": "TOP SKILL SHOT",
+        "strobe": 5,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "id_str": "57",
+        "name": "MIDDLE SKILL SHOT",
+        "strobe": 5,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "id_str": "58",
+        "name": "LOWER SKILL SHOT",
+        "strobe": 5,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "id_str": "61",
+        "name": "LEFT SPINNER",
+        "strobe": 6,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "id_str": "62",
+        "name": "RIGHT SPINNER",
+        "strobe": 6,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "id_str": "63",
+        "name": "(unnamed)",
+        "strobe": 6,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "id_str": "64",
+        "name": "(unnamed)",
+        "strobe": 6,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 65,
+        "id_str": "65",
+        "name": "LEFT GOFER 1",
+        "strobe": 6,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 66,
+        "id_str": "66",
+        "name": "LEFT GOFER 2",
+        "strobe": 6,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 67,
+        "id_str": "67",
+        "name": "BEHIND LEFT GOFER",
+        "strobe": 6,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 68,
+        "id_str": "68",
+        "name": "HOLE-IN ONE MADE",
+        "strobe": 6,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 71,
+        "id_str": "71",
+        "name": "LEFT CART PATH",
+        "strobe": 7,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 72,
+        "id_str": "72",
+        "name": "RIGHT CART PATH",
+        "strobe": 7,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 73,
+        "id_str": "73",
+        "name": "RIGHT RAMP MAKE",
+        "strobe": 7,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 74,
+        "id_str": "74",
+        "name": "GOLF CART",
+        "strobe": 7,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 75,
+        "id_str": "75",
+        "name": "RIGHT GOFER 1",
+        "strobe": 7,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 76,
+        "id_str": "76",
+        "name": "RIGHT GOFER 2",
+        "strobe": 7,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 77,
+        "id_str": "77",
+        "name": "ADVANCE TRAP VALUE",
+        "strobe": 7,
+        "return": 7,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 78,
+        "id_str": "78",
+        "name": "SAND TRAP EJECT",
+        "strobe": 7,
+        "return": 8,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 81,
+        "id_str": "81",
+        "name": "K-I-C-K ADVANCE",
+        "strobe": 8,
+        "return": 1,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 82,
+        "id_str": "82",
+        "name": "(K)ICK",
+        "strobe": 8,
+        "return": 2,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 83,
+        "id_str": "83",
+        "name": "K(I)CK",
+        "strobe": 8,
+        "return": 3,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 84,
+        "id_str": "84",
+        "name": "KI(C)K",
+        "strobe": 8,
+        "return": 4,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 85,
+        "id_str": "85",
+        "name": "KIC(K)",
+        "strobe": 8,
+        "return": 5,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 86,
+        "id_str": "86",
+        "name": "CAPTIVE BALL",
+        "strobe": 8,
+        "return": 6,
+        "type": "matrix",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": 87,
+        "id_str": "87",
+        "name": "NOT USED",
+        "strobe": 8,
+        "return": 7,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": 88,
+        "id_str": "88",
+        "name": "NOT USED",
+        "strobe": 8,
+        "return": 8,
+        "type": "matrix",
+        "used": false,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D1",
+        "name": "LEFT COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D2",
+        "name": "CENTER COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D3",
+        "name": "RIGHT COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D4",
+        "name": "4TH COIN CHUTE",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D5",
+        "name": "J205-6 U16-9 Normal Test Function Function Srv Crdts Escape",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D6",
+        "name": "J205-7 U16-11 Normal Test Function Function Volume Dn Down",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D7",
+        "name": "J205-8 U16-7 Normal Test Function Function Volume Up Up",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "D8",
+        "name": "J205-9 U16-5 Normal Test Function Function Begin Test Enter",
+        "strobe": null,
+        "return": null,
+        "type": "dedicated_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "F1",
+        "name": "Lower Right Flipper E.O.S",
+        "strobe": null,
+        "return": null,
+        "type": "flipper_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "F3",
+        "name": "Lower Right Flipper Opto Lower Left Flipper E.O.S",
+        "strobe": null,
+        "return": null,
+        "type": "flipper_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "F5",
+        "name": "Lower Left Flipper Opto Upper Right Flipper E.O.S",
+        "strobe": null,
+        "return": null,
+        "type": "flipper_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "F7",
+        "name": "Upper Right Flipper Opto Upper Left Flipper E.O.S",
+        "strobe": null,
+        "return": null,
+        "type": "flipper_grounded",
+        "used": true,
+        "notes": []
+      },
+      {
+        "id": null,
+        "id_str": "F8",
+        "name": "Upper Left Flipper Opto",
+        "strobe": null,
+        "return": null,
+        "type": "flipper_grounded",
+        "used": true,
+        "notes": []
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "Williams System 11 / WPC matrix",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [
+      {
+        "sol_number": 1,
+        "name": "AUTO FIRE",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q72",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-BRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 2,
+        "name": "KICKBACK",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q68",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-RED",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 3,
+        "name": "CLUBHOUSE KICKER",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q71",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-ORG",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 4,
+        "name": "LEFT GOFER UP",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q67",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-YEL",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 5,
+        "name": "RIGHT GOFER UP",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q70",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-GRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 6,
+        "name": "JET POPPER",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q66",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-BLU",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 7,
+        "name": "LEFT EJECT",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q69",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-BLK",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 8,
+        "name": "UPPER RIGHT EJECT",
+        "type": "high power",
+        "bcd_code": null,
+        "transistor": "Q65",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "VIO-GRY",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 9,
+        "name": "TROUGH EJECT",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q44",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-BLK",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 10,
+        "name": "LEFT SLINGSHOT",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q48",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-RED",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 11,
+        "name": "RIGHT SLINGSHOT",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q43",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-ORG",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 12,
+        "name": "TOP JET BUMPBER",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q47",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-YEL",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 13,
+        "name": "MIDDLE JET BUMPER",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q42",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-GRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 14,
+        "name": "BOTTOM JET BUMPER",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q46",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-BLU",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 15,
+        "name": "LEFT GOFER DOWN",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q41",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-VIO",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 16,
+        "name": "RIGHT GOFER DOWN",
+        "type": "low power",
+        "bcd_code": null,
+        "transistor": "Q45",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BRN-GRY",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 17,
+        "name": "JET FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q28",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-BRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 18,
+        "name": "LOWER LEFT FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q32",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-RED",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 19,
+        "name": "LEFT SPINNER FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q27",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-ORG",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 20,
+        "name": "RIGHT SPINNER FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q31",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLK-YEL",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 21,
+        "name": "LOWER RIGHT FLASHER",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q26",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-GRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 22,
+        "name": "NOT USED",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q30",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-BLK",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 23,
+        "name": "NOT USED",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q25",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-VIO",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 24,
+        "name": "UNDERGROUND PASS",
+        "type": "flasher",
+        "bcd_code": null,
+        "transistor": "Q29",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-GRY",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 25,
+        "name": "SAND TRAP FLASHER",
+        "type": "gen. purpose",
+        "bcd_code": null,
+        "transistor": "Q16",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-BRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 26,
+        "name": "WHEEL FLASHER",
+        "type": "gen. purpose",
+        "bcd_code": null,
+        "transistor": "Q15",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-RED",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 27,
+        "name": "LEFT RAMP DOWN",
+        "type": "gen. purpose",
+        "bcd_code": null,
+        "transistor": "Q14",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-ORG",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 28,
+        "name": "RIGHT RAMP DOWN",
+        "type": "gen. purpose",
+        "bcd_code": null,
+        "transistor": "Q13",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "BLU-YEL",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 1,
+        "name": "LEFT SIDE STRING",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q5",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-BRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 2,
+        "name": "RIGHT SIDE STRING",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q4",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-ORG",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 3,
+        "name": "GOFER SPOTLIGHT",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": "Q3",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-YEL",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 4,
+        "name": "*ILLUMINATION STRING 4",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": null,
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-GRN",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      },
+      {
+        "sol_number": 5,
+        "name": "*ILLUMINATION STRING 5",
+        "type": "g.i.",
+        "bcd_code": null,
+        "transistor": null,
+        "connector": null,
+        "wire_code": null,
+        "wire_color": "WHT-VIO",
+        "sol_exp_color": null,
+        "coil_type": null,
+        "fault_flag": false
+      }
+    ],
+    "flipper_circuits": [
+      {
+        "name": "LOWER RIGHT FLIPPER",
+        "power_wire": "Power",
+        "coil_wire": "J119-1 (RED-GRN)",
+        "coil_connector": "",
+        "button_wire": "Q90",
+        "button_connector": "",
+        "coil_part": "BLUE"
+      },
+      {
+        "name": "LOWER LEFT FLIPPER",
+        "power_wire": "Power",
+        "coil_wire": "J119-4 (RED-BLU)",
+        "coil_connector": "",
+        "button_wire": "Q87",
+        "button_connector": "",
+        "coil_part": "BLUE"
+      },
+      {
+        "name": "UPPER RIGHT FLIPPER",
+        "power_wire": "Power",
+        "coil_wire": "J119-6 (RED-VIO)",
+        "coil_connector": "",
+        "button_wire": "Q84",
+        "button_connector": "",
+        "coil_part": "RED"
+      },
+      {
+        "name": "BALL LAUNCH RAMP",
+        "power_wire": "Power",
+        "coil_wire": "J119-8 (RED-GRY)",
+        "coil_connector": "",
+        "button_wire": "Q81",
+        "button_connector": "",
+        "coil_part": "YELLOW"
+      },
+      {
+        "name": "NOT USED",
+        "power_wire": "Hold",
+        "coil_wire": "J119-8 (RED-GRY)",
+        "coil_connector": "",
+        "button_wire": "Q83",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "WHEEL SPIN (CCW)",
+        "power_wire": "Low Power",
+        "coil_wire": "J139-2",
+        "coil_connector": "",
+        "button_wire": "U3A U3B",
+        "button_connector": "",
+        "coil_part": "MANUAL"
+      },
+      {
+        "name": "WHEEL SPIN (CLOCK-WISE)",
+        "power_wire": "Low Power",
+        "coil_wire": "J139-2",
+        "coil_connector": "",
+        "button_wire": "U3C U3D",
+        "button_connector": "",
+        "coil_part": "MANUAL"
+      },
+      {
+        "name": "UPPER RIGHT 1 FLASHER",
+        "power_wire": "Flasher",
+        "coil_wire": "J4-1",
+        "coil_connector": "",
+        "button_wire": "Q2",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "UPPER RIGHT 2 FLASHER",
+        "power_wire": "Flasher",
+        "coil_wire": "J4-1",
+        "coil_connector": "",
+        "button_wire": "Q4",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "UPPER RIGHT 3 FLASHER",
+        "power_wire": "Flasher",
+        "coil_wire": "J4-1",
+        "coil_connector": "",
+        "button_wire": "Q6",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "UPPER PLAYFIELD RIGHT",
+        "power_wire": "Flasher",
+        "coil_wire": "J4-1",
+        "coil_connector": "",
+        "button_wire": "Q8",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "UPPER PLAYFIELD LEFT",
+        "power_wire": "Flasher",
+        "coil_wire": "J4-1",
+        "coil_connector": "",
+        "button_wire": "Q10",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "UPPER LEFT 1 FLASHER",
+        "power_wire": "Flasher",
+        "coil_wire": "J4-1",
+        "coil_connector": "",
+        "button_wire": "Q12",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "UPPER LEFT 2 FLASHER",
+        "power_wire": "Flasher",
+        "coil_wire": "J4-1",
+        "coil_connector": "",
+        "button_wire": "Q14",
+        "button_connector": "",
+        "coil_part": ""
+      },
+      {
+        "name": "UPPER LEFT 3 FLASHER",
+        "power_wire": "Flasher",
+        "coil_wire": "J4-1",
+        "coil_connector": "",
+        "button_wire": "Q16",
+        "button_connector": "",
+        "coil_part": ""
+      }
+    ]
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": [
+      {
+        "id": 11,
+        "name": "OUTLANE EXTRA BALL",
+        "col": 1,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 12,
+        "name": "KICKBACK",
+        "col": 1,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 13,
+        "name": "LOWER DRIVING RANGE",
+        "col": 1,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 14,
+        "name": "SHOOT AGAIN",
+        "col": 1,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 15,
+        "name": "SPECIAL",
+        "col": 1,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 16,
+        "name": "WHEEL VALUE",
+        "col": 1,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 17,
+        "name": "JET LIGHTNING",
+        "col": 1,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 18,
+        "name": "HOLE 8",
+        "col": 1,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 21,
+        "name": "HOLE 5",
+        "col": 2,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 22,
+        "name": "HOLE 4",
+        "col": 2,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 23,
+        "name": "HOLE 3",
+        "col": 2,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 24,
+        "name": "HIT BUD",
+        "col": 2,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 25,
+        "name": "HOLE 1",
+        "col": 2,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 26,
+        "name": "2X",
+        "col": 2,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 27,
+        "name": "CART PATH 2",
+        "col": 2,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 28,
+        "name": "5X CART PATH",
+        "col": 2,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 31,
+        "name": "HOLE 6",
+        "col": 3,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 32,
+        "name": "HOLE 7",
+        "col": 3,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 33,
+        "name": "HOLE 2",
+        "col": 3,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 34,
+        "name": "HIT BUZZ",
+        "col": 3,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 35,
+        "name": "HOLE 9",
+        "col": 3,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 36,
+        "name": "4X",
+        "col": 3,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 37,
+        "name": "CART PATH 4",
+        "col": 3,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 38,
+        "name": "3X",
+        "col": 3,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 41,
+        "name": "DRIVING RANGE",
+        "col": 4,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 42,
+        "name": "INCREASE GOLF CART",
+        "col": 4,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 43,
+        "name": "INCREASE BUZZ VALUE",
+        "col": 4,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 44,
+        "name": "INCREASE BUD VALUE",
+        "col": 4,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 45,
+        "name": "NEWTON DRIVE",
+        "col": 4,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 46,
+        "name": "COLLECT",
+        "col": 4,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 47,
+        "name": "RIP OFF",
+        "col": 4,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 48,
+        "name": "LEFT LOOP DRIVE",
+        "col": 4,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 51,
+        "name": "(K)ICK",
+        "col": 5,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 52,
+        "name": "K(I)CK",
+        "col": 5,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 53,
+        "name": "KI(C)K",
+        "col": 5,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 54,
+        "name": "KIC(K)",
+        "col": 5,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 55,
+        "name": "SKILL SHOT",
+        "col": 5,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 56,
+        "name": "RIGHT RAISE GOFER",
+        "col": 5,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 57,
+        "name": "RIGHT RAMP LOCK",
+        "col": 5,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 58,
+        "name": "RIGHT RAMP DRIVE",
+        "col": 5,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 61,
+        "name": "4 STROKES",
+        "col": 6,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 62,
+        "name": "3 STROKES",
+        "col": 6,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 63,
+        "name": "2 STROKES",
+        "col": 6,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 64,
+        "name": "5 STROKES",
+        "col": 6,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 65,
+        "name": "7 STROKES",
+        "col": 6,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 66,
+        "name": "6 STROKES",
+        "col": 6,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 67,
+        "name": "LEFT SPINNER",
+        "col": 6,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 68,
+        "name": "TRAP READY",
+        "col": 6,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 71,
+        "name": "ADVANCE TRAP",
+        "col": 7,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 72,
+        "name": "CENTER DRIVE",
+        "col": 7,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 73,
+        "name": "CENTER LOCK",
+        "col": 7,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 74,
+        "name": "GET T.N.T.",
+        "col": 7,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 75,
+        "name": "CENTER RAISE GOFER",
+        "col": 7,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 76,
+        "name": "RIGHT SPINNER",
+        "col": 7,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 77,
+        "name": "RIGHT LOOP DRIVE",
+        "col": 7,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 78,
+        "name": "BOTTOM JET BUMPER",
+        "col": 7,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 81,
+        "name": "SIDE RAMP DRIVE",
+        "col": 8,
+        "row": 1,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 82,
+        "name": "EXTRA BALL",
+        "col": 8,
+        "row": 2,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 83,
+        "name": "MULTIBALL",
+        "col": 8,
+        "row": 3,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 84,
+        "name": "JACKPOT",
+        "col": 8,
+        "row": 4,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 85,
+        "name": "PUTT OUT",
+        "col": 8,
+        "row": 5,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 86,
+        "name": "TOP JET BUMPER",
+        "col": 8,
+        "row": 6,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 87,
+        "name": "MIDDLE JET BUMPER",
+        "col": 8,
+        "row": 7,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      },
+      {
+        "id": 88,
+        "name": "START BUTTON",
+        "col": 8,
+        "row": 8,
+        "decode_decoder": null,
+        "decode_address": null,
+        "aux_board": false,
+        "notes": []
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}
