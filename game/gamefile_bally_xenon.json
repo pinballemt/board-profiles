@@ -1,0 +1,2017 @@
+{
+  "game": {
+    "id": "bally_xenon",
+    "name": "Xenon",
+    "manufacturer": "Bally",
+    "year": null,
+    "system": "Bally AS-2518",
+    "mpu": "AS-2518-35",
+    "platform_id": "bally_35",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Bally_Xenon_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "AS-2518-35"
+      },
+      "DRIVER": {
+        "part": "AS-2518-22"
+      },
+      "LAMP": [
+        {
+          "part": "AS-2518-23"
+        },
+        {
+          "part": "AS-2518-52",
+          "note": "Aux. Lamp Driver Board"
+        }
+      ],
+      "SOUND": {
+        "part": "AS-2518-56",
+        "note": "sound module variant"
+      },
+      "POWER": {
+        "part": "AS-2518-54",
+        "note": "Rectifier Module"
+      },
+      "DISPLAY": {
+        "part": "TBD"
+      }
+    },
+    "decode_complete": true
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 1,
+            "wire_color": "Wht-Red",
+            "wire_code": 51
+          },
+          {
+            "connector": "A4J3",
+            "pin": 2,
+            "wire_color": "Red-Yel",
+            "wire_code": 13
+          }
+        ],
+        "strobe": 0
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 2,
+            "wire_color": "Orn",
+            "wire_code": 70
+          },
+          {
+            "connector": "A4J3",
+            "pin": 3,
+            "wire_color": "Red-Grn",
+            "wire_code": 14
+          }
+        ],
+        "strobe": 1
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 3,
+            "wire_color": "Gry-Yel",
+            "wire_code": 93
+          }
+        ],
+        "strobe": 2
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 4,
+            "wire_color": "Wht-Yel",
+            "wire_code": 53
+          }
+        ],
+        "strobe": 3
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 5,
+            "wire_color": "Yel-Red",
+            "wire_code": 31
+          }
+        ],
+        "strobe": 4
+      }
+    ],
+    "return_signals": [
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 8,
+            "wire_color": "Wht-Grn",
+            "wire_code": 54
+          },
+          {
+            "connector": "A4J3",
+            "pin": 9,
+            "wire_color": "Red-Wht",
+            "wire_code": 15
+          }
+        ],
+        "ret_index": 0,
+        "row_index": 0
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 9,
+            "wire_color": "Brn-Yel",
+            "wire_code": 63
+          },
+          {
+            "connector": "A4J3",
+            "pin": 10,
+            "wire_color": "Brn-Wht",
+            "wire_code": 65
+          }
+        ],
+        "ret_index": 1,
+        "row_index": 1
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 10,
+            "wire_color": "Wht-Orn",
+            "wire_code": 57
+          },
+          {
+            "connector": "A4J3",
+            "pin": 11,
+            "wire_color": "Blu",
+            "wire_code": 20
+          }
+        ],
+        "ret_index": 2,
+        "row_index": 2
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 11,
+            "wire_color": "Orn-Blk",
+            "wire_code": 78
+          },
+          {
+            "connector": "A4J3",
+            "pin": 12,
+            "wire_color": "Blu-Red",
+            "wire_code": 21
+          }
+        ],
+        "ret_index": 3,
+        "row_index": 3
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 12,
+            "wire_color": "Brn",
+            "wire_code": 60
+          },
+          {
+            "connector": "A4J3",
+            "pin": 13,
+            "wire_color": "Blu-Yel",
+            "wire_code": 23
+          }
+        ],
+        "ret_index": 4,
+        "row_index": 4
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 13,
+            "wire_color": "Wht-Brn",
+            "wire_code": 56
+          },
+          {
+            "connector": "A4J3",
+            "pin": 14,
+            "wire_color": "Blu-Wht",
+            "wire_code": 25
+          }
+        ],
+        "ret_index": 5,
+        "row_index": 5
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 14,
+            "wire_color": "Brn-Wht",
+            "wire_code": 65
+          },
+          {
+            "connector": "A4J3",
+            "pin": 15,
+            "wire_color": "Blu-Orn",
+            "wire_code": 27
+          }
+        ],
+        "ret_index": 6,
+        "row_index": 6
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 15,
+            "wire_color": "Wht-Blu",
+            "wire_code": 52
+          },
+          {
+            "connector": "A4J3",
+            "pin": 16,
+            "wire_color": "Yel",
+            "wire_code": 30
+          }
+        ],
+        "ret_index": 7,
+        "row_index": 7
+      }
+    ],
+    "switches": [
+      {
+        "switch_id": 1,
+        "matrix_position": 1,
+        "row": 1,
+        "column": 1,
+        "number": 1,
+        "name": "End of Tube Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 9,
+        "matrix_position": 9,
+        "row": 1,
+        "column": 2,
+        "number": 9,
+        "name": "Coin Chute III (Right)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 17,
+        "matrix_position": 17,
+        "row": 1,
+        "column": 3,
+        "number": 17,
+        "name": "Button #4",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 25,
+        "matrix_position": 25,
+        "row": 1,
+        "column": 4,
+        "number": 25,
+        "name": "Shooter Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 33,
+        "matrix_position": 33,
+        "row": 1,
+        "column": 5,
+        "number": 33,
+        "name": "Side Saucer",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 2,
+        "matrix_position": 2,
+        "row": 2,
+        "column": 1,
+        "number": 2,
+        "name": "Ball Release #1",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 10,
+        "matrix_position": 10,
+        "row": 2,
+        "column": 2,
+        "number": 10,
+        "name": "Coin Chute I (Left)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 18,
+        "matrix_position": 18,
+        "row": 2,
+        "column": 3,
+        "number": 18,
+        "name": "Button #3",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 26,
+        "matrix_position": 26,
+        "row": 2,
+        "column": 4,
+        "number": 26,
+        "name": "30 Point Rebound (2)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 34,
+        "matrix_position": 34,
+        "row": 2,
+        "column": 5,
+        "number": 34,
+        "name": "Top Saucer",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 3,
+        "matrix_position": 3,
+        "row": 3,
+        "column": 1,
+        "number": 3,
+        "name": "Upper Side Target",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 11,
+        "matrix_position": 11,
+        "row": 3,
+        "column": 2,
+        "number": 11,
+        "name": "Coin Chute II (Middle)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 19,
+        "matrix_position": 19,
+        "row": 3,
+        "column": 3,
+        "number": 19,
+        "name": "Button #2",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 27,
+        "matrix_position": 27,
+        "row": 3,
+        "column": 4,
+        "number": 27,
+        "name": "Tube Entry Switch",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 35,
+        "matrix_position": 35,
+        "row": 3,
+        "column": 5,
+        "number": 35,
+        "name": "Right Slingshot",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 4,
+        "matrix_position": 4,
+        "row": 4,
+        "column": 1,
+        "number": 4,
+        "name": "Lower Side Target",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 12,
+        "matrix_position": 12,
+        "row": 4,
+        "column": 2,
+        "number": 12,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 20,
+        "matrix_position": 20,
+        "row": 4,
+        "column": 3,
+        "number": 20,
+        "name": "Button #1",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 28,
+        "matrix_position": 28,
+        "row": 4,
+        "column": 4,
+        "number": 28,
+        "name": "Ball Release #2",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 36,
+        "matrix_position": 36,
+        "row": 4,
+        "column": 5,
+        "number": 36,
+        "name": "Left Slingshot",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 5,
+        "matrix_position": 5,
+        "row": 5,
+        "column": 1,
+        "number": 5,
+        "name": "Spinner",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 13,
+        "matrix_position": 13,
+        "row": 5,
+        "column": 2,
+        "number": 13,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 21,
+        "matrix_position": 21,
+        "row": 5,
+        "column": 3,
+        "number": 21,
+        "name": "Drop Target #4",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 29,
+        "matrix_position": 29,
+        "row": 5,
+        "column": 4,
+        "number": 29,
+        "name": "Left Outlane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 37,
+        "matrix_position": 37,
+        "row": 5,
+        "column": 5,
+        "number": 37,
+        "name": "Lower Thumper Bumper",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 6,
+        "matrix_position": 6,
+        "row": 6,
+        "column": 1,
+        "number": 6,
+        "name": "Credit Button",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 14,
+        "matrix_position": 14,
+        "row": 6,
+        "column": 2,
+        "number": 14,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 22,
+        "matrix_position": 22,
+        "row": 6,
+        "column": 3,
+        "number": 22,
+        "name": "Drop Target #3",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 30,
+        "matrix_position": 30,
+        "row": 6,
+        "column": 4,
+        "number": 30,
+        "name": "Flipper Feed Lane (Left Return Lane)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 38,
+        "matrix_position": 38,
+        "row": 6,
+        "column": 5,
+        "number": 38,
+        "name": "Middle Thumper Bumper",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 7,
+        "matrix_position": 7,
+        "row": 7,
+        "column": 1,
+        "number": 7,
+        "name": "Tilt (3)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 15,
+        "matrix_position": 15,
+        "row": 7,
+        "column": 2,
+        "number": 15,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 23,
+        "matrix_position": 23,
+        "row": 7,
+        "column": 3,
+        "number": 23,
+        "name": "Drop Target #2",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 31,
+        "matrix_position": 31,
+        "row": 7,
+        "column": 4,
+        "number": 31,
+        "name": "Flipper Feed Lane (Right Return Lane)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 39,
+        "matrix_position": 39,
+        "row": 7,
+        "column": 5,
+        "number": 39,
+        "name": "Right Thumper Bumper",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 8,
+        "matrix_position": 8,
+        "row": 8,
+        "column": 1,
+        "number": 8,
+        "name": "Outhole",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 16,
+        "matrix_position": 16,
+        "row": 8,
+        "column": 2,
+        "number": 16,
+        "name": "Slam (2)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 24,
+        "matrix_position": 24,
+        "row": 8,
+        "column": 3,
+        "number": 24,
+        "name": "Drop Target #1",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 32,
+        "matrix_position": 32,
+        "row": 8,
+        "column": 4,
+        "number": 32,
+        "name": "Right Outlane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 40,
+        "matrix_position": 40,
+        "row": 8,
+        "column": 5,
+        "number": 40,
+        "name": "Left Thumper Bumper",
+        "type": "playfield",
+        "used": true
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "Bally AS-2518-35",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [
+      {
+        "sol_number": 1,
+        "name": "Outhole Kicker",
+        "type": "momentary",
+        "bcd_code": 7,
+        "transistor": "Q4",
+        "connector": "A3J1-5",
+        "wire_code": 95,
+        "wire_color": "Gry-Wht",
+        "sol_exp_color": null,
+        "coil_type": "AN-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 2,
+        "name": "Knocker",
+        "type": "momentary",
+        "bcd_code": 6,
+        "transistor": "Q3",
+        "connector": "A3J2-5, J3-7",
+        "wire_code": 85,
+        "wire_color": "Blk-Wht",
+        "sol_exp_color": null,
+        "coil_type": "AR-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 3,
+        "name": "Ball Release",
+        "type": "momentary",
+        "bcd_code": 8,
+        "transistor": "Q8",
+        "connector": "A3J5-10",
+        "wire_code": 85,
+        "wire_color": "Blk-Wht",
+        "sol_exp_color": null,
+        "coil_type": "AO-27-1300",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 4,
+        "name": "Side Saucer",
+        "type": "momentary",
+        "bcd_code": 9,
+        "transistor": "Q13",
+        "connector": "A3J5-12",
+        "wire_code": 80,
+        "wire_color": "Blk",
+        "sol_exp_color": null,
+        "coil_type": "AO-27-1300",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 5,
+        "name": "Left Slingshot",
+        "type": "momentary",
+        "bcd_code": 15,
+        "transistor": "Q11",
+        "connector": "A3J5-14",
+        "wire_code": 83,
+        "wire_color": "Blk-Yel",
+        "sol_exp_color": null,
+        "coil_type": "AN-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 6,
+        "name": "Right Slingshot",
+        "type": "momentary",
+        "bcd_code": 16,
+        "transistor": "Q16",
+        "connector": "A3J5-8, J2-6, J3-7,",
+        "wire_code": 18,
+        "wire_color": "Red-Blk",
+        "sol_exp_color": null,
+        "coil_type": "AN-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 7,
+        "name": "Thumper Bumper Left",
+        "type": "momentary",
+        "bcd_code": 10,
+        "transistor": "Q14",
+        "connector": "A3J5-11",
+        "wire_code": 78,
+        "wire_color": "Orn-Blk",
+        "sol_exp_color": null,
+        "coil_type": "AN-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 8,
+        "name": "Thumper Bumper Right",
+        "type": "momentary",
+        "bcd_code": 11,
+        "transistor": "Q9",
+        "connector": "A3J5-9",
+        "wire_code": 71,
+        "wire_color": "Orn-Red",
+        "sol_exp_color": null,
+        "coil_type": "AN-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 9,
+        "name": "Thumper Bumper Middle",
+        "type": "momentary",
+        "bcd_code": 13,
+        "transistor": "Q10",
+        "connector": "A3J5-15",
+        "wire_code": 74,
+        "wire_color": "Orn-Grn",
+        "sol_exp_color": null,
+        "coil_type": "AN-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 10,
+        "name": "Thumper Bumper Lower",
+        "type": "momentary",
+        "bcd_code": 14,
+        "transistor": "Q12",
+        "connector": "A3J5-13",
+        "wire_code": 67,
+        "wire_color": "Brn-Orn",
+        "sol_exp_color": null,
+        "coil_type": "AN-26-1200",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 11,
+        "name": "4 Drop Target Reset",
+        "type": "momentary",
+        "bcd_code": 1,
+        "transistor": "Q2",
+        "connector": "A3J1-3, J2-4",
+        "wire_code": 67,
+        "wire_color": "Brn-Orn",
+        "sol_exp_color": null,
+        "coil_type": "NO-26-1900",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 12,
+        "name": "Drop Target #1",
+        "type": "momentary",
+        "bcd_code": 2,
+        "transistor": "Q1",
+        "connector": "A3J1-2, J2-9",
+        "wire_code": 18,
+        "wire_color": "Red-Blk",
+        "sol_exp_color": null,
+        "coil_type": "CJ-31-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 13,
+        "name": "Drop Target #2",
+        "type": "momentary",
+        "bcd_code": 3,
+        "transistor": "Q5",
+        "connector": "A3J2-10",
+        "wire_code": 81,
+        "wire_color": "Blk-Red",
+        "sol_exp_color": null,
+        "coil_type": "CJ-31-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 14,
+        "name": "Drop Target #3",
+        "type": "momentary",
+        "bcd_code": 4,
+        "transistor": "Q6",
+        "connector": "A3J2-11",
+        "wire_code": 80,
+        "wire_color": "Blk",
+        "sol_exp_color": null,
+        "coil_type": "CJ-31-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 15,
+        "name": "Drop Target #4",
+        "type": "momentary",
+        "bcd_code": 5,
+        "transistor": "Q7",
+        "connector": "A3J2-12",
+        "wire_code": 75,
+        "wire_color": "Orn-Wht",
+        "sol_exp_color": null,
+        "coil_type": "CJ-31-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 16,
+        "name": "Coin Lockout",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Q19",
+        "connector": "A3J2-8",
+        "wire_code": 36,
+        "wire_color": "Yel-Brn",
+        "sol_exp_color": null,
+        "coil_type": "FO-36-7000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 17,
+        "name": "Flipper enabling relay",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Q15",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "48V Relay",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 18,
+        "name": "Top Saucer",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Q17",
+        "connector": "A3J5-7",
+        "wire_code": 81,
+        "wire_color": "Blk-Red",
+        "sol_exp_color": null,
+        "coil_type": "AO-27-1300",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 18,
+        "name": "Top Saucer (SECONDARY)",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Q18",
+        "connector": "A3J5-3, J2-15, J3-9",
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "AO-27-1300",
+        "fault_flag": false,
+        "note": "Continuation row -- additional driver for parent solenoid."
+      }
+    ],
+    "flipper_circuits": [
+      {
+        "name": "Left Flipper",
+        "power_wire": "60 (Brn)",
+        "coil_wire": "40 (Grn)",
+        "coil_connector": "A3J1-8",
+        "button_wire": "20 (Blu)",
+        "button_connector": "A3J2-2",
+        "coil_part": "AQ-25-500/34-4500"
+      },
+      {
+        "name": "Right Flipper",
+        "power_wire": "60 (Brn)",
+        "coil_wire": "70 (Orn)",
+        "coil_connector": "A3J1-9",
+        "button_wire": "10 (Red)",
+        "button_connector": "A3J2-1",
+        "coil_part": "AQ-25-500/34-4500"
+      }
+    ]
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": [
+      {
+        "scr": "Q28",
+        "connector": "A5J1-8",
+        "description": "Amber \"X\"",
+        "wire_code": 51,
+        "wire_color": "Wht-Red",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 2,
+        "lamp_code": 2
+      },
+      {
+        "scr": "Q22",
+        "connector": "A5J1-10",
+        "description": "Flipper Feed Arrow (Left Return Lane)",
+        "wire_code": 23,
+        "wire_color": "Blu-Yel",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 5,
+        "lamp_code": 5
+      },
+      {
+        "scr": "Q44",
+        "connector": "A5J3-19",
+        "description": "Amber \"E\"",
+        "wire_code": 67,
+        "wire_color": "Brn-Orn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 2,
+        "lamp_code": 2
+      },
+      {
+        "scr": "Q37",
+        "connector": "A5J3-23",
+        "description": "Flipper Feed Arrow (Right Return Lane)",
+        "wire_code": 98,
+        "wire_color": "Gry-Blk",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 5,
+        "lamp_code": 5
+      },
+      {
+        "scr": "Q51",
+        "connector": "A5J3-15",
+        "description": "Amber \"N\" (first)",
+        "wire_code": 53,
+        "wire_color": "Wht-Yel",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 2,
+        "lamp_code": 2
+      },
+      {
+        "scr": "Q33",
+        "connector": "A5J2-11",
+        "description": "Game Over (Back Box)",
+        "wire_code": 95,
+        "wire_color": "Gry-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 12,
+        "lamp_code": 12
+      },
+      {
+        "scr": "Q08",
+        "connector": "A5J1-23",
+        "description": "Amber \"O\"",
+        "wire_code": 12,
+        "wire_color": "Red-Blu",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 3,
+        "lamp_code": 3
+      },
+      {
+        "scr": "Q15",
+        "connector": "A5J2-23",
+        "description": "High Score to Date (Back Box)",
+        "wire_code": 97,
+        "wire_color": "Gry-Orn",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 12,
+        "lamp_code": 12
+      },
+      {
+        "scr": "Q35",
+        "connector": "A5J1-3",
+        "description": "Amber \"N\" (second)",
+        "wire_code": 45,
+        "wire_color": "Grn-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 3,
+        "lamp_code": 3
+      },
+      {
+        "scr": "Q23",
+        "connector": "A5J2-8",
+        "description": "Match (Back Box)",
+        "wire_code": 70,
+        "wire_color": "Orn",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 10,
+        "lamp_code": 10
+      },
+      {
+        "scr": "Q19",
+        "connector": "A9J3-10",
+        "description": "Ball Shooter General Illumination",
+        "wire_code": 25,
+        "wire_color": "Blu-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 2,
+        "decode_address": 4,
+        "lamp_code": 4
+      },
+      {
+        "scr": "Q10",
+        "connector": "A5J1-15",
+        "description": "Outlane Arrow Left",
+        "wire_code": 13,
+        "wire_color": "Red-Yel",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 5,
+        "lamp_code": 5
+      },
+      {
+        "scr": "Q16",
+        "connector": "A5J2-22",
+        "description": "Ball-in-Play (Back Box)",
+        "wire_code": 62,
+        "wire_color": "Brn-Blu",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 12,
+        "lamp_code": 12
+      },
+      {
+        "scr": "Q60",
+        "connector": "A5J3-3",
+        "description": "Outlane Arrow Right",
+        "wire_code": 81,
+        "wire_color": "Blk-Red",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 5,
+        "lamp_code": 5
+      },
+      {
+        "scr": "Q12",
+        "connector": "A5J1-19",
+        "description": "Blue \"X\"",
+        "wire_code": 60,
+        "wire_color": "Brn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 1,
+        "lamp_code": 1
+      },
+      {
+        "scr": "Q27",
+        "connector": "A9J3-14",
+        "description": "Ring Circle #1",
+        "wire_code": 83,
+        "wire_color": "Blk-Yel",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 2,
+        "decode_address": 6,
+        "lamp_code": 6
+      },
+      {
+        "scr": "Q27",
+        "connector": "A5J1-9",
+        "description": "Blue \"E\"",
+        "wire_code": 43,
+        "wire_color": "Grn-Yel",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 1,
+        "lamp_code": 1
+      },
+      {
+        "scr": "Q21",
+        "connector": "A9J3-4",
+        "description": "Ring Circle #2",
+        "wire_code": 78,
+        "wire_color": "Orn-Blk",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 0,
+        "decode_address": 5,
+        "lamp_code": 5
+      },
+      {
+        "scr": "Q38",
+        "connector": "A5J3-25",
+        "description": "Blue \"N\" (first)",
+        "wire_code": 36,
+        "wire_color": "Yel-Brn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 1,
+        "lamp_code": 1
+      },
+      {
+        "scr": "Q06",
+        "connector": "A9J2-6",
+        "description": "Ring Circle #3",
+        "wire_code": 80,
+        "wire_color": "Blk",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 1,
+        "decode_address": 1,
+        "lamp_code": 1
+      },
+      {
+        "scr": "Q50",
+        "connector": "A5J3-12",
+        "description": "Blue \"O\"",
+        "wire_code": 21,
+        "wire_color": "Blu-Red",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 1,
+        "lamp_code": 1
+      },
+      {
+        "scr": "Q13",
+        "connector": "A9J2-13",
+        "description": "Ring Circle #4",
+        "wire_code": 81,
+        "wire_color": "Blk-Red",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 0,
+        "decode_address": 3,
+        "lamp_code": 3
+      },
+      {
+        "scr": "Q13",
+        "connector": "A5J1-17",
+        "description": "Blue \"N\" (second)",
+        "wire_code": 57,
+        "wire_color": "Wht-Orn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 2,
+        "lamp_code": 2
+      },
+      {
+        "scr": "Q20",
+        "connector": "A9J3-7",
+        "description": "Ring Circle #5",
+        "wire_code": 82,
+        "wire_color": "Blk-Blu",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 3,
+        "decode_address": 4,
+        "lamp_code": 4
+      },
+      {
+        "scr": "Q49",
+        "connector": "A5J3-17",
+        "description": "Bonus 20K",
+        "wire_code": 13,
+        "wire_color": "Red-Yel",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 3,
+        "lamp_code": 3
+      },
+      {
+        "scr": "Q28",
+        "connector": "A9J3-13",
+        "description": "Ring Circle #6",
+        "wire_code": 60,
+        "wire_color": "Brn",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 3,
+        "decode_address": 6,
+        "lamp_code": 6
+      },
+      {
+        "scr": "Q54",
+        "connector": "A5J3-11",
+        "description": "Bonus 40K & Special",
+        "wire_code": 20,
+        "wire_color": "Blu",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 3,
+        "lamp_code": 3
+      },
+      {
+        "scr": "Q14",
+        "connector": "A9J2-12",
+        "description": "Ring Circle #7",
+        "wire_code": 85,
+        "wire_color": "Blk-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 1,
+        "decode_address": 3,
+        "lamp_code": 3
+      },
+      {
+        "scr": "Q36",
+        "connector": "A5J3-26",
+        "description": "Bonus Multiplier 2X",
+        "wire_code": 43,
+        "wire_color": "Grn-Yel",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 0,
+        "lamp_code": 0
+      },
+      {
+        "scr": "Q03",
+        "connector": "A5J2-21",
+        "description": "Same Player Shoot Again (Back Box)",
+        "wire_code": 47,
+        "wire_color": "Grn-Orn",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 10,
+        "lamp_code": 10
+      },
+      {
+        "scr": "Q57",
+        "connector": "A5J3-1",
+        "description": "Bonus Multiplier 4X",
+        "wire_code": 10,
+        "wire_color": "Red",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 0,
+        "lamp_code": 0
+      },
+      {
+        "scr": "Q40",
+        "connector": "A5J3-22",
+        "description": "Same Player Shoot Again (Playfield)",
+        "wire_code": 23,
+        "wire_color": "Blu-Yel",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 10,
+        "lamp_code": 10
+      },
+      {
+        "scr": "Q52",
+        "connector": "A5J3-13",
+        "description": "Credit Indicator",
+        "wire_code": 35,
+        "wire_color": "Yel-Wht",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 10,
+        "lamp_code": 10
+      },
+      {
+        "scr": "Q11",
+        "connector": "A5J1-16",
+        "description": "Side Saucer 5K",
+        "wire_code": 90,
+        "wire_color": "Gry",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 6,
+        "lamp_code": 6
+      },
+      {
+        "scr": "Q01",
+        "connector": "A9J2-7",
+        "description": "Door Frame Bottom & Left #1",
+        "wire_code": 10,
+        "wire_color": "Red",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 0,
+        "decode_address": 0,
+        "lamp_code": 0
+      },
+      {
+        "scr": "Q26",
+        "connector": "A5J1-7",
+        "description": "Side Saucer 10K",
+        "wire_code": 34,
+        "wire_color": "Yel-Grn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 6,
+        "lamp_code": 6
+      },
+      {
+        "scr": "Q08",
+        "connector": "A9J2-14",
+        "description": "Door Frame Bottom & Left #2",
+        "wire_code": 12,
+        "wire_color": "Red-Blu",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 3,
+        "decode_address": 1,
+        "lamp_code": 1
+      },
+      {
+        "scr": "Q32",
+        "connector": "A5J3-27",
+        "description": "Side Saucer 15K",
+        "wire_code": 40,
+        "wire_color": "Grn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 6,
+        "lamp_code": 6
+      },
+      {
+        "scr": "Q15",
+        "connector": "A9J3-8",
+        "description": "Door Frame Bottom & Left #3",
+        "wire_code": 13,
+        "wire_color": "Red-Yel",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 2,
+        "decode_address": 3,
+        "lamp_code": 3
+      },
+      {
+        "scr": "Q59",
+        "connector": "A5J3-4",
+        "description": "Side Saucer 20K",
+        "wire_code": 14,
+        "wire_color": "Red-Grn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 6,
+        "lamp_code": 6
+      },
+      {
+        "scr": "Q22",
+        "connector": "A9J3-15",
+        "description": "Door Frame Bottom & Left #4",
+        "wire_code": 14,
+        "wire_color": "Red-Grn",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 1,
+        "decode_address": 5,
+        "lamp_code": 5
+      },
+      {
+        "scr": "Q04",
+        "connector": "A5J1-28",
+        "description": "Side Saucer 25K",
+        "wire_code": 78,
+        "wire_color": "Orn-Blk",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 7,
+        "lamp_code": 7
+      },
+      {
+        "scr": "Q04",
+        "connector": "A9J2-10",
+        "description": "Door Frame Bottom & Right #5",
+        "wire_code": 56,
+        "wire_color": "Wht-Brn",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 3,
+        "decode_address": 0,
+        "lamp_code": 0
+      },
+      {
+        "scr": "Q25",
+        "connector": "A5J1-6",
+        "description": "Side Saucer 30K",
+        "wire_code": 25,
+        "wire_color": "Blu-Wht",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 7,
+        "lamp_code": 7
+      },
+      {
+        "scr": "Q11",
+        "connector": "A9J2-18",
+        "description": "Door Frame Bottom & Right #6",
+        "wire_code": 57,
+        "wire_color": "Wht-Orn",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 2,
+        "decode_address": 2,
+        "lamp_code": 2
+      },
+      {
+        "scr": "Q20",
+        "connector": "A5J1-13",
+        "description": "Side Saucer 35K",
+        "wire_code": 96,
+        "wire_color": "Gry-Brn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 7,
+        "lamp_code": 7
+      },
+      {
+        "scr": "Q18",
+        "connector": "A9J3-11",
+        "description": "Door Frame Bottom & Right #7",
+        "wire_code": 58,
+        "wire_color": "Wht-Blk",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 1,
+        "decode_address": 4,
+        "lamp_code": 4
+      },
+      {
+        "scr": "Q58",
+        "connector": "A5J3-2",
+        "description": "Side Saucer 40K",
+        "wire_code": 95,
+        "wire_color": "Gry-Wht",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 7,
+        "lamp_code": 7
+      },
+      {
+        "scr": "Q25",
+        "connector": "A9J3-18",
+        "description": "Door Frame Bottom & Right #8",
+        "wire_code": 72,
+        "wire_color": "Orn-Blu",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 0,
+        "decode_address": 6,
+        "lamp_code": 6
+      },
+      {
+        "scr": "Q01",
+        "connector": "A5J1-24",
+        "description": "Side Saucer 50K",
+        "wire_code": 50,
+        "wire_color": "Wht",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 8,
+        "lamp_code": 8
+      },
+      {
+        "scr": "Q02",
+        "connector": "A9J2-4",
+        "description": "Door Frame Top & Left #5",
+        "wire_code": 15,
+        "wire_color": "Red-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 1,
+        "decode_address": 0,
+        "lamp_code": 0
+      },
+      {
+        "scr": "Q05",
+        "connector": "A9J2-9",
+        "description": "Side Saucer General Illumination",
+        "wire_code": 54,
+        "wire_color": "Wht-Grn",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 0,
+        "decode_address": 1,
+        "lamp_code": 1
+      },
+      {
+        "scr": "Q09",
+        "connector": "A9J2-11",
+        "description": "Door Frame Top & Left #6",
+        "wire_code": 18,
+        "wire_color": "Red-Blk",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 0,
+        "decode_address": 2,
+        "lamp_code": 2
+      },
+      {
+        "scr": "Q41",
+        "connector": "A5J3-20",
+        "description": "Side Saucer Special",
+        "wire_code": 64,
+        "wire_color": "Brn-Grn",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 9,
+        "lamp_code": 9
+      },
+      {
+        "scr": "Q16",
+        "connector": "A9J3-3",
+        "description": "Door Frame Top & Left #7",
+        "wire_code": 20,
+        "wire_color": "Blu",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 3,
+        "decode_address": 3,
+        "lamp_code": 3
+      },
+      {
+        "scr": "Q56",
+        "connector": "A5J3-10",
+        "description": "Side Target Arrow (lower)",
+        "wire_code": 91,
+        "wire_color": "Gry-Red",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 8,
+        "lamp_code": 8
+      },
+      {
+        "scr": "Q23",
+        "connector": "A9J3-12",
+        "description": "Door Frame Top & Left #8",
+        "wire_code": 21,
+        "wire_color": "Blu-Red",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 2,
+        "decode_address": 5,
+        "lamp_code": 5
+      },
+      {
+        "scr": "Q24",
+        "connector": "A5J1-5",
+        "description": "Side Target Arrow (upper)",
+        "wire_code": 48,
+        "wire_color": "Grn-Blk",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 8,
+        "lamp_code": 8
+      },
+      {
+        "scr": "Q03",
+        "connector": "A9J2-8",
+        "description": "Door Frame Top & Right #1",
+        "wire_code": 51,
+        "wire_color": "Wht-Red",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 2,
+        "decode_address": 0,
+        "lamp_code": 0
+      },
+      {
+        "scr": "Q46",
+        "connector": "A5J3-18",
+        "description": "Spinner",
+        "wire_code": 56,
+        "wire_color": "Wht-Brn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 9,
+        "lamp_code": 9
+      },
+      {
+        "scr": "Q10",
+        "connector": "A9J2-15",
+        "description": "Door Frame Top & Right #2",
+        "wire_code": 52,
+        "wire_color": "Wht-Blu",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 1,
+        "decode_address": 2,
+        "lamp_code": 2
+      },
+      {
+        "scr": "Q17",
+        "connector": "A9J3-9",
+        "description": "Door Frame Top & Right #3",
+        "wire_code": 53,
+        "wire_color": "Wht-Grn",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 0,
+        "decode_address": 4,
+        "lamp_code": 4
+      },
+      {
+        "scr": "Q47",
+        "connector": "A5J2-10",
+        "description": "Tilt (Back Box)",
+        "wire_code": 35,
+        "wire_color": "Yel-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 12,
+        "lamp_code": 12
+      },
+      {
+        "scr": "Q07",
+        "connector": "A5J1-27",
+        "description": "Top Saucer 1st X",
+        "wire_code": 53,
+        "wire_color": "Wht-Yel",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 11,
+        "lamp_code": 11
+      },
+      {
+        "scr": "Q24",
+        "connector": "A9J3-16",
+        "description": "Door Frame Top & Right #4",
+        "wire_code": 54,
+        "wire_color": "Wht-Grn",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 3,
+        "decode_address": 5,
+        "lamp_code": 5
+      },
+      {
+        "scr": "Q21",
+        "connector": "A5J1-12",
+        "description": "Top Saucer 2nd X",
+        "wire_code": 61,
+        "wire_color": "Brn-Red",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 11,
+        "lamp_code": 11
+      },
+      {
+        "scr": "Q55",
+        "connector": "A5J3-9",
+        "description": "Drop Target #1 & Top 1",
+        "wire_code": 15,
+        "wire_color": "Red-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 4,
+        "lamp_code": 4
+      },
+      {
+        "scr": "Q39",
+        "connector": "A5J3-24",
+        "description": "Top Saucer 3rd X",
+        "wire_code": 72,
+        "wire_color": "Orn-Blu",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 11,
+        "lamp_code": 11
+      },
+      {
+        "scr": "Q48",
+        "connector": "A5J3-16",
+        "description": "Drop Target #2 & Top 2",
+        "wire_code": 25,
+        "wire_color": "Blu-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 4,
+        "lamp_code": 4
+      },
+      {
+        "scr": "Q53",
+        "connector": "A5J3-14",
+        "description": "Top Saucer Captive Ball",
+        "wire_code": 84,
+        "wire_color": "Blk-Grn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 11,
+        "lamp_code": 11
+      },
+      {
+        "scr": "Q34",
+        "connector": "A5J1-2",
+        "description": "Drop Target #3 & Top 3",
+        "wire_code": 52,
+        "wire_color": "Wht-Blu",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 4,
+        "lamp_code": 4
+      },
+      {
+        "scr": "Q17",
+        "connector": "A5J1-11",
+        "description": "Tube Entrance & End of Tube",
+        "wire_code": 65,
+        "wire_color": "Brn-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 9,
+        "lamp_code": 9
+      },
+      {
+        "scr": "Q09",
+        "connector": "A5J1-14",
+        "description": "Drop Target #4 & Top 4",
+        "wire_code": 67,
+        "wire_color": "Brn-Orn",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 4,
+        "lamp_code": 4
+      },
+      {
+        "scr": "Q05",
+        "connector": "A5J2-16",
+        "description": "Tube Lights #1",
+        "wire_code": 34,
+        "wire_color": "Yel-Grn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 13,
+        "lamp_code": 13
+      },
+      {
+        "scr": "Q31",
+        "connector": "A5J2-2",
+        "description": "Drop Targets 25K",
+        "wire_code": 20,
+        "wire_color": "Blu",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 14,
+        "lamp_code": 14
+      },
+      {
+        "scr": "Q18",
+        "connector": "A5J2-20",
+        "description": "Tube Lights #2",
+        "wire_code": 98,
+        "wire_color": "Gry-Blk",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 13,
+        "lamp_code": 13
+      },
+      {
+        "scr": "Q42",
+        "connector": "A5J3-21",
+        "description": "Drop Targets Arrow",
+        "wire_code": 30,
+        "wire_color": "Yel",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 8,
+        "lamp_code": 8
+      },
+      {
+        "scr": "Q30",
+        "connector": "A5J2-6",
+        "description": "Tube Lights #3",
+        "wire_code": 85,
+        "wire_color": "Blk-Wht",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 2,
+        "decode_address": 13,
+        "lamp_code": 13
+      },
+      {
+        "scr": "Q06",
+        "connector": "A5J2-14",
+        "description": "Drop Targets Bonus Multiplier 2X",
+        "wire_code": 12,
+        "wire_color": "Red-Blu",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 14,
+        "lamp_code": 14
+      },
+      {
+        "scr": "Q43",
+        "connector": "A5J2-7",
+        "description": "Tube Lights #4",
+        "wire_code": 91,
+        "wire_color": "Gry-Red",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 13,
+        "lamp_code": 13
+      },
+      {
+        "scr": "Q19",
+        "connector": "A5J2-15",
+        "description": "Drop Targets Bonus Multiplier 4X",
+        "wire_code": 23,
+        "wire_color": "Blu-Yel",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 14,
+        "lamp_code": 14
+      },
+      {
+        "scr": "Q02",
+        "connector": "A5J1-25",
+        "description": "Tube Lights #5",
+        "wire_code": 75,
+        "wire_color": "Orn-Wht",
+        "tr_type": "MCR-106",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 9,
+        "lamp_code": 9
+      },
+      {
+        "scr": "Q45",
+        "connector": "A5J2-1",
+        "description": "Drop Targets Extra Ball",
+        "wire_code": 60,
+        "wire_color": "Brn",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 3,
+        "decode_address": 14,
+        "lamp_code": 14
+      },
+      {
+        "scr": "Q14",
+        "connector": "A5J1-18",
+        "description": null,
+        "wire_code": 58,
+        "wire_color": "Wht-Blk",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 0,
+        "decode_address": 0,
+        "lamp_code": 0
+      },
+      {
+        "scr": "Q29",
+        "connector": "A5J1-1",
+        "description": "Drop Targets Special",
+        "wire_code": 41,
+        "wire_color": "Grn-Red",
+        "tr_type": "2N5060",
+        "aux_board": false,
+        "decode_decoder": 1,
+        "decode_address": 0,
+        "lamp_code": 0
+      },
+      {
+        "scr": "Q07",
+        "connector": "A9J2-5",
+        "description": null,
+        "wire_code": 60,
+        "wire_color": "Brn",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 2,
+        "decode_address": 1,
+        "lamp_code": 1
+      },
+      {
+        "scr": "Q12",
+        "connector": "A9J2-17",
+        "description": "End of Tube General Illumination",
+        "wire_code": 43,
+        "wire_color": "Grn-Yel",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 3,
+        "decode_address": 2,
+        "lamp_code": 2
+      },
+      {
+        "scr": "Q26",
+        "connector": "A9J3-17",
+        "description": null,
+        "wire_code": 68,
+        "wire_color": "Brn-Blk",
+        "tr_type": "MCR-106",
+        "aux_board": true,
+        "decode_decoder": 1,
+        "decode_address": 6,
+        "lamp_code": 6
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}

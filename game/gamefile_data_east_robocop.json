@@ -1,0 +1,1117 @@
+{
+  "game": {
+    "id": "data_east_robocop",
+    "name": "East Robocop",
+    "manufacturer": "Data",
+    "year": null,
+    "system": "UNKNOWN",
+    "mpu": "UNKNOWN",
+    "platform_id": null,
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Data_East_Robocop_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "520-5003-06",
+        "note": "matched via wildcard family"
+      },
+      "DRIVER": {
+        "part": "520-5033-00",
+        "note": "matched via wildcard family"
+      },
+      "LAMP": {
+        "part": "520-5033-00",
+        "note": "matched via wildcard family"
+      },
+      "SOUND": {
+        "part": "520-5002-06",
+        "note": "matched via wildcard family"
+      },
+      "POWER": [
+        {
+          "part": "520-5000-00",
+          "note": "matched via wildcard family"
+        },
+        {
+          "part": "520-5021-00",
+          "note": "matched via wildcard family"
+        }
+      ],
+      "DISPLAY": {
+        "part": "TBD"
+      }
+    },
+    "decode_complete": false
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      }
+    ],
+    "return_signals": [
+      {
+        "signals": [],
+        "row_index": 0
+      },
+      {
+        "signals": [],
+        "row_index": 1
+      },
+      {
+        "signals": [],
+        "row_index": 2
+      },
+      {
+        "signals": [],
+        "row_index": 3
+      },
+      {
+        "signals": [],
+        "row_index": 4
+      },
+      {
+        "signals": [],
+        "row_index": 5
+      },
+      {
+        "signals": [],
+        "row_index": 6
+      },
+      {
+        "signals": [],
+        "row_index": 7
+      }
+    ],
+    "switches": [
+      {
+        "switch_id": 1,
+        "matrix_position": 1,
+        "row": 1,
+        "column": 1,
+        "number": 1,
+        "name": "Plump Bob Tilt",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 9,
+        "matrix_position": 9,
+        "row": 1,
+        "column": 2,
+        "number": 9,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 17,
+        "matrix_position": 17,
+        "row": 1,
+        "column": 3,
+        "number": 17,
+        "name": "Laser Kick",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 25,
+        "matrix_position": 25,
+        "row": 1,
+        "column": 4,
+        "number": 25,
+        "name": "2 Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 33,
+        "matrix_position": 33,
+        "row": 1,
+        "column": 5,
+        "number": 33,
+        "name": "Green Target 1 (left)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 41,
+        "matrix_position": 41,
+        "row": 1,
+        "column": 6,
+        "number": 41,
+        "name": "Yellow Target 1 (left)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 49,
+        "matrix_position": 49,
+        "row": 1,
+        "column": 7,
+        "number": 49,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 57,
+        "matrix_position": 57,
+        "row": 1,
+        "column": 8,
+        "number": 57,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 2,
+        "matrix_position": 2,
+        "row": 2,
+        "column": 1,
+        "number": 2,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 10,
+        "matrix_position": 10,
+        "row": 2,
+        "column": 2,
+        "number": 10,
+        "name": "Outhole",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 18,
+        "matrix_position": 18,
+        "row": 2,
+        "column": 3,
+        "number": 18,
+        "name": "Left Return Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 26,
+        "matrix_position": 26,
+        "row": 2,
+        "column": 4,
+        "number": 26,
+        "name": "0 Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 34,
+        "matrix_position": 34,
+        "row": 2,
+        "column": 5,
+        "number": 34,
+        "name": "Green Target 2",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 42,
+        "matrix_position": 42,
+        "row": 2,
+        "column": 6,
+        "number": 42,
+        "name": "Yellow Target 2",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 50,
+        "matrix_position": 50,
+        "row": 2,
+        "column": 7,
+        "number": 50,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 58,
+        "matrix_position": 58,
+        "row": 2,
+        "column": 8,
+        "number": 58,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 3,
+        "matrix_position": 3,
+        "row": 3,
+        "column": 1,
+        "number": 3,
+        "name": "Start Button",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 11,
+        "matrix_position": 11,
+        "row": 3,
+        "column": 2,
+        "number": 11,
+        "name": "Trough #1",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 19,
+        "matrix_position": 19,
+        "row": 3,
+        "column": 3,
+        "number": 19,
+        "name": "Right Outlane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 27,
+        "matrix_position": 27,
+        "row": 3,
+        "column": 4,
+        "number": 27,
+        "name": "9 Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 35,
+        "matrix_position": 35,
+        "row": 3,
+        "column": 5,
+        "number": 35,
+        "name": "Green Target 3",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 43,
+        "matrix_position": 43,
+        "row": 3,
+        "column": 6,
+        "number": 43,
+        "name": "Yellow Target 3 (right)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 51,
+        "matrix_position": 51,
+        "row": 3,
+        "column": 7,
+        "number": 51,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 59,
+        "matrix_position": 59,
+        "row": 3,
+        "column": 8,
+        "number": 59,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 4,
+        "matrix_position": 4,
+        "row": 4,
+        "column": 1,
+        "number": 4,
+        "name": "Right Coin Switch",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 12,
+        "matrix_position": 12,
+        "row": 4,
+        "column": 2,
+        "number": 12,
+        "name": "Trough #2",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 20,
+        "matrix_position": 20,
+        "row": 4,
+        "column": 3,
+        "number": 20,
+        "name": "Right Return Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 28,
+        "matrix_position": 28,
+        "row": 4,
+        "column": 4,
+        "number": 28,
+        "name": "Left Eject",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 36,
+        "matrix_position": 36,
+        "row": 4,
+        "column": 5,
+        "number": 36,
+        "name": "Green Target 4 (right)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 44,
+        "matrix_position": 44,
+        "row": 4,
+        "column": 6,
+        "number": 44,
+        "name": "Spinner",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 52,
+        "matrix_position": 52,
+        "row": 4,
+        "column": 7,
+        "number": 52,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 60,
+        "matrix_position": 60,
+        "row": 4,
+        "column": 8,
+        "number": 60,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 5,
+        "matrix_position": 5,
+        "row": 5,
+        "column": 1,
+        "number": 5,
+        "name": "Center Coin Switch",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 13,
+        "matrix_position": 13,
+        "row": 5,
+        "column": 2,
+        "number": 13,
+        "name": "Trough #3",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 21,
+        "matrix_position": 21,
+        "row": 5,
+        "column": 3,
+        "number": 21,
+        "name": "Left Slingshot",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 29,
+        "matrix_position": 29,
+        "row": 5,
+        "column": 4,
+        "number": 29,
+        "name": "Center Eject",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 37,
+        "matrix_position": 37,
+        "row": 5,
+        "column": 5,
+        "number": 37,
+        "name": "10 Point Top4",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 45,
+        "matrix_position": 45,
+        "row": 5,
+        "column": 6,
+        "number": 45,
+        "name": "VUK",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 53,
+        "matrix_position": 53,
+        "row": 5,
+        "column": 7,
+        "number": 53,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 61,
+        "matrix_position": 61,
+        "row": 5,
+        "column": 8,
+        "number": 61,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 6,
+        "matrix_position": 6,
+        "row": 6,
+        "column": 1,
+        "number": 6,
+        "name": "Left Coin Switch",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 14,
+        "matrix_position": 14,
+        "row": 6,
+        "column": 2,
+        "number": 14,
+        "name": "Shooter Lane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 22,
+        "matrix_position": 22,
+        "row": 6,
+        "column": 3,
+        "number": 22,
+        "name": "Right Slingshot",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 30,
+        "matrix_position": 30,
+        "row": 6,
+        "column": 4,
+        "number": 30,
+        "name": "Right Eject",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 38,
+        "matrix_position": 38,
+        "row": 6,
+        "column": 5,
+        "number": 38,
+        "name": "10 Point Bottom",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 46,
+        "matrix_position": 46,
+        "row": 6,
+        "column": 6,
+        "number": 46,
+        "name": "Left Pop Bumper",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 54,
+        "matrix_position": 54,
+        "row": 6,
+        "column": 7,
+        "number": 54,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 62,
+        "matrix_position": 62,
+        "row": 6,
+        "column": 8,
+        "number": 62,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 7,
+        "matrix_position": 7,
+        "row": 7,
+        "column": 1,
+        "number": 7,
+        "name": "Slam Tilt",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 15,
+        "matrix_position": 15,
+        "row": 7,
+        "column": 2,
+        "number": 15,
+        "name": "Left Flipper (via SSFB)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 23,
+        "matrix_position": 23,
+        "row": 7,
+        "column": 3,
+        "number": 23,
+        "name": "Right Trap Ball",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 31,
+        "matrix_position": 31,
+        "row": 7,
+        "column": 4,
+        "number": 31,
+        "name": "Left Ramp",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 39,
+        "matrix_position": 39,
+        "row": 7,
+        "column": 5,
+        "number": 39,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 47,
+        "matrix_position": 47,
+        "row": 7,
+        "column": 6,
+        "number": 47,
+        "name": "Center Pop Bumper",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 55,
+        "matrix_position": 55,
+        "row": 7,
+        "column": 7,
+        "number": 55,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 63,
+        "matrix_position": 63,
+        "row": 7,
+        "column": 8,
+        "number": 63,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 8,
+        "matrix_position": 8,
+        "row": 8,
+        "column": 1,
+        "number": 8,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 16,
+        "matrix_position": 16,
+        "row": 8,
+        "column": 2,
+        "number": 16,
+        "name": "Right Flipper (via SSFB)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 24,
+        "matrix_position": 24,
+        "row": 8,
+        "column": 3,
+        "number": 24,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 32,
+        "matrix_position": 32,
+        "row": 8,
+        "column": 4,
+        "number": 32,
+        "name": "Right Ramp",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 40,
+        "matrix_position": 40,
+        "row": 8,
+        "column": 5,
+        "number": 40,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 48,
+        "matrix_position": 48,
+        "row": 8,
+        "column": 6,
+        "number": 48,
+        "name": "Right Pop Bumper",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 56,
+        "matrix_position": 56,
+        "row": 8,
+        "column": 7,
+        "number": 56,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 64,
+        "matrix_position": 64,
+        "row": 8,
+        "column": 8,
+        "number": 64,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "UNKNOWN",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [],
+    "flipper_circuits": []
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": [
+      {
+        "scr": "Eject",
+        "connector": "Bottom",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "2",
+        "tr_type": "Arrest",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Robocop",
+        "connector": "Special",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Lane",
+        "tr_type": "Emil",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "25",
+        "connector": "33",
+        "description": null,
+        "wire_code": 41,
+        "wire_color": "49",
+        "tr_type": "57",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Eject",
+        "connector": "2X",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "0",
+        "tr_type": "Arrest",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "rObocop",
+        "connector": "Multiplier",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Lane",
+        "tr_type": "Bodd",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "26",
+        "connector": "34",
+        "description": null,
+        "wire_code": 42,
+        "wire_color": "50",
+        "tr_type": "58",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Eject",
+        "connector": "3X",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "9",
+        "tr_type": "Arrest",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "roBocop",
+        "connector": "Multiplier",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Lane",
+        "tr_type": "Jones",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "27",
+        "connector": "35",
+        "description": null,
+        "wire_code": 43,
+        "wire_color": "51",
+        "tr_type": "59",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Eject",
+        "connector": "Bonus",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Ball",
+        "tr_type": "ED 209",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "robOcop",
+        "connector": "Hold",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Guide",
+        "tr_type": "1 Meg",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "28",
+        "connector": "36",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "1",
+        "tr_type": "60",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "",
+        "connector": "",
+        "description": null,
+        "wire_code": 44,
+        "wire_color": "52",
+        "tr_type": null,
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Eject",
+        "connector": "4X",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Ball",
+        "tr_type": "Ramp",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "roboCop",
+        "connector": "Multiplier",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Guide",
+        "tr_type": "Special",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "29",
+        "connector": "37",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "2",
+        "tr_type": "61",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "",
+        "connector": "",
+        "description": null,
+        "wire_code": 45,
+        "wire_color": "53",
+        "tr_type": null,
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Spinner",
+        "connector": "5X",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Ball",
+        "tr_type": "Ramp",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Green",
+        "connector": "Multiplier",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Guide",
+        "tr_type": "Jackpot",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "30",
+        "connector": "38",
+        "description": null,
+        "wire_code": 46,
+        "wire_color": "3",
+        "tr_type": "62",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "",
+        "connector": "",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "54",
+        "tr_type": null,
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Spinner",
+        "connector": "Bottom",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Ball",
+        "tr_type": "ED 209",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Yellow",
+        "connector": "Target",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Guide",
+        "tr_type": "Left",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "31",
+        "connector": "Practice",
+        "description": null,
+        "wire_code": 47,
+        "wire_color": "4",
+        "tr_type": "63",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "",
+        "connector": "39",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "55",
+        "tr_type": null,
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Spinner",
+        "connector": "Extra",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Not",
+        "tr_type": "ED 209",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "Red",
+        "connector": "Ball",
+        "description": null,
+        "wire_code": null,
+        "wire_color": "Used",
+        "tr_type": "Right",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      },
+      {
+        "scr": "32",
+        "connector": "40",
+        "description": null,
+        "wire_code": 48,
+        "wire_color": "56",
+        "tr_type": "64",
+        "aux_board": false,
+        "decode_decoder": null,
+        "decode_address": null,
+        "lamp_code": null
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}

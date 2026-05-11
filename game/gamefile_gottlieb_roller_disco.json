@@ -1,0 +1,905 @@
+{
+  "game": {
+    "id": "gottlieb_roller_disco",
+    "name": "Roller Disco",
+    "manufacturer": "Gottlieb",
+    "year": null,
+    "system": "Gottlieb System 1",
+    "mpu": "(varies: MA-216/MA-490/MA-555/MA-720)",
+    "platform_id": "gottlieb_system_1",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Gottlieb_Roller_Disco_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "TBD"
+      },
+      "DRIVER": {
+        "part": "TBD"
+      },
+      "LAMP": {
+        "part": "TBD"
+      },
+      "SOUND": {
+        "part": "TBD"
+      },
+      "POWER": {
+        "part": "TBD"
+      },
+      "DISPLAY": {
+        "part": "TBD"
+      }
+    },
+    "decode_complete": false
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      },
+      {
+        "signals": []
+      }
+    ],
+    "return_signals": [
+      {
+        "signals": [],
+        "row_index": 0
+      },
+      {
+        "signals": [],
+        "row_index": 1
+      },
+      {
+        "signals": [],
+        "row_index": 2
+      },
+      {
+        "signals": [],
+        "row_index": 3
+      },
+      {
+        "signals": [],
+        "row_index": 4
+      }
+    ],
+    "switches": [
+      {
+        "switch_id": 1,
+        "matrix_position": 1,
+        "row": 1,
+        "column": 1,
+        "number": 1,
+        "name": "Test Button Brn-Blk-Blk (100) SW.00",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 9,
+        "matrix_position": 9,
+        "row": 1,
+        "column": 2,
+        "number": 9,
+        "name": "#1 Drop Target Red-Brn-Brn (211) SW.10",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 17,
+        "matrix_position": 17,
+        "row": 1,
+        "column": 3,
+        "number": 17,
+        "name": "#6 Drop Target Yel-Yel-Yel (444) SW.20",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 25,
+        "matrix_position": 25,
+        "row": 1,
+        "column": 4,
+        "number": 25,
+        "name": "1X Rollover Button Grn-Pur-Pur (577) SW.30",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 33,
+        "matrix_position": 33,
+        "row": 1,
+        "column": 5,
+        "number": 33,
+        "name": "\"A\" Rollover Orn-Blk-Blk (300) SW.40",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 41,
+        "matrix_position": 41,
+        "row": 1,
+        "column": 6,
+        "number": 41,
+        "name": "\"C\" Rollover Grn-Blk-Blk (500) SW.50",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 49,
+        "matrix_position": 49,
+        "row": 1,
+        "column": 7,
+        "number": 49,
+        "name": "Right Extra Ball Target Brn-Pur-Pur (177) SW.60",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 57,
+        "matrix_position": 57,
+        "row": 1,
+        "column": 8,
+        "number": 57,
+        "name": "Left Extra Ball Target Brn-Slt-Slt (188) SW.70",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 2,
+        "matrix_position": 2,
+        "row": 2,
+        "column": 1,
+        "number": 2,
+        "name": "#1 Coin Chute Brn-Red-Red (122) SW.01",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 10,
+        "matrix_position": 10,
+        "row": 2,
+        "column": 2,
+        "number": 10,
+        "name": "#2 Drop Target Red-Red-Red (222) SW.11",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 18,
+        "matrix_position": 18,
+        "row": 2,
+        "column": 3,
+        "number": 18,
+        "name": "#7 Drop Target Yel-Grn-Grn (455) SW.21",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 26,
+        "matrix_position": 26,
+        "row": 2,
+        "column": 4,
+        "number": 26,
+        "name": "2X Rollover Button Grn-Slt-Slt (588) SW.31",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 34,
+        "matrix_position": 34,
+        "row": 2,
+        "column": 5,
+        "number": 34,
+        "name": "Kickout Hole Orn-Yel-Yel (344) SW.41",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 42,
+        "matrix_position": 42,
+        "row": 2,
+        "column": 6,
+        "number": 42,
+        "name": "Kicking Rubbers (2) Brn-Blk-Blk (100) SW.51",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 50,
+        "matrix_position": 50,
+        "row": 2,
+        "column": 7,
+        "number": 50,
+        "name": "Right Bottom Rollover Button Orn-Pur-Pur (377) SW.61",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 58,
+        "matrix_position": 58,
+        "row": 2,
+        "column": 8,
+        "number": 58,
+        "name": "Left Bottom Rollover Button Orn-Grn-Grn (355) SW.71",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 3,
+        "matrix_position": 3,
+        "row": 3,
+        "column": 1,
+        "number": 3,
+        "name": "#2 Coin Chute Brn-Orn-Orn (133) SW.02",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 11,
+        "matrix_position": 11,
+        "row": 3,
+        "column": 2,
+        "number": 11,
+        "name": "#3 Drop Target Red-Orn-Orn (233) SW.12",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 19,
+        "matrix_position": 19,
+        "row": 3,
+        "column": 3,
+        "number": 19,
+        "name": "#8 Drop Target Yel-Blu-Blu (466) SW.22",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 27,
+        "matrix_position": 27,
+        "row": 3,
+        "column": 4,
+        "number": 27,
+        "name": "3X Rollover Button Blu-Pur-Pur (677) SW.32",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 35,
+        "matrix_position": 35,
+        "row": 3,
+        "column": 5,
+        "number": 35,
+        "name": "Bottom Rollovers (4) Blk-Pur-Pur (077) SW.42",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 43,
+        "matrix_position": 43,
+        "row": 3,
+        "column": 6,
+        "number": 43,
+        "name": "10 Point Contacts (5) Brn-Brn-Brn (111) SW.52",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 51,
+        "matrix_position": 51,
+        "row": 3,
+        "column": 7,
+        "number": 51,
+        "name": "Right Return Rollover Orn-Slt-Slt (388) SW.62",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 59,
+        "matrix_position": 59,
+        "row": 3,
+        "column": 8,
+        "number": 59,
+        "name": "Left Return Rollover Slt-Blu-Blu (866) SW.72",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 4,
+        "matrix_position": 4,
+        "row": 4,
+        "column": 1,
+        "number": 4,
+        "name": "Replay Button Brn-Yel-Yel (144) SW.03",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 12,
+        "matrix_position": 12,
+        "row": 4,
+        "column": 2,
+        "number": 12,
+        "name": "#4 Drop Target Red-Yel-Yel (244) SW.13",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 20,
+        "matrix_position": 20,
+        "row": 4,
+        "column": 3,
+        "number": 20,
+        "name": "#9 Drop Target Yel-Pur-Pur (477) SW.23",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 28,
+        "matrix_position": 28,
+        "row": 4,
+        "column": 4,
+        "number": 28,
+        "name": "4X Rollover Button Blu-Slt-Slt (688) SW.33",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 36,
+        "matrix_position": 36,
+        "row": 4,
+        "column": 5,
+        "number": 36,
+        "name": "\"B\" Rollover Orn-Brn-Brn (311) SW.43",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 44,
+        "matrix_position": 44,
+        "row": 4,
+        "column": 6,
+        "number": 44,
+        "name": "\"D\" Rollover Grn-Brn-Brn (511) SW.53",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 52,
+        "matrix_position": 52,
+        "row": 4,
+        "column": 7,
+        "number": 52,
+        "name": "Right Side Rollover Pur-Slt-Slt (788) SW.63",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 60,
+        "matrix_position": 60,
+        "row": 4,
+        "column": 8,
+        "number": 60,
+        "name": "Left Side Rollover Slt-Pur-Pur (877) SW.73",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 5,
+        "matrix_position": 5,
+        "row": 5,
+        "column": 1,
+        "number": 5,
+        "name": "Tilt Blu-Blu-Blu (666) SW.04",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 13,
+        "matrix_position": 13,
+        "row": 5,
+        "column": 2,
+        "number": 13,
+        "name": "#5 Drop Target Red-Grn-Grn (255) SW.14",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 21,
+        "matrix_position": 21,
+        "row": 5,
+        "column": 3,
+        "number": 21,
+        "name": "#10 Drop Target Yel-Slt-Slt (488) SW.24",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 29,
+        "matrix_position": 29,
+        "row": 5,
+        "column": 4,
+        "number": 29,
+        "name": "5X Rollover Button Pur-Blu-Blu (766) SW.34",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 37,
+        "matrix_position": 37,
+        "row": 5,
+        "column": 5,
+        "number": 37,
+        "name": "Top Rollover Buttons (2) Red-Blu-Blu (266) SW.44",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 45,
+        "matrix_position": 45,
+        "row": 5,
+        "column": 6,
+        "number": 45,
+        "name": "Pop Bumpers (3) Red-Blk-Blk (200) SW.54",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 53,
+        "matrix_position": 53,
+        "row": 5,
+        "column": 7,
+        "number": 53,
+        "name": "Special Target Brn-Orn-Orn (133) SW.64",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 61,
+        "matrix_position": 61,
+        "row": 5,
+        "column": 8,
+        "number": 61,
+        "name": "Not Used SW.74",
+        "type": "playfield",
+        "used": false
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "Gottlieb System 1",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [
+      {
+        "description": "Game Over Relay",
+        "coil_type_class": "Controlled",
+        "coil_part_number": "A-16890",
+        "lamp_code_alias": 1,
+        "transistor": "Q01",
+        "connector": "J5-18",
+        "wire_color": "Yel-Blk-Blk",
+        "transistor_type": "MPS-U45"
+      },
+      {
+        "description": "Tilt Relay",
+        "coil_type_class": "Controlled",
+        "coil_part_number": "A-16890",
+        "lamp_code_alias": 2,
+        "transistor": "Q02",
+        "connector": "J5-19",
+        "wire_color": "Yel-Brn-Brn",
+        "transistor_type": "MPS-U45"
+      },
+      {
+        "description": "Outhole",
+        "coil_type_class": "Controlled",
+        "coil_part_number": "A-16570",
+        "sol_number": 1,
+        "transistor": "Q32",
+        "connector": "J4-6",
+        "wire_color": "Red-Blk-Blk",
+        "transistor_type": "2N6043"
+      },
+      {
+        "description": "Knocker",
+        "coil_type_class": "Controlled",
+        "coil_part_number": "A-5195",
+        "sol_number": 2,
+        "transistor": "Q25",
+        "connector": "J2-1",
+        "wire_color": "Red-Brn-Brn",
+        "transistor_type": "2N6043"
+      },
+      {
+        "description": "Kickout Hole",
+        "coil_type_class": "Controlled",
+        "coil_part_number": "A-16570",
+        "sol_number": 6,
+        "transistor": "Q31",
+        "connector": "J4-5",
+        "wire_color": "Red-Blu-Blu",
+        "transistor_type": "2N6043 - 2N5875"
+      },
+      {
+        "description": "Left Drop Target Bank Reset",
+        "coil_type_class": "Controlled",
+        "coil_part_number": "A-17891",
+        "sol_number": 7,
+        "transistor": "Q30",
+        "connector": "J4-4",
+        "wire_color": "Orn-Blk-Blk",
+        "transistor_type": "2N6043 - 2N5875"
+      },
+      {
+        "description": "Right Drop Target Bank Reset",
+        "coil_type_class": "Controlled",
+        "coil_part_number": "A-17891",
+        "sol_number": 8,
+        "transistor": "Q29 - Q45",
+        "connector": "J4-2",
+        "wire_color": "Orn-Brn-Brn",
+        "transistor_type": "MPS-U45 - 2N3055",
+        "fuse": "2 Amp Slo-Blo"
+      },
+      {
+        "description": "Left Pop Bumper",
+        "coil_type_class": "Directly",
+        "coil_part_number": "A-1496"
+      },
+      {
+        "description": "Right Pop Bumper",
+        "coil_type_class": "Directly",
+        "coil_part_number": "A-1496"
+      },
+      {
+        "description": "Center Pop Bumper",
+        "coil_type_class": "Directly",
+        "coil_part_number": "A-1496"
+      },
+      {
+        "description": "Left Kicking Rubber",
+        "coil_type_class": "Directly",
+        "coil_part_number": "A-5194"
+      },
+      {
+        "description": "Right Kicking Rubber",
+        "coil_type_class": "Directly",
+        "coil_part_number": "A-5194"
+      },
+      {
+        "description": "Coin Lockout",
+        "coil_type_class": "Directly",
+        "coil_part_number": "A-16890",
+        "connector": "A6J1-11"
+      },
+      {
+        "description": "Left Flippers",
+        "coil_type_class": "Directly",
+        "coil_part_number": "A-17875",
+        "connector": "A6J5-4"
+      },
+      {
+        "description": "Right Flippers",
+        "coil_type_class": "Directly",
+        "coil_part_number": "A-17875",
+        "connector": "A6J5-5"
+      }
+    ],
+    "flipper_circuits": []
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": [
+      {
+        "lamp_code": 3,
+        "transistor": "Q03",
+        "connector": "J5-17",
+        "description": "High Game to Date 422",
+        "wire_color": "Yel-Red-Red",
+        "transistor_type": "MPS-U45"
+      },
+      {
+        "lamp_code": 4,
+        "transistor": "Q04",
+        "connector": "J5-15",
+        "description": "Same Player Shoot Again 433",
+        "wire_color": "Yel-Orn-Orn",
+        "transistor_type": "MPS-U45"
+      },
+      {
+        "lamp_code": 5,
+        "transistor": "Q05",
+        "connector": "J5-13",
+        "description": "1X Bonus 455",
+        "wire_color": "Yel-Grn-Grn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 6,
+        "transistor": "Q06",
+        "connector": "J5-14",
+        "description": "2X Bonus 466",
+        "wire_color": "Yel-Blu-Blu",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 7,
+        "transistor": "Q07",
+        "connector": "J5-12",
+        "description": "Right Extra Ball 500",
+        "wire_color": "Grn-Blk-Blk",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 8,
+        "transistor": "Q08",
+        "connector": "J5-11",
+        "description": "Left Extra Ball 511",
+        "wire_color": "Grn-Brn-Brn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 9,
+        "transistor": "Q09",
+        "connector": "J5-9",
+        "description": "Left Drop Target 522",
+        "wire_color": "Grn-Red-Red",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 10,
+        "transistor": "Q10",
+        "connector": "J5-10",
+        "description": "Right Drop Target 533",
+        "wire_color": "Grn-Orn-Orn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 11,
+        "transistor": "Q11",
+        "connector": "J5-8",
+        "description": "Right Side Rollover 544",
+        "wire_color": "Grn-Yel-Yel",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 12,
+        "transistor": "Q12",
+        "connector": "J5-7",
+        "description": "Left Side Rollover 566",
+        "wire_color": "Grn-Blu-Blu",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 13,
+        "transistor": "Q13",
+        "connector": "J5-5",
+        "description": "Score Bonus When Lit 600",
+        "wire_color": "Blu-Blk-Blk",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 14,
+        "transistor": "Q14",
+        "connector": "J5-6",
+        "description": "Special 611",
+        "wire_color": "Blu-Brn-Brn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 15,
+        "transistor": "Q15",
+        "connector": "J5-4",
+        "description": "\"D\" Rollover 622",
+        "wire_color": "Blu-Red-Red",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 16,
+        "transistor": "Q16",
+        "connector": "J5-3",
+        "description": "\"C\" Rollover 633",
+        "wire_color": "Blu-Orn-Orn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 17,
+        "transistor": "Q17",
+        "connector": "J5-1",
+        "description": "\"A\" Rollover 644",
+        "wire_color": "Blu-Yel-Yel",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 18,
+        "transistor": "Q18",
+        "connector": "J5-2",
+        "description": "\"B\" Rollover 655",
+        "wire_color": "Blu-Grn-Grn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 19,
+        "transistor": "Q19",
+        "connector": "J3-20",
+        "description": "Right Bottom Rollover Button 700",
+        "wire_color": "Pur-Blk-Blk",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 20,
+        "transistor": "Q20",
+        "connector": "J3-18",
+        "description": "Left Bottom Rollover Button 711",
+        "wire_color": "Pur-Brn-Brn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 21,
+        "transistor": "Q21",
+        "connector": "J3-16",
+        "description": "Left Return Rollover 722",
+        "wire_color": "Pur-Red-Red",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 22,
+        "transistor": "Q22",
+        "connector": "J3-17",
+        "description": "Right Return Rollover 733",
+        "wire_color": "Pur-Orn-Orn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 23,
+        "transistor": "Q23",
+        "connector": "J3-15",
+        "description": "1000 Bonus 744",
+        "wire_color": "Pur-Yel-Yel",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 24,
+        "transistor": "Q24",
+        "connector": "J3-14",
+        "description": "2000 Bonus 755",
+        "wire_color": "Pur-Grn-Grn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 25,
+        "transistor": "Q33",
+        "connector": "J3-12",
+        "description": "3000 Bonus 800",
+        "wire_color": "Slt-Blk-Blk",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 26,
+        "transistor": "Q34",
+        "connector": "J3-13",
+        "description": "4000 Bonus 811",
+        "wire_color": "Slt-Brn-Brn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 27,
+        "transistor": "Q35",
+        "connector": "J3-11",
+        "description": "5000 Bonus 822",
+        "wire_color": "Slt-Red-Red",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 28,
+        "transistor": "Q36",
+        "connector": "J3-9",
+        "description": "6000 Bonus 833",
+        "wire_color": "Slt-Orn-Orn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 29,
+        "transistor": "Q37",
+        "connector": "J3-7",
+        "description": "7000 Bonus 844",
+        "wire_color": "Slt-Yel-Yel",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 30,
+        "transistor": "Q38",
+        "connector": "J3-8",
+        "description": "8000 Bonus 855",
+        "wire_color": "Slt-Grn-Grn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 31,
+        "transistor": "Q39",
+        "connector": "J3-6",
+        "description": "9000 Bonus 111",
+        "wire_color": "Brn-Brn-Brn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 32,
+        "transistor": "Q40",
+        "connector": "J3-5",
+        "description": "10,000 Bonus 333",
+        "wire_color": "Orn-Orn-Orn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 33,
+        "transistor": "Q41",
+        "connector": "J3-4",
+        "description": "20,000 Bonus 444",
+        "wire_color": "Yel-Yel-Yel",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 34,
+        "transistor": "Q42",
+        "connector": "J3-3",
+        "description": "5X Bonus 555",
+        "wire_color": "Grn-Grn-Grn",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 35,
+        "transistor": "Q43",
+        "connector": "J3-2",
+        "description": "4X Bonus 666",
+        "wire_color": "Blu-Blu-Blu",
+        "transistor_type": "MPS-A13"
+      },
+      {
+        "lamp_code": 36,
+        "transistor": "Q44",
+        "connector": "J3-1",
+        "description": "3X Bonus 777",
+        "wire_color": "Pur-Pur-Pur",
+        "transistor_type": "MPS-A13"
+      }
+    ]
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}
