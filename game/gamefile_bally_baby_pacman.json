@@ -1,0 +1,846 @@
+{
+  "game": {
+    "id": "bally_baby_pacman",
+    "name": "Baby Pacman",
+    "manufacturer": "Bally",
+    "year": null,
+    "system": "Bally MPU 6803",
+    "mpu": "6803 Controller",
+    "platform_id": "bally_6803",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "source": "Auto-extracted from Bally_Baby_Pacman_Tech_Chart.pdf via pdfplumber.",
+    "changelog": [
+      "v1.0: Auto-extracted via extract_techchart.py."
+    ],
+    "boardset": {
+      "MPU": {
+        "part": "AS-2518-133"
+      },
+      "DRIVER": {
+        "part": "TBD"
+      },
+      "LAMP": {
+        "part": "TBD"
+      },
+      "SOUND": {
+        "part": "TBD"
+      },
+      "POWER": {
+        "part": "AS-2518-132",
+        "note": "role discovered from chart context: 'Rectifier'",
+        "discovered": true
+      },
+      "DISPLAY": {
+        "part": "TBD"
+      },
+      "UNCLASSIFIED": [
+        {
+          "part": "AS-2518-107",
+          "note": "likely coil designator (no board role label nearby)"
+        },
+        {
+          "part": "AS-2518-121",
+          "note": "unrecognized role label nearby: 'Vidiot Deluxe\nModule'"
+        }
+      ]
+    },
+    "decode_complete": false
+  },
+  "switch_matrix": {
+    "rows": 8,
+    "columns": 6,
+    "notes": [
+      "Extracted via pdfplumber cell-border-aware table extraction.",
+      "'cap.' annotations preserved in switch notes."
+    ],
+    "strobe_signals": [
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 1,
+            "wire_color": "Wht-Red",
+            "wire_code": 51
+          },
+          {
+            "connector": "A4J3",
+            "pin": 2,
+            "wire_color": "Wht-Red",
+            "wire_code": 51
+          }
+        ],
+        "strobe": 0
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 2,
+            "wire_color": "Orn",
+            "wire_code": 70
+          },
+          {
+            "connector": "A4J3",
+            "pin": 3,
+            "wire_color": "Orn",
+            "wire_code": 70
+          }
+        ],
+        "strobe": 1
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 3,
+            "wire_color": "Gry-Yel",
+            "wire_code": 93
+          }
+        ],
+        "strobe": 2
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 4,
+            "wire_color": "Wht-Yel",
+            "wire_code": 53
+          }
+        ],
+        "strobe": 3
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 5,
+            "wire_color": "Yel-Red",
+            "wire_code": 31
+          }
+        ],
+        "strobe": 4
+      }
+    ],
+    "return_signals": [
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 8,
+            "wire_color": "Wht-Grn",
+            "wire_code": 54
+          },
+          {
+            "connector": "A4J3",
+            "pin": 9,
+            "wire_color": "Wht-Grn",
+            "wire_code": 54
+          }
+        ],
+        "ret_index": 0,
+        "row_index": 0
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 9,
+            "wire_color": "Brn-Yel",
+            "wire_code": 63
+          },
+          {
+            "connector": "A4J3",
+            "pin": 10,
+            "wire_color": "Brn-Yel",
+            "wire_code": 63
+          }
+        ],
+        "ret_index": 1,
+        "row_index": 1
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 10,
+            "wire_color": "Wht-Orn",
+            "wire_code": 57
+          },
+          {
+            "connector": "A4J3",
+            "pin": 11,
+            "wire_color": "Wht-Orn",
+            "wire_code": 57
+          }
+        ],
+        "ret_index": 2,
+        "row_index": 2
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 11,
+            "wire_color": "Orn-Blk",
+            "wire_code": 78
+          },
+          {
+            "connector": "A4J3",
+            "pin": 12,
+            "wire_color": "Orn-Blk",
+            "wire_code": 78
+          }
+        ],
+        "ret_index": 3,
+        "row_index": 3
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 12,
+            "wire_color": "Brn",
+            "wire_code": 60
+          },
+          {
+            "connector": "A4J3",
+            "pin": 13,
+            "wire_color": "Wht-Brn",
+            "wire_code": 56
+          }
+        ],
+        "ret_index": 4,
+        "row_index": 4
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 13,
+            "wire_color": "Wht-Brn",
+            "wire_code": 56
+          },
+          {
+            "connector": "A4J3",
+            "pin": 14,
+            "wire_color": "Wht-Brn",
+            "wire_code": 56
+          }
+        ],
+        "ret_index": 5,
+        "row_index": 5
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 14,
+            "wire_color": "Brn-Wht",
+            "wire_code": 65
+          },
+          {
+            "connector": "A4J3",
+            "pin": 15,
+            "wire_color": "Brn-Wht",
+            "wire_code": 65
+          }
+        ],
+        "ret_index": 6,
+        "row_index": 6
+      },
+      {
+        "signals": [
+          {
+            "connector": "A4J2",
+            "pin": 15,
+            "wire_color": "Wht-Blu",
+            "wire_code": 52
+          },
+          {
+            "connector": "A4J3",
+            "pin": 16,
+            "wire_color": "Wht-Blu",
+            "wire_code": 52
+          }
+        ],
+        "ret_index": 7,
+        "row_index": 7
+      }
+    ],
+    "switches": [
+      {
+        "switch_id": 1,
+        "matrix_position": 1,
+        "row": 1,
+        "column": 1,
+        "number": 1,
+        "name": "Right Flipper E.O.S.",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 9,
+        "matrix_position": 9,
+        "row": 1,
+        "column": 2,
+        "number": 9,
+        "name": "Coin Chute Right",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 17,
+        "matrix_position": 17,
+        "row": 1,
+        "column": 3,
+        "number": 17,
+        "name": "Top Loop Lane (Right)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 25,
+        "matrix_position": 25,
+        "row": 1,
+        "column": 4,
+        "number": 25,
+        "name": "Drop Target #5 (Right)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 33,
+        "matrix_position": 33,
+        "row": 1,
+        "column": 5,
+        "number": 33,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 2,
+        "matrix_position": 2,
+        "row": 2,
+        "column": 1,
+        "number": 2,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 10,
+        "matrix_position": 10,
+        "row": 2,
+        "column": 2,
+        "number": 10,
+        "name": "Coin Chute Left",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 18,
+        "matrix_position": 18,
+        "row": 2,
+        "column": 3,
+        "number": 18,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 26,
+        "matrix_position": 26,
+        "row": 2,
+        "column": 4,
+        "number": 26,
+        "name": "Drop Target #4",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 34,
+        "matrix_position": 34,
+        "row": 2,
+        "column": 5,
+        "number": 34,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 3,
+        "matrix_position": 3,
+        "row": 3,
+        "column": 1,
+        "number": 3,
+        "name": "Start Game for 2 Players",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 11,
+        "matrix_position": 11,
+        "row": 3,
+        "column": 2,
+        "number": 11,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 19,
+        "matrix_position": 19,
+        "row": 3,
+        "column": 3,
+        "number": 19,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 27,
+        "matrix_position": 27,
+        "row": 3,
+        "column": 4,
+        "number": 27,
+        "name": "Drop Target #3",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 35,
+        "matrix_position": 35,
+        "row": 3,
+        "column": 5,
+        "number": 35,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 4,
+        "matrix_position": 4,
+        "row": 4,
+        "column": 1,
+        "number": 4,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 12,
+        "matrix_position": 12,
+        "row": 4,
+        "column": 2,
+        "number": 12,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 20,
+        "matrix_position": 20,
+        "row": 4,
+        "column": 3,
+        "number": 20,
+        "name": "Top Loop Lane (Left)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 28,
+        "matrix_position": 28,
+        "row": 4,
+        "column": 4,
+        "number": 28,
+        "name": "Drop Target #2",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 36,
+        "matrix_position": 36,
+        "row": 4,
+        "column": 5,
+        "number": 36,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 5,
+        "matrix_position": 5,
+        "row": 5,
+        "column": 1,
+        "number": 5,
+        "name": "Rebounds (2)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 13,
+        "matrix_position": 13,
+        "row": 5,
+        "column": 2,
+        "number": 13,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 21,
+        "matrix_position": 21,
+        "row": 5,
+        "column": 3,
+        "number": 21,
+        "name": "Tunnel Outlane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 29,
+        "matrix_position": 29,
+        "row": 5,
+        "column": 4,
+        "number": 29,
+        "name": "Drop Target #1 (Left)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 37,
+        "matrix_position": 37,
+        "row": 5,
+        "column": 5,
+        "number": 37,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 6,
+        "matrix_position": 6,
+        "row": 6,
+        "column": 1,
+        "number": 6,
+        "name": "Start Game for 1 Player",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 14,
+        "matrix_position": 14,
+        "row": 6,
+        "column": 2,
+        "number": 14,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 22,
+        "matrix_position": 22,
+        "row": 6,
+        "column": 3,
+        "number": 22,
+        "name": "Fruits Outlane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 30,
+        "matrix_position": 30,
+        "row": 6,
+        "column": 4,
+        "number": 30,
+        "name": "Outhole Saucer",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 38,
+        "matrix_position": 38,
+        "row": 6,
+        "column": 5,
+        "number": 38,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 7,
+        "matrix_position": 7,
+        "row": 7,
+        "column": 1,
+        "number": 7,
+        "name": "Right Spinner",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 15,
+        "matrix_position": 15,
+        "row": 7,
+        "column": 2,
+        "number": 15,
+        "name": "Tilt (2)",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 23,
+        "matrix_position": 23,
+        "row": 7,
+        "column": 3,
+        "number": 23,
+        "name": "Right Inside Outlane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 31,
+        "matrix_position": 31,
+        "row": 7,
+        "column": 4,
+        "number": 31,
+        "name": "Right Maze Saucer",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 39,
+        "matrix_position": 39,
+        "row": 7,
+        "column": 5,
+        "number": 39,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      },
+      {
+        "switch_id": 8,
+        "matrix_position": 8,
+        "row": 8,
+        "column": 1,
+        "number": 8,
+        "name": "Left Spinner",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 16,
+        "matrix_position": 16,
+        "row": 8,
+        "column": 2,
+        "number": 16,
+        "name": "Slam",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 24,
+        "matrix_position": 24,
+        "row": 8,
+        "column": 3,
+        "number": 24,
+        "name": "Left Inside Outlane",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 32,
+        "matrix_position": 32,
+        "row": 8,
+        "column": 4,
+        "number": 32,
+        "name": "Left Maze Saucer",
+        "type": "playfield",
+        "used": true
+      },
+      {
+        "switch_id": 40,
+        "matrix_position": 40,
+        "row": 8,
+        "column": 5,
+        "number": 40,
+        "name": "Not Used",
+        "type": "playfield",
+        "used": false
+      }
+    ]
+  },
+  "solenoids": {
+    "driver_board": "Bally MPU 6803",
+    "notes": [
+      "BCD codes derived from platform transistor->BCD map (when platform recognized).",
+      "Continuous solenoids bypass the BCD decoder."
+    ],
+    "coils": [
+      {
+        "sol_number": 1,
+        "name": "Outhole",
+        "type": "momentary",
+        "bcd_code": null,
+        "transistor": "Q37",
+        "connector": "A3J6-3",
+        "wire_code": 74,
+        "wire_color": "Orn-Grn",
+        "sol_exp_color": null,
+        "coil_type": "AO-27-1300",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 2,
+        "name": "Drop Target Reset",
+        "type": "momentary",
+        "bcd_code": null,
+        "transistor": "Q36",
+        "connector": "A3J6-4",
+        "wire_code": 78,
+        "wire_color": "Orn-Blk",
+        "sol_exp_color": null,
+        "coil_type": "NO-26-1900",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 3,
+        "name": "Drop Target #1 (Left)",
+        "type": "momentary",
+        "bcd_code": null,
+        "transistor": "Q35",
+        "connector": "A3J6-7",
+        "wire_code": 71,
+        "wire_color": "Orn-Red",
+        "sol_exp_color": null,
+        "coil_type": "CJ-31-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 4,
+        "name": "Drop Target #2",
+        "type": "momentary",
+        "bcd_code": null,
+        "transistor": "Q34",
+        "connector": "A3J6-8",
+        "wire_code": 91,
+        "wire_color": "Gry-Red",
+        "sol_exp_color": null,
+        "coil_type": "CJ-31-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 5,
+        "name": "Drop Target #3",
+        "type": "momentary",
+        "bcd_code": null,
+        "transistor": "Q33",
+        "connector": "A3J6-11",
+        "wire_code": 81,
+        "wire_color": "Blk-Red",
+        "sol_exp_color": null,
+        "coil_type": "CJ-31-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 6,
+        "name": "Drop Target #4",
+        "type": "momentary",
+        "bcd_code": null,
+        "transistor": "Q32",
+        "connector": "A3J6-12",
+        "wire_code": 85,
+        "wire_color": "Blk-Wht",
+        "sol_exp_color": null,
+        "coil_type": "CJ-31-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 7,
+        "name": "Drop Target #5 (Right)",
+        "type": "momentary",
+        "bcd_code": null,
+        "transistor": "Q31",
+        "connector": "A3J5-4",
+        "wire_code": 83,
+        "wire_color": "Blk-Yel",
+        "sol_exp_color": null,
+        "coil_type": "CJ-31-2000",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 8,
+        "name": "Flipper enabling relay",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Q40",
+        "connector": null,
+        "wire_code": null,
+        "wire_color": null,
+        "sol_exp_color": null,
+        "coil_type": "48V Relay",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 9,
+        "name": "Left Maze Saucer",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Q39",
+        "connector": "A3J6-2",
+        "wire_code": 67,
+        "wire_color": "Brn-Orn",
+        "sol_exp_color": null,
+        "coil_type": "AO-27-1300",
+        "fault_flag": false
+      },
+      {
+        "sol_number": 10,
+        "name": "Right Maze Saucer",
+        "type": "continuous",
+        "bcd_code": null,
+        "transistor": "Q38",
+        "connector": "A3J6-1",
+        "wire_code": 18,
+        "wire_color": "Red-Blk",
+        "sol_exp_color": null,
+        "coil_type": "AO-27-1300",
+        "fault_flag": false
+      }
+    ],
+    "flipper_circuits": [
+      {
+        "name": "Left Flipper",
+        "power_wire": "Brn (60)",
+        "coil_wire": "40 (Grn)",
+        "coil_connector": "A3J10-5",
+        "button_wire": "20 (Blu)",
+        "button_connector": "A3J11-3",
+        "coil_part": "AQ-25-500/34-4500"
+      },
+      {
+        "name": "Right Flipper",
+        "power_wire": "Brn (60)",
+        "coil_wire": "70 (Orn)",
+        "coil_connector": "A3J10-4",
+        "button_wire": "10 (Red)",
+        "button_connector": "A3J11-5",
+        "coil_part": "AQ-25-500/34-4500"
+      }
+    ]
+  },
+  "lamps": {
+    "notes": [
+      "decode_decoder + decode_address derived from platform SCR map (when known)."
+    ],
+    "controlled_lamps": []
+  },
+  "sound_commands": {
+    "notes": [
+      "Sound commands not present in tech chart -- requires ROM analysis."
+    ],
+    "commands": []
+  }
+}
